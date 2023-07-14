@@ -9,15 +9,20 @@ body {
   box-sizing: border-box;
   height: 100%;
   margin: 0;
-  /* font-family: syne-reg; */
+  font-family: syne-reg;
   scroll-behavior: smooth;
 }
 
-/* 
+
 @font-face {
   font-family: syne-reg;
   src: url("./syne.regular.otf");
-} */
+}
+
+@font-face {
+  font-family: syne-bold;
+  src: url("./syne.bold.otf");
+}
 
 a {
   text-decoration: none!important;
@@ -33,4 +38,140 @@ a {
   .mobile {
     display: none!important;
   }
+}
+
+.login-sec {
+  background-image: url('./assets/bg-login.svg');
+  background-size: cover;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: auto;
+  padding-bottom: 50px;
+}
+
+.login-box {
+  width: 600px;
+  margin: 0 auto;
+  position: relative;
+  right: 0;
+  left: 0;
+  top: 20px;
+  max-width: 95%;
+}
+
+.login-box .sign-box {
+  background: #fff;
+  padding: 40px 45px 40px;
+  position: relative;
+  width: 100%;
+  border-radius: 30px 30px 0px 0px;
+}
+
+@media (min-width: 992px){
+  .logo {
+    padding: 30px;
+    text-align: center;
+    margin-top: 132px;
+  }
+}
+
+@media (max-width: 767.98px){
+  .logo {
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+.sign-box h3 {
+  color: #228B22;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.sign-box h6 {
+  color: #999999;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.sign-box .form-control {
+  background-color: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 3px;
+  color: #888;
+  font-size: 12px;
+  padding: 16px;
+}
+
+.form-check-input:checked {
+  background-color: #228b22;
+  border-color: #228b22;
+}
+
+.forgot-p .form-check-label {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+}
+
+.forgot-p h6 {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  color: #228b22;
+}
+
+.forgot-p .form-check-input[type=checkbox] {
+  border-radius: 0;
+}
+
+.sign-box p {
+  color: #000;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.btn-main, .btn-main:hover {
+  background: #228b22;
+  border: #228b22;
+}
+
+@media (min-width: 992px) {
+  .otp-form {
+    width: 65px !important;
+    height: 63px;
+    border: 1px solid #E5E7EB !important;
+    text-align: center;
+    font-size: 24px !important;
+    font-weight: bold !important;
+    color: #228B22 !important;
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .otp-form {
+    width: 40px !important;
+    height: 40px;
+    border: 1px solid #E5E7EB !important;
+    text-align: center;
+    font-size: 24px !important;
+    font-weight: bold !important;
+    color: #228B22 !important;
+    margin: 0 3px;
+  }
+}
+
+.sign-box h4 {
+  color: grey;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
 }
