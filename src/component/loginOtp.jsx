@@ -21,7 +21,7 @@ export default function LoginOtp () {
             <OtpInput value={otp} onChange={handleChange} numInputs={6} inputStyle="form-control otp-form" />
           </div>
           <h4 className="mb-3 text-black">Didn’t get an OTP code? <span style={{color: "#228B22"}}>RESEND</span></h4>
-          <button to="" type="button" className="btn btn-primary btn-main rounded-pill px-5 py-3 w-100">Verify</button>
+          <a href="/dashboard" type="button" className="btn btn-primary btn-main rounded-pill px-5 py-3 w-100">Verify</a>
         </div>
       </div>
     </div>
