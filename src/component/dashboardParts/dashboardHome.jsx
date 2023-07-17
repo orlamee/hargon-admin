@@ -1,7 +1,7 @@
 import nots from "../../assets/not.svg"
 // import ceo from "../../assets/ceo.svg"
 import loan from "../../assets/loan-graph.svg"
-// import ceo from "../../assets/ceo.svg"
+import naira from "../../assets/naira.svg"
 import avatar from "../../assets/avi.svg"
 import dashboard from "../../assets/dashboard.svg"
 import cancel from "../../assets/cancelled.svg"
@@ -267,7 +267,7 @@ function DashboardHome() {
             <div className="row mt-5">
               <div className="col-sm-9">
                 <h6 className="text-white">Total funds</h6>
-                <h5 className="text-white">10k</h5>
+                <h5 className="text-white"><img src={naira} alt="naira" className="img-fluid me-1" />10k</h5>
               </div>
             </div>
           </div>
