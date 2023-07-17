@@ -45,6 +45,7 @@ div.content {
   /* padding: 1px 16px; */
   min-height: auto;
   background-color: #FAFAFA;
+  padding-bottom: 50px;
 }
 
 @media screen and (max-width: 700px) {
@@ -177,4 +178,94 @@ div.content {
 
 .side-bar::-webkit-scrollbar {
   display: none;
+}
+
+.app-card {
+  padding: 50px 40px;
+  border-radius: 16px;
+}
+
+.app-card h3 {
+  color: #040404;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 500;
+}
+
+.app-card h6 {
+  color: #6B7280;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.app-card h5 {
+  color: #000;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 600;
+  font-family: number;
+}
+
+.app-card-btn {
+  background: #F9FAFB;
+  border: 1px solid #F9FAFB;
+  font-size: 12px;
+  color: #6B7280;
+  padding: 4px 15px;
+  border-radius: 48px;
+  float: right;
+  margin-top: -36px
+}
+
+.app-equal {
+  margin: 30px 0;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+  top: -1px!important;
+  left: 155px!important;
+}
+
+.graphs img {
+  height: 408px;
+  object-position: top;
+  object-fit: cover;
+  border-radius: 22px;
+}
+
+.cancel {
+  height: 398px;
+  object-position: top;
+  width: 100%;
+  object-fit: cover;
+}
+
+.user-avi h6 {
+  color: #000000;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15px;
+  margin: 0;
+}
+
+.user-avi p {
+  color: #9CA3AF;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.bg-orange {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("./assets/orange.svg");
+}
+
+.bg-green {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("./assets/green.svg");
 }
