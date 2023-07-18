@@ -25,8 +25,7 @@ function Sidebar() {
           <div className="item">
             <a className="sub-btn"><Icon icon="ri:building-2-line" className="me-3 nme-1 fs-4" />Loans <i className="bi bi-chevron-right dropdown"></i></a>
             <div className="sub-menu">
-              <a href="" className="sub-item">Dashboard</a>
-              <a href="" className="sub-item">All Loans</a>
+              <a href="/all-loans" className="sub-item">All Loans</a>
               <a href="" className="sub-item">Applications</a>
               <a href="" className="sub-item">Manage products</a>
               <a href="" className="sub-item">Bulk loan payments</a>

@@ -11,6 +11,8 @@ import Register from './pages/register';
 import ForgotP from './pages/forgotP';
 import RecoverPassword from './pages/recoverP';
 import Dashboard from './dashboardPages/dashboard';
+import AllLoans from './dashboardPages/allLoans';
+import LoanDetails from './dashboardPages/loanDetails';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -23,6 +25,8 @@ root.render(
       <Route path='/recover-password' element={<ForgotP/>}></Route>
       <Route path='/set-password' element={<RecoverPassword/>}></Route>
       <Route path='/dashboard' element={<Dashboard/>}></Route>
+      <Route path='/all-loans' element={<AllLoans/>}></Route>
+      <Route path='/all-loans/details' element={<LoanDetails/>}></Route>
     </Routes>
   </BrowserRouter>
 );

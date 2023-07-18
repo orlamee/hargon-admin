@@ -269,3 +269,164 @@ div.content {
   background-size: cover;
   background-image: url("./assets/green.svg");
 }
+
+.pending-loan {
+  background-color: #fff;
+  padding: 30px 30px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.pending-loan h5 {
+  color: #000000;
+  font-size: 15px;
+  line-height: 19px ;
+  font-weight: 500;
+}
+
+.xxx {
+  color: #228B22;
+  padding: 8px 15px;
+  border-radius: 40px;
+  background: #FAFAFA;
+  cursor: pointer;
+  margin-top: -8px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.members .table>:not(caption)>*>* {
+  padding: 1.2rem 0.5rem;
+  background-color: var(--bs-table-bg);
+  border-bottom-width: 1px;
+  box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+}
+
+.members th {
+  color: #9CA3AF;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+}
+
+.member-table th {
+  color: #9CA3AF;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 50;
+  letter-spacing: 0.05rem;
+}
+
+
+.members tbody, td, tfoot, th, thead, tr {
+  border-color: #F3F4F6;
+  border-style: solid;
+  border-width: 0;
+}
+
+.pagination {
+  --bs-pagination-padding-x: 0.75rem;
+  --bs-pagination-padding-y: 0.170rem;
+}
+
+.members td{
+  color: #000;
+  font-size: 12px;
+  line-height: 36px;
+  font-weight: 500;
+}
+
+.approved {
+  background: #F0FDF4;
+  color: #22C55E;
+  padding: 6px 14px;
+  border-radius: 44px;
+  font-size: 10px;
+}
+
+.disbursed {
+  background: #F0F6FF;
+  color: #005FEE;
+  padding: 6px 14px;
+  border-radius: 44px;
+  font-size: 10px;
+}
+
+.awaiting {
+  background: #FFFBEB;
+  color: #FFCA0D;
+  padding: 6px 14px;
+  border-radius: 44px;
+  font-size: 10px;
+}
+
+.withdrawn {
+  background: #FFF0F0;
+  color: #FF4E4E;
+  padding: 6px 14px;
+  border-radius: 44px;
+  font-size: 10px;
+}
+
+.activ {
+  background: #FFF2EB;
+  color: #FF823B;
+  padding: 6px 14px;
+  border-radius: 44px;
+  font-size: 10px;
+}
+
+.active>.page-link, .page-link.active {
+  z-index: 3;
+  color: var(--bs-pagination-active-color);
+  background-color: #328a28;
+  border-color: #328a28;
+}
+
+.details {
+  border: 1px solid #f4f4f5!important;
+  border-radius: 6px!important;
+  box-shadow: 0 25px 50px -12px rgba(46,162,117,.25)!important;
+}
+
+.details .dropdown-item {
+  font-size: 13px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.details .dropdown-item:hover {
+  background-color: #fff;
+}
+
+.members .dropdown {
+  cursor: pointer;
+}
+
+.view-loans a {
+  color: #9CA3AF;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+}
+
+.tog-bg {
+  background-color: #FAFAFA;
+  border-radius: 5px;
+}
+
+.tog-bg .nav-link {
+  color: #000;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.tog-bg .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 400;
+  box-shadow: 0px 4px 13px 0px #0000001F;
+}
