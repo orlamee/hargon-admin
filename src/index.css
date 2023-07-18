@@ -443,6 +443,13 @@ div.content {
   font-weight: 500;
 }
 
+.details-card p {
+  color: #041004;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 500;
+}
+
 .details-card h5 {
   color: #B3B3B3;
   font-size: 12px;

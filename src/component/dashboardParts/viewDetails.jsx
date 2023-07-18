@@ -1,4 +1,6 @@
 import SearchNotification from "./searchNotification";
+import valid from "../../assets/validid.svg";
+import back from "../../assets/back.svg";
 
 function ViewDetails() {
   return (
@@ -392,21 +394,73 @@ function ViewDetails() {
                   </div>
                   <div
                     className="tab-pane fade"
-                    id="pills-g"
-                    role="tabpanel"
-                    aria-labelledby="pills-g-tab"
-                    tabIndex="0"
-                  >
-                    <h2>kkkk</h2>
-                  </div>
-                  <div
-                    className="tab-pane fade"
                     id="pills-h"
                     role="tabpanel"
                     aria-labelledby="pills-h-tab"
                     tabIndex="0"
                   >
-                    <h2>kkkk</h2>
+                    <div className="collateral">
+                      <div className="row justify-content-center">
+                        <div className="col-sm-7">
+                          <div className="details-card">
+                            <div className="bg-white p-4">
+                              <h3>Collateral Details</h3>
+                              <hr />
+                              <div className="row">
+                                <div className="col-sm-3 mb-3">
+                                  <h5>Name</h5>
+                                  <h6>Collateral</h6>
+                                </div>
+                                <div className="col-sm-3 mb-3">
+                                  <h5>Type</h5>
+                                  <h6>Collateral</h6>
+                                </div>
+                                <div className="col-sm-3 mb-3">
+                                  <h5>Collateral Possessed</h5>
+                                  <h6>NO</h6>
+                                </div>
+                                <div className="col-sm-3 mb-3">
+                                  <h5>Approval credit score</h5>
+                                  <h6>100%</h6>
+                                </div>
+                              </div>
+                              <div className="row">
+                                <div className="col-sm-3 mb-3">
+                                  <h5>Timely repayments rate</h5>
+                                  <h6>100%</h6>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className="tab-pane fade"
+                    id="pills-g"
+                    role="tabpanel"
+                    aria-labelledby="pills-g-tab"
+                    tabIndex="0"
+                  >
+                    <div className="files">
+                      <div className="row justify-content-center">
+                        <div className="col-sm-5">
+                          <div className="details-card">
+                            <div className="bg-white px-5 py-4">
+                              <div>
+                                <h3>Valid ID</h3>
+                                <img src={valid} alt="id" className="img-fluid w-100" />
+                              </div>
+                              <div className="mt-4">
+                                <h3>Valid ID</h3>
+                                <img src={back} alt="id" className="img-fluid w-100" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div
                     className="tab-pane fade"
@@ -415,7 +469,64 @@ function ViewDetails() {
                     aria-labelledby="pills-j-tab"
                     tabIndex="0"
                   >
-                    <h2>kkkk</h2>
+                    <div className="guarantor">
+                      <div className="row justify-content-center">
+                        <div className="col-sm-7">
+                          <div className="details-card pb-0">
+                            <div className="bg-white p-4">
+                              <h3>Guarantor Details</h3>
+                              <hr />
+                              <div className="row">
+                                <div className="col-sm-4 mb-3">
+                                  <h5>Name</h5>
+                                  <h6>Victoria Beckham</h6>
+                                </div>
+                                <div className="col-sm-4 mb-3">
+                                  <h5>Relationship</h5>
+                                  <h6>Wife</h6>
+                                </div>
+                                <div className="col-sm-4 mb-3">
+                                  <h5>Phone number</h5>
+                                  <h6>+234 867 876 7593</h6>
+                                </div>
+                              </div>
+                              <div className="row mt-3">
+                                <div className="col-sm-4 mb-3">
+                                  <h5>Address</h5>
+                                  <h6>2, Adebowale street, Ikeja, Lagos state. Nigeria</h6>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="details-card">
+                            <div className="bg-white p-4">
+                              <h3>Information</h3>
+                              <hr />
+                              <div className="row">
+                                <div className="col-sm-4 mb-3">
+                                  <h5>Name</h5>
+                                  <h6>Victoria Beckham</h6>
+                                </div>
+                                <div className="col-sm-4 mb-3">
+                                  <h5>Relationship</h5>
+                                  <h6>Wife</h6>
+                                </div>
+                                <div className="col-sm-4 mb-3">
+                                  <h5>Pnone number</h5>
+                                  <h6>+234 867 876 7593</h6>
+                                </div>
+                              </div>
+                              <div className="row mt-3">
+                                <div className="col-sm-4 mb-3">
+                                  <h5>Address</h5>
+                                  <h6>2, Adebowale street, Ikeja, Lagos state. Nigeria</h6>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div
                     className="tab-pane fade"
@@ -424,7 +535,19 @@ function ViewDetails() {
                     aria-labelledby="pills-k-tab"
                     tabIndex="0"
                   >
-                    <h2>kkkk</h2>
+                    <div className="notes">
+                      <div className="row justify-content-center">
+                        <div className="col-sm-7">
+                          <div className="details-card">
+                            <div className="bg-white p-4">
+                              <h3>Notes</h3>
+                              <hr />
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam aliquid error veniam optio porro voluptate! Provident excepturi beatae ad error quis nisi sapiente, numquam necessitatibus natus optio, aperiam id. Nostrum?</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
