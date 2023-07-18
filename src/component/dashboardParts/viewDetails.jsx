@@ -11,7 +11,7 @@ function ViewDetails() {
               <i className="bi bi-chevron-left me-2"></i>Back
             </a>
             <div className="row justify-content-center mt-5">
-              <div className="col-sm-8">
+              <div className="col-sm-9">
                 <div className="tog-bg p-1">
                   <ul
                     className="nav nav-pills nav-justified"
