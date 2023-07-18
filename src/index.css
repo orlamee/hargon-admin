@@ -430,3 +430,30 @@ div.content {
   font-weight: 400;
   box-shadow: 0px 4px 13px 0px #0000001F;
 }
+
+.details-card {
+  background-color: #FAFAFA;
+  padding: 20px;
+}
+
+.details-card h3 {
+  color: #000;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+}
+
+.details-card h5 {
+  color: #B3B3B3;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.details-card h6 {
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  /* font-family: number; */
+}

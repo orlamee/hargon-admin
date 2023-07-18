@@ -116,7 +116,154 @@ function ViewDetails() {
                     aria-labelledby="pills-home-tab"
                     tabIndex="0"
                   >
-                    <h1>Loading</h1>
+                    <div className="acc-details">
+                      <div className="row justify-content-center">
+                        <div className="col-sm-7">
+                          <div className="details-card pb-0">
+                            <div className="bg-white p-4">
+                              <h3>Summary</h3>
+                              <hr />
+                              <div className="row">
+                                <div className="col-sm-3 mb-3">
+                                  <h5>Total balance</h5>
+                                  <h6>₦10,000</h6>
+                                </div>
+                                <div className="col-sm-3 mb-3">
+                                  <h5>Amount paid in</h5>
+                                  <h6>₦10,000</h6>
+                                </div>
+                                <div className="col-sm-3 mb-3">
+                                  <h5>Days in arrears</h5>
+                                  <h6>0</h6>
+                                </div>
+                                <div className="col-sm-3 mb-3">
+                                  <h5>Approval credit score</h5>
+                                  <h6>100%</h6>
+                                </div>
+                              </div>
+                              <div className="row mt-3">
+                                <div className="col-sm-3 mb-3">
+                                  <h5>Timely repayments rate</h5>
+                                  <h6>90%</h6>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="details-card pb-0">
+                            <div className="bg-white p-4">
+                              <h3>Information</h3>
+                              <hr />
+                              <div className="row">
+                                <div className="col-sm-3 mb-3">
+                                  <h5>Status</h5>
+                                  <h6><span className="approved">Approved</span></h6>
+                                </div>
+                                <div className="col-sm-3 mb-3">
+                                  <h5>0909999</h5>
+                                  <h6>09094003</h6>
+                                </div>
+                                <div className="col-sm-3 mb-3">
+                                  <h5>Loan officer</h5>
+                                  <h6 style={{color: "#FF823B"}}>Super Admin</h6>
+                                </div>
+                                <div className="col-sm-3 mb-3">
+                                  <h5>Loan product</h5>
+                                  <h6>Auto Loan</h6>
+                                </div>
+                              </div>
+                              <div className="row mt-3">
+                                <div className="col-sm-3 mb-3">
+                                  <h5>Disbursed amount</h5>
+                                  <h6>₦10,000</h6>
+                                </div>
+                                <div className="col-sm-3 mb-3">
+                                  <h5>Loan term</h5>
+                                  <h6>400 days</h6>
+                                </div>
+                                <div className="col-sm-3 mb-3">
+                                  <h5>Repayments</h5>
+                                  <h6 style={{color: "#228B22"}}>Every 30days</h6>
+                                </div>
+                                <div className="col-sm-3 mb-3">
+                                  <h5>Interest</h5>
+                                  <h6>20% p.m</h6>
+                                </div>
+                              </div>
+                              <div className="row mt-3">
+                                <div className="col-sm-3 mb-3">
+                                  <h5>Date submitted</h5>
+                                  <h6>18/04/2023</h6>
+                                </div>
+                                <div className="col-sm-3 mb-3">
+                                  <h5>Approved date</h5>
+                                  <h6>18/04/2023</h6>
+                                </div>
+                                <div className="col-sm-3 mb-3">
+                                  <h5>Disbursed date</h5>
+                                  <h6>18/04/2023</h6>
+                                </div>
+                                <div className="col-sm-3 mb-3">
+                                  <h5>Maturity date</h5>
+                                  <h6>18/04/2023</h6>
+                                </div>
+                              </div>
+                              <div className="row mt-3">
+                                <div className="col-sm-3 mb-3">
+                                  <h5>Fund</h5>
+                                  <h6>Stackivy Bank</h6>
+                                </div>
+                                <div className="col-sm-3 mb-3">
+                                  <h5>Applied amount</h5>
+                                  <h6>₦10,000</h6>
+                                </div>
+                                <div className="col-sm-3 mb-3">
+                                  <h5>Topup amount</h5>
+                                  <h6>₦10,000</h6>
+                                </div>
+                                <div className="col-sm-3 mb-3">
+                                  <h5>Approved amount</h5>
+                                  <h6>80%</h6>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="details-card">
+                            <div className="bg-white p-4">
+                              <h3>Performance History</h3>
+                              <hr />
+                              <div className="row">
+                                <div className="col-sm-3 mb-3">
+                                  <h5>Repayments</h5>
+                                  <h6>30 of 30</h6>
+                                </div>
+                                <div className="col-sm-3 mb-3">
+                                  <h5>Loan standing</h5>
+                                  <h6>In good standing</h6>
+                                </div>
+                                <div className="col-sm-3 mb-3">
+                                  <h5>Days in arrears</h5>
+                                  <h6>0</h6>
+                                </div>
+                                <div className="col-sm-3 mb-3">
+                                  <h5>Approval credit score</h5>
+                                  <h6>100%</h6>
+                                </div>
+                              </div>
+                              <div className="row mt-3">
+                                <div className="col-sm-3 mb-3">
+                                  <h5>Timely repayments rate</h5>
+                                  <h6>90%</h6>
+                                </div>
+                                <div className="col-sm-3 mb-3">
+                                  <h5>Rate</h5>
+                                  <h6>90%</h6>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div
                     className="tab-pane fade"
@@ -125,7 +272,123 @@ function ViewDetails() {
                     aria-labelledby="pills-profile-tab"
                     tabIndex="0"
                   >
-                    <h2>kkkk</h2>
+                    <div className="loan-repay">
+                    <div
+                        className="row members bg-white"
+                        style={{ borderRadius: "0 0 20px 20px" }}
+                      >
+                        <div className="col">
+                          <table
+                            className="table table-responsive"
+                            style={{ width: "100%" }}
+                            id="example"
+                          >
+                            <thead className="bg-white rounded-pill">
+                              <tr>
+                                <th>Date</th>
+                                <th>Days</th>
+                                <th>Paid by</th>
+                                <th>Disbursement</th>
+                                <th>Principal due</th>
+                                <th>Principal balance</th>
+                                <th>Interest due</th>
+                                <th>Fees</th>
+                                <th>Penalties</th>
+                                <th>Total due</th>
+                                <th>Total paid</th>
+                                <th>Total outstanding</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>15/06/2023</td>
+                                <td>30</td>
+                                <td>Ade Ola</td>
+                                <td>Level 1</td>
+                                <td>₦10,000</td>
+                                <td>₦10,000</td>
+                                <td>₦10,000</td>
+                                <td>₦10,000</td>
+                                <td>5%</td>
+                                <td>₦10,000</td>
+                                <td>₦10,000,000</td>
+                                <td>₦10,000</td>
+                              </tr>
+                              <tr>
+                                <td>15/06/2023</td>
+                                <td>30</td>
+                                <td>Ade Ola</td>
+                                <td>Level 1</td>
+                                <td>₦10,000</td>
+                                <td>₦10,000</td>
+                                <td>₦10,000</td>
+                                <td>₦10,000</td>
+                                <td>5%</td>
+                                <td>₦10,000</td>
+                                <td>₦10,000,000</td>
+                                <td>₦10,000</td>
+                              </tr>
+                              <tr>
+                                <td>15/06/2023</td>
+                                <td>30</td>
+                                <td>Ade Ola</td>
+                                <td>Level 1</td>
+                                <td>₦10,000</td>
+                                <td>₦10,000</td>
+                                <td>₦10,000</td>
+                                <td>₦10,000</td>
+                                <td>5%</td>
+                                <td>₦10,000</td>
+                                <td>₦10,000,000</td>
+                                <td>₦10,000</td>
+                              </tr>
+                              <tr>
+                                <td>15/06/2023</td>
+                                <td>30</td>
+                                <td>Ade Ola</td>
+                                <td>Level 1</td>
+                                <td>₦10,000</td>
+                                <td>₦10,000</td>
+                                <td>₦10,000</td>
+                                <td>₦10,000</td>
+                                <td>5%</td>
+                                <td>₦10,000</td>
+                                <td>₦10,000,000</td>
+                                <td>₦10,000</td>
+                              </tr>
+                              <tr>
+                                <td>15/06/2023</td>
+                                <td>30</td>
+                                <td>Ade Kola</td>
+                                <td>Level 1</td>
+                                <td>₦10,000</td>
+                                <td>₦10,000</td>
+                                <td>₦10,000</td>
+                                <td>₦10,000</td>
+                                <td>5%</td>
+                                <td>₦10,000</td>
+                                <td>₦10,000,000</td>
+                                <td>₦10,000</td>
+                              </tr>
+                              <tr>
+                                <td>15/06/2023</td>
+                                <td>30</td>
+                                <td>Shabi</td>
+                                <td>Level 1</td>
+                                <td>₦10,000</td>
+                                <td>₦100,000</td>
+                                <td>₦10,000</td>
+                                <td>₦10,000</td>
+                                <td>50%</td>
+                                <td>₦10,000</td>
+                                <td>₦10,000,000</td>
+                                <td>₦10,000</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div
                     className="tab-pane fade"
