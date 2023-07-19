@@ -2,6 +2,10 @@ import SearchNotification from "./searchNotification";
 import cancel from "../../assets/cancelled.svg"
 import credit from "../../assets/credit.svg"
 import debit from "../../assets/debit.svg"
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Autoplay } from 'swiper/modules';
 
 function ReportView() {
   return (
@@ -17,30 +21,60 @@ function ReportView() {
         </div>
       </div>
       <div className="row mt-5 mx-5">
-        <div className="col-sm-3 mb-3">
-          <div className="report-card">
-            <h3>Repayment</h3>
-            <h6 className="mt-3 text-black">0</h6>
-          </div>
-        </div>
-        <div className="col-sm-3 mb-3">
-          <div className="report-card">
-            <h3>Pending application</h3>
-            <h6 className="mt-3 text-black">0</h6>
-          </div>
-        </div>
-        <div className="col-sm-3 mb-3">
-          <div className="report-card">
-            <h3>Written off</h3>
-            <h6 className="mt-3 text-black">0</h6>
-          </div>
-        </div>
-        <div className="col-sm-3 mb-3">
-          <div className="report-card">
-            <h3>Generated individual account</h3>
-            <h6 className="mt-3 text-black">0</h6>
-          </div>
-        </div>
+      <Swiper
+          slidesPerView={4}
+          spaceBetween={30}
+          autoplay={{
+            delay: 1500,
+            disableOnInteraction: false,
+          }}
+          modules={[Autoplay]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <div className="report-card">
+              <h3>Repayment</h3>
+              <h6 className="mt-3 text-black">0</h6>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="report-card">
+              <h3>Pending applications</h3>
+              <h6 className="mt-3 text-black">0</h6>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="report-card">
+              <h3>Written off</h3>
+              <h6 className="mt-3 text-black">0</h6>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="report-card">
+              <h3>Generated individual account</h3>
+              <h6 className="mt-3 text-black">0</h6>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="report-card">
+              <h3>Statement</h3>
+              <h6 className="mt-3 text-black">0</h6>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="report-card">
+              <h3>Fully paid loans</h3>
+              <h6 className="mt-3 text-black">0</h6>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="report-card">
+              <h3>Closed loans</h3>
+              <h6 className="mt-3 text-black">0</h6>
+            </div>
+          </SwiperSlide>
+          
+        </Swiper>
       </div>
       <div className="row mt-4 mx-5">
         <div className="col-sm-4 mb-3">
