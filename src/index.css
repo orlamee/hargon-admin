@@ -409,6 +409,10 @@ div.content {
   font-weight: 400;
 }
 
+.view-loans {
+  min-height: 999px;
+}
+
 .tog-bg {
   background-color: #FAFAFA;
   border-radius: 5px;
@@ -457,10 +461,149 @@ div.content {
   line-height: 14px;
 }
 
-.details-card h6 {
+.details-card h6,
+.app-details h3 {
   color: #000;
   font-size: 14px;
   font-weight: 500;
   line-height: 14px;
   /* font-family: number; */
+}
+
+.buttons-csv {
+  background: #FAFAFA;
+  color: #041004;
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid #FAFAFA;
+  padding: 7px 25px;
+}
+
+.app-details .form-label {
+  color: #9CA3AF;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.app-details .form-control,
+.app-details .form-select,
+.app-cal .form-control,
+.app-cal .form-select {
+  border: 1px solid #F0F0F0;
+  padding: 13px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.btn-save {
+  background: #328a28!important;
+  color: #fff!important;
+  padding: 12px 30px!important;
+  font-size: 13px!important;
+  font-weight: 500!important;
+  border-radius: 50px!important;
+  border: 1px solid #328a28!important;
+}
+
+.btn-report {
+  background: #F1F1F1;
+  color: #000;
+  padding: 12px 30px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 50px;
+  border: 1px solid #E7E7E7;
+}
+
+.app-details hr {
+  margin: 2rem 0;
+  color: #F3F4F6;
+  border: 0;
+  border-top: var(--bs-border-width) solid;
+  opacity: 0.9;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.report-card {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 16px;
+}
+
+.report-card h3 {
+  color: #6B7280;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.report-card p {
+  color: #6B7280;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.report-card h6,
+.card-loans h6 {
+  color: #6B7280;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  font-family: number;
+}
+
+.report-card span {
+  color: #228B22;
+  font-size: 11px;
+}
+
+.loan-saving {
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 16px;
+}
+
+.loan-saving h2 {
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.loan-saving .nav-link {
+  color: #D1D5DB;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 9px 34px 9px 0px;
+}
+
+.loan-saving .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #000;
+  background-color: #fff;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.card-loans {
+  border: 1px solid #F3F4F6;
+  background-color: #FCFCFC;
+  padding: 20px;
+  border-radius: 14px;
+}
+
+.card-loans h1 {
+  color: #22C55E;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  margin: 0;
 }

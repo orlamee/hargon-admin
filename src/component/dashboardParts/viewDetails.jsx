@@ -2,6 +2,7 @@ import SearchNotification from "./searchNotification";
 import valid from "../../assets/validid.svg";
 import back from "../../assets/back.svg";
 
+
 function ViewDetails() {
   return (
     <div className="content home">

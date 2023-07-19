@@ -13,6 +13,11 @@ import RecoverPassword from './pages/recoverP';
 import Dashboard from './dashboardPages/dashboard';
 import AllLoans from './dashboardPages/allLoans';
 import LoanDetails from './dashboardPages/loanDetails';
+import AppSummary from './dashboardPages/appSummary';
+import ApplicationDetails from './dashboardPages/applicationDetails';
+import Reports from './dashboardPages/reports';
+import Calculator from './dashboardPages/calculator';
+import LoanCalculation from './dashboardPages/loanCalculation';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -27,6 +32,11 @@ root.render(
       <Route path='/dashboard' element={<Dashboard/>}></Route>
       <Route path='/all-loans' element={<AllLoans/>}></Route>
       <Route path='/all-loans/details' element={<LoanDetails/>}></Route>
+      <Route path='/applications' element={<AppSummary/>}></Route>
+      <Route path='/applications/details' element={<ApplicationDetails/>}></Route>
+      <Route path='/reports' element={<Reports/>}></Route>
+      <Route path='/loan--calculator' element={<Calculator/>}></Route>
+      <Route path='/calculate-loan' element={<LoanCalculation/>}></Route>
     </Routes>
   </BrowserRouter>
 );

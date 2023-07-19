@@ -8,11 +8,11 @@ function Sidebar() {
       <div className="row justify-content-center mt-4">
         <div className="col-sm-10 text-center">
           <img src={logo} alt="logo" className="img-fluid" />
-          <div class="row d-flex justify-content-center align-items-center mt-5">
+          <div className="row d-flex justify-content-center align-items-center mt-5">
             <div className="col-md-12">
               <div className="form">
                 <i className="bi bi-search"></i>
-                <input type="text" class="form-control form-input" placeholder="Search"/>
+                <input type="text" className="form-control form-input" placeholder="Search"/>
               </div>
             </div>
           </div>
@@ -26,13 +26,12 @@ function Sidebar() {
             <a className="sub-btn"><Icon icon="ri:building-2-line" className="me-3 nme-1 fs-4" />Loans <i className="bi bi-chevron-right dropdown"></i></a>
             <div className="sub-menu">
               <a href="/all-loans" className="sub-item">All Loans</a>
-              <a href="" className="sub-item">Applications</a>
+              <a href="/applications" className="sub-item">Applications</a>
               <a href="" className="sub-item">Manage products</a>
-              <a href="" className="sub-item">Bulk loan payments</a>
               <a href="" className="sub-item">Bulk import loan</a>
               <a href="" className="sub-item">Calculator</a>
               <a href="" className="sub-item">Settings</a>
-              <a href="" className="sub-item">Report</a>
+              <a href="/reports" className="sub-item">Report</a>
             </div>
           </div>
           <div className="item">

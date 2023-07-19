@@ -7,11 +7,11 @@ export default function SearchNotification(params) {
     <div className="sticky-top container-fluid bg-white dash-bot px-5 py-4">
       <div className="row justify-content-end">
         <div className="col-sm-9">
-          <div class="row d-flex justify-content-center align-items-center">
+          <div className="row d-flex justify-content-center align-items-center">
             <div className="col-md-12">
               <div className="form">
                 <i className="bi bi-search"></i>
-                <input type="text" class="form-control form-input" placeholder="Search for something here"/>
+                <input type="text" className="form-control form-input" placeholder="Search for something here"/>
               </div>
             </div>
           </div>
