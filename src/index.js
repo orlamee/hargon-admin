@@ -36,7 +36,7 @@ root.render(
       <Route path='/applications' element={<AppSummary/>}></Route>
       <Route path='/applications/details' element={<ApplicationDetails/>}></Route>
       <Route path='/reports' element={<Reports/>}></Route>
-      <Route path='/loan--calculator' element={<Calculator/>}></Route>
+      <Route path='/loan-calculator' element={<Calculator/>}></Route>
       <Route path='/calculate-loan' element={<LoanCalculation/>}></Route>
       <Route path='/manage-products' element={<ManageP/>}></Route>
     </Routes>
