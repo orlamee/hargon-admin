@@ -27,7 +27,7 @@ function Sidebar() {
             <div className="sub-menu">
               <a href="/all-loans" className="sub-item">All Loans</a>
               <a href="/applications" className="sub-item">Applications</a>
-              <a href="" className="sub-item">Manage products</a>
+              <a href="/manage-products" className="sub-item">Manage products</a>
               <a href="" className="sub-item">Bulk import loan</a>
               <a href="" className="sub-item">Calculator</a>
               <a href="" className="sub-item">Settings</a>

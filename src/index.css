@@ -454,7 +454,8 @@ div.content {
   font-weight: 500;
 }
 
-.details-card h5 {
+.details-card h5,
+.preview h5 {
   color: #B3B3B3;
   font-size: 12px;
   font-weight: 400;
@@ -462,7 +463,8 @@ div.content {
 }
 
 .details-card h6,
-.app-details h3 {
+.app-details h3,
+.preview h6 {
   color: #000;
   font-size: 14px;
   font-weight: 500;
@@ -489,7 +491,8 @@ div.content {
 .app-details .form-control,
 .app-details .form-select,
 .app-cal .form-control,
-.app-cal .form-select {
+.app-cal .form-select,
+.modal-m .form-control {
   border: 1px solid #F0F0F0;
   padding: 13px;
   font-size: 14px;
@@ -518,6 +521,14 @@ div.content {
 
 .app-details hr {
   margin: 2rem 0;
+  color: #F3F4F6;
+  border: 0;
+  border-top: var(--bs-border-width) solid;
+  opacity: 0.9;
+}
+
+.preview hr {
+  margin: 1rem 0;
   color: #F3F4F6;
   border: 0;
   border-top: var(--bs-border-width) solid;
@@ -606,4 +617,38 @@ input::-webkit-inner-spin-button {
   font-weight: 500;
   line-height: 18px;
   margin: 0;
+}
+
+.add_ {
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
+.modal-m .modal-content { 
+  background: #FAFAFA;
+  border-radius: 24px;
+}
+
+.modal-m .modal-header {
+  background: #fff;
+  border-bottom: 0;
+  border-radius: 24px 24px 0px 0px;
+  padding: 25px;
+}
+
+.modal-m .modal-title {
+  font-size: 14px;
+  line-height: 16px;
+  color: #000;
+  font-weight: 500;
+}
+
+.modal-m .modal-body {
+  padding: 25px;
+}
+
+.inner-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 16px;
 }

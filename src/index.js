@@ -18,6 +18,7 @@ import ApplicationDetails from './dashboardPages/applicationDetails';
 import Reports from './dashboardPages/reports';
 import Calculator from './dashboardPages/calculator';
 import LoanCalculation from './dashboardPages/loanCalculation';
+import ManageP from './dashboardPages/manageP';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -37,6 +38,7 @@ root.render(
       <Route path='/reports' element={<Reports/>}></Route>
       <Route path='/loan--calculator' element={<Calculator/>}></Route>
       <Route path='/calculate-loan' element={<LoanCalculation/>}></Route>
+      <Route path='/manage-products' element={<ManageP/>}></Route>
     </Routes>
   </BrowserRouter>
 );
