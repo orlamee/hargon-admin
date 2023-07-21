@@ -19,6 +19,10 @@ import Reports from './dashboardPages/reports';
 import Calculator from './dashboardPages/calculator';
 import LoanCalculation from './dashboardPages/loanCalculation';
 import ManageP from './dashboardPages/manageP';
+import LoanSettings from './dashboardPages/loanSettings';
+import BulkLoan from './dashboardPages/bulkLoan';
+import UploadLoan from './dashboardPages/uploadLoan';
+import ImportedLoans from './dashboardPages/importedLoan';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -39,6 +43,10 @@ root.render(
       <Route path='/loan-calculator' element={<Calculator/>}></Route>
       <Route path='/calculate-loan' element={<LoanCalculation/>}></Route>
       <Route path='/manage-products' element={<ManageP/>}></Route>
+      <Route path='/loan-settings' element={<LoanSettings/>}></Route>
+      <Route path='/bulk-loan' element={<BulkLoan/>}></Route>
+      <Route path='/import-loan' element={<UploadLoan/>}></Route>
+      <Route path='/imported-loan' element={<ImportedLoans/>}></Route>
     </Routes>
   </BrowserRouter>
 );

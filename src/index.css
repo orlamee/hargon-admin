@@ -392,6 +392,7 @@ div.content {
   font-size: 13px;
   text-align: center;
   font-weight: 500;
+  color: #041004!important;
 }
 
 .details .dropdown-item:hover {
@@ -651,4 +652,54 @@ input::-webkit-inner-spin-button {
   background: #fff;
   padding: 25px;
   border-radius: 16px;
+}
+
+.add {
+  margin-top: -36px;
+}
+
+.title-head {
+  background: #FAFAFA;
+  padding: 15px 12px 6px 10px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.addlist {
+  padding: 15px 12px 6px 10px;
+}
+
+.gray-part {
+  background-color: #FCFCFC;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.instruct {
+  box-shadow: 0px 8px 47px 0px #9696961F;
+}
+
+.gray-part h5,
+.instruct h5 {
+  color: #041004;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.instruct li {
+  font-size: 12px;
+  color: #4B5563;
+  line-height: 50px;
+}
+
+.upload-sheet {
+  background-color: #FCFCFC;
+  padding: 70px 40px;
+}
+
+.upload-sheet h6 {
+  color: #000;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
 }
