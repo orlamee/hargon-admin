@@ -28,7 +28,7 @@ function Sidebar() {
               <a href="/all-loans" className="sub-item">All Loans</a>
               <a href="/applications" className="sub-item">Applications</a>
               <a href="/manage-products" className="sub-item">Manage products</a>
-              <a href="" className="sub-item">Bulk import loan</a>
+              <a href="/bulk-loan" className="sub-item">Bulk import loan</a>
               <a href="/loan-calculator" className="sub-item">Calculator</a>
               <a href="/loan-settings" className="sub-item">Settings</a>
               <a href="/reports" className="sub-item">Report</a>

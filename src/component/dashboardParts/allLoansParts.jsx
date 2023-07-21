@@ -274,6 +274,204 @@ function AllLoansParts() {
                 </td>
                 <td>15/06/2023</td>
               </tr>
+              <tr>
+                <td>
+                  <div className="dropdown">
+                    <i
+                      className="bi bi-three-dots"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    ></i>
+                    <ul class="dropdown-menu details">
+                      <li>
+                        <a className="dropdown-item" href="/all-loans/details">
+                          View Details
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+                <td>#11-22</td>
+                <td>John Doe</td>
+                <td>Level 7</td>
+                <td>₦10,000</td>
+                <td>₦10,000,</td>
+                <td>15/06/2023</td>
+                <td>Auto loan</td>
+                <td>5%</td>
+                <td>15/06/2023</td>
+                <td>₦10,000,000</td>
+                <td>15/06/2023</td>
+                <td>
+                  <span className="activ">Active</span>
+                </td>
+                <td>15/06/2023</td>
+              </tr>
+              <tr>
+                <td>
+                  <div className="dropdown">
+                    <i
+                      className="bi bi-three-dots"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    ></i>
+                    <ul class="dropdown-menu details">
+                      <li>
+                        <a className="dropdown-item" href="/all-loans/details">
+                          View Details
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+                <td>#11-22</td>
+                <td>John Doe</td>
+                <td>Level 7</td>
+                <td>₦10,000</td>
+                <td>₦10,000,</td>
+                <td>15/06/2023</td>
+                <td>Auto loan</td>
+                <td>5%</td>
+                <td>15/06/2023</td>
+                <td>₦10,000,000</td>
+                <td>15/06/2023</td>
+                <td>
+                  <span className="activ">Active</span>
+                </td>
+                <td>15/06/2023</td>
+              </tr>
+              <tr>
+                <td>
+                  <div className="dropdown">
+                    <i
+                      className="bi bi-three-dots"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    ></i>
+                    <ul class="dropdown-menu details">
+                      <li>
+                        <a className="dropdown-item" href="/all-loans/details">
+                          View Details
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+                <td>#11-22</td>
+                <td>John Doe</td>
+                <td>Level 7</td>
+                <td>₦10,000</td>
+                <td>₦10,000,</td>
+                <td>15/06/2023</td>
+                <td>Auto loan</td>
+                <td>5%</td>
+                <td>15/06/2023</td>
+                <td>₦10,000,000</td>
+                <td>15/06/2023</td>
+                <td>
+                  <span className="activ">Active</span>
+                </td>
+                <td>15/06/2023</td>
+              </tr>
+              <tr>
+                <td>
+                  <div className="dropdown">
+                    <i
+                      className="bi bi-three-dots"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    ></i>
+                    <ul class="dropdown-menu details">
+                      <li>
+                        <a className="dropdown-item" href="/all-loans/details">
+                          View Details
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+                <td>#11-22</td>
+                <td>John Doe</td>
+                <td>Level 7</td>
+                <td>₦10,000</td>
+                <td>₦10,000,</td>
+                <td>15/06/2023</td>
+                <td>Auto loan</td>
+                <td>5%</td>
+                <td>15/06/2023</td>
+                <td>₦10,000,000</td>
+                <td>15/06/2023</td>
+                <td>
+                  <span className="activ">Active</span>
+                </td>
+                <td>15/06/2023</td>
+              </tr>
+              <tr>
+                <td>
+                  <div className="dropdown">
+                    <i
+                      className="bi bi-three-dots"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    ></i>
+                    <ul class="dropdown-menu details">
+                      <li>
+                        <a className="dropdown-item" href="/all-loans/details">
+                          View Details
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+                <td>#11-22</td>
+                <td>Rukky</td>
+                <td>Level 7</td>
+                <td>₦10,000</td>
+                <td>₦10,000,</td>
+                <td>15/06/2023</td>
+                <td>Auto loan</td>
+                <td>5%</td>
+                <td>15/06/2023</td>
+                <td>₦10,000,000</td>
+                <td>15/06/2023</td>
+                <td>
+                  <span className="activ">Active</span>
+                </td>
+                <td>15/06/2023</td>
+              </tr>
+              <tr>
+                <td>
+                  <div className="dropdown">
+                    <i
+                      className="bi bi-three-dots"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    ></i>
+                    <ul class="dropdown-menu details">
+                      <li>
+                        <a className="dropdown-item" href="/all-loans/details">
+                          View Details
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+                <td>#11-22</td>
+                <td>Kunle Ola</td>
+                <td>Level 2</td>
+                <td>₦10,000</td>
+                <td>₦10,000,</td>
+                <td>15/06/2023</td>
+                <td>Auto loan</td>
+                <td>5%</td>
+                <td>15/06/2023</td>
+                <td>₦10,000,000</td>
+                <td>15/06/2023</td>
+                <td>
+                  <span className="activ">Active</span>
+                </td>
+                <td>15/06/2023</td>
+              </tr>
             </tbody>
           </table>
         </div>
