@@ -51,7 +51,7 @@ function Sidebar() {
             </div>
           </div>
           <div className="item">
-            <a className="sub-btn"><Icon icon="material-symbols:business-center-outline" className="me-3 nme-1 fs-4" />Business management <i className="bi bi-chevron-right dropdown"></i></a>
+            <a className="sub-btn"><Icon icon="material-symbols:business-center-outline" className="me-3 nme-1 fs-4" />Company management <i className="bi bi-chevron-right dropdown"></i></a>
             <div className="sub-menu">
               <a href="" className="sub-item">Manage company</a>
               <a href="" className="sub-item">Onboarding company</a>
