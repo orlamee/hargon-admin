@@ -23,6 +23,11 @@ import LoanSettings from './dashboardPages/loanSettings';
 import BulkLoan from './dashboardPages/bulkLoan';
 import UploadLoan from './dashboardPages/uploadLoan';
 import ImportedLoans from './dashboardPages/importedLoan';
+import UsersManagement from './dashboardPages/usersManagement';
+import UserDetails from './dashboardPages/userDetails';
+import UploadUsers from './dashboardPages/uploadUsers';
+import BulkUsers from './dashboardPages/importUsers';
+import UserSettings from './dashboardPages/userSettings';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -47,6 +52,12 @@ root.render(
       <Route path='/bulk-loan' element={<BulkLoan/>}></Route>
       <Route path='/import-loan' element={<UploadLoan/>}></Route>
       <Route path='/imported-loan' element={<ImportedLoans/>}></Route>
+      <Route path='/manage-users' element={<UsersManagement/>}></Route>
+      <Route path='/manage-users/details' element={<UserDetails/>}></Route>
+      <Route path='/bulk--users' element={<BulkUsers/>}></Route>
+      <Route path='/import--users' element={<UploadUsers/>}></Route>
+      <Route path='/user-settings' element={<UserSettings/>}></Route>
+
     </Routes>
   </BrowserRouter>
 );

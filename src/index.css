@@ -272,7 +272,7 @@ div.content {
 
 .pending-loan {
   background-color: #fff;
-  padding: 30px 30px;
+  padding: 40px 30px;
   border-radius: 20px 20px 0px 0px;
 }
 
@@ -482,7 +482,8 @@ div.content {
   padding: 7px 25px;
 }
 
-.app-details .form-label {
+.app-details .form-label,
+.modal-m .form-label {
   color: #9CA3AF;
   font-size: 12px;
   font-weight: 400;
@@ -589,7 +590,8 @@ input::-webkit-inner-spin-button {
   line-height: 18px;
 }
 
-.loan-saving .nav-link {
+.loan-saving .nav-link,
+.loany .nav-link {
   color: #D1D5DB;
   font-size: 12px;
   font-weight: 400;
@@ -597,6 +599,15 @@ input::-webkit-inner-spin-button {
 }
 
 .loan-saving .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #000;
+  background-color: #fff;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.loany .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #000;
   background-color: #fff;
@@ -702,4 +713,47 @@ input::-webkit-inner-spin-button {
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
+}
+
+.add-m h4 {
+  color: #041004;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.add-m hr {
+  margin: 24px 0;
+  color: #F3F4F6;
+  border: 0;
+  border-top: var(--bs-border-width) solid;
+  opacity: 0.9;
+}
+
+.overview-table td {
+  text-align: right;
+  color: #000000;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+}
+
+.overview-table th {
+  color: #9CA3AF;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+}
+
+.overview hr {
+  margin: 24px -44px;
+  color: #fafafa;
+  border: 0;
+  border-top: var(--bs-border-width) solid;
+  opacity: 0.9;
+}
+
+.overview .table>:not(caption)>*>* {
+  padding: 1rem 0.5rem!important;
 }

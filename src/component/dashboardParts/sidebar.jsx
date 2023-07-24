@@ -37,7 +37,7 @@ function Sidebar() {
           <div className="item">
             <a className="sub-btn"><Icon icon="clarity:users-line" className="me-3 nme-1 fs-4" />User management <i className="bi bi-chevron-right dropdown"></i></a>
             <div className="sub-menu">
-              <a href="" className="sub-item">Manage users</a>
+              <a href="/manage-users" className="sub-item">Manage users</a>
               <a href="" className="sub-item">Import users</a>
               <a href="" className="sub-item">Settings</a>
             </div>
