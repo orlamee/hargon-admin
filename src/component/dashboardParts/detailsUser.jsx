@@ -857,7 +857,7 @@ function DetailsUsers() {
                                       <table
                                         className="table table-responsive"
                                         style={{ width: "100%" }}
-                                        id="example"
+                                        id="loans"
                                       >
                                         <thead className="bg-white rounded-pill">
                                           <tr>
