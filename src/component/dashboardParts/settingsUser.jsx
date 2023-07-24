@@ -255,7 +255,7 @@ function SettingsUser() {
                           <div className="details-card">
                             <div className="bg-white p-4">
                               <div>
-                                <h6>Loan Purpose</h6>
+                                <h6>Profession</h6>
                                 <button className="btn-save float-end add" data-bs-toggle="modal" data-bs-target="#add-profession">Add <i className="bi bi-plus"></i></button>
                               </div>
                               <div className="mt-5">
@@ -316,8 +316,8 @@ function SettingsUser() {
                           <div className="details-card">
                             <div className="bg-white p-4">
                               <div>
-                                <h6>Loan Status</h6>
-                                <button className="btn-save float-end add" data-bs-toggle="modal" data-bs-target="#add-status">Add <i className="bi bi-plus"></i></button>
+                                <h6>Member Relationship</h6>
+                                <button className="btn-save float-end add" data-bs-toggle="modal" data-bs-target="#add-mr">Add <i className="bi bi-plus"></i></button>
                               </div>
                               <div className="mt-5">
                                 <div className="row title-head">
@@ -331,7 +331,7 @@ function SettingsUser() {
                                 <div className="addlist">
                                   <div className="row">
                                     <div className="col-sm-6">
-                                      <h6>Hargon</h6>
+                                      <h6>Member Relationship</h6>
                                     </div>
                                     <div className="col-sm-6 text-end">
                                       <div className="dropdown">
@@ -342,7 +342,129 @@ function SettingsUser() {
                                         ></i>
                                         <ul class="dropdown-menu details">
                                           <li>
-                                            <a className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#edit-status">
+                                            <a className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#edit-mr">
+                                              Edit
+                                            </a>
+                                          </li>
+                                          <li>
+                                            <a className="dropdown-item" href="/">
+                                              Delete
+                                            </a>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className="tab-pane fade"
+                    id="pills-z"
+                    role="tabpanel"
+                    aria-labelledby="pills-z-tab"
+                    tabIndex="0"
+                  >
+                     <div className="acc-details">
+                      <div className="row justify-content-center">
+                        <div className="col-sm-5">
+                          <div className="details-card">
+                            <div className="bg-white p-4">
+                              <div>
+                                <h6>Member Identification Type</h6>
+                                <button className="btn-save float-end add" data-bs-toggle="modal" data-bs-target="#add-mit">Add <i className="bi bi-plus"></i></button>
+                              </div>
+                              <div className="mt-5">
+                                <div className="row title-head">
+                                  <div className="col-sm-8">
+                                    <h6>Name</h6>
+                                  </div>
+                                  <div className="col-sm-4 text-end">
+                                    <h6>Actions</h6>
+                                  </div>
+                                </div>
+                                <div className="addlist">
+                                  <div className="row">
+                                    <div className="col-sm-6">
+                                      <h6>Member Identification Type</h6>
+                                    </div>
+                                    <div className="col-sm-6 text-end">
+                                      <div className="dropdown">
+                                        <i
+                                          className="bi bi-three-dots"
+                                          data-bs-toggle="dropdown"
+                                          aria-expanded="false"
+                                        ></i>
+                                        <ul class="dropdown-menu details">
+                                          <li>
+                                            <a className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#edit-mit">
+                                              Edit
+                                            </a>
+                                          </li>
+                                          <li>
+                                            <a className="dropdown-item" href="/">
+                                              Delete
+                                            </a>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className="tab-pane fade"
+                    id="pills-x"
+                    role="tabpanel"
+                    aria-labelledby="pills-x-tab"
+                    tabIndex="0"
+                  >
+                     <div className="acc-details">
+                      <div className="row justify-content-center">
+                        <div className="col-sm-5">
+                          <div className="details-card">
+                            <div className="bg-white p-4">
+                              <div>
+                                <h6>Member Instructions</h6>
+                                <button className="btn-save float-end add" data-bs-toggle="modal" data-bs-target="#add-mi">Add <i className="bi bi-plus"></i></button>
+                              </div>
+                              <div className="mt-5">
+                                <div className="row title-head">
+                                  <div className="col-sm-8">
+                                    <h6>Name</h6>
+                                  </div>
+                                  <div className="col-sm-4 text-end">
+                                    <h6>Actions</h6>
+                                  </div>
+                                </div>
+                                <div className="addlist">
+                                  <div className="row">
+                                    <div className="col-sm-6">
+                                      <h6>Member Instructions</h6>
+                                    </div>
+                                    <div className="col-sm-6 text-end">
+                                      <div className="dropdown">
+                                        <i
+                                          className="bi bi-three-dots"
+                                          data-bs-toggle="dropdown"
+                                          aria-expanded="false"
+                                        ></i>
+                                        <ul class="dropdown-menu details">
+                                          <li>
+                                            <a className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#edit-mi">
                                               Edit
                                             </a>
                                           </li>
@@ -478,7 +600,7 @@ function SettingsUser() {
           </div>
         </div>
       </div>
-      {/* Add Loan Purpose */}
+      {/* Add profession Purpose */}
       <div className="modal fade modal-m" id="add-profession" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div className="modal-dialog modal-dialog-centered modal-lg">
           <div className="modal-content">
@@ -505,7 +627,7 @@ function SettingsUser() {
           </div>
         </div>
       </div>
-      {/* Edit Loan Purpose */}
+      {/* Edit profession Purpose */}
       <div className="modal fade modal-m" id="edit-profession" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div className="modal-dialog modal-dialog-centered modal-lg">
           <div className="modal-content">
@@ -532,12 +654,12 @@ function SettingsUser() {
           </div>
         </div>
       </div>
-      {/* Add Loan Purpose */}
-      <div className="modal fade modal-m" id="add-status" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      {/* Add Member Relationship */}
+      <div className="modal fade modal-m" id="add-mr" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div className="modal-dialog modal-dialog-centered modal-lg">
           <div className="modal-content">
             <div className="modal-header">
-              <h1 className="modal-title">Create Loan Status</h1>
+              <h1 className="modal-title">Create Member Relationship</h1>
               <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body">
@@ -546,7 +668,7 @@ function SettingsUser() {
                   <div className="col-sm-12">
                     <Form>
                       <Form.Group className="mb-3">
-                        <Form.Control type="text" placeholder="Name of Fund" />
+                        <Form.Control type="text" placeholder="Name of Member Relationship" />
                       </Form.Group>
                       <div className="text-end">
                         <button type="button" className="btn-save"> Save</button>
@@ -559,12 +681,12 @@ function SettingsUser() {
           </div>
         </div>
       </div>
-      {/* Edit Loan Purpose */}
-      <div className="modal fade modal-m" id="edit-status" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      {/* Edit Member Relationship */}
+      <div className="modal fade modal-m" id="edit-mr" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div className="modal-dialog modal-dialog-centered modal-lg">
           <div className="modal-content">
             <div className="modal-header">
-              <h1 className="modal-title">Edit Loan Status</h1>
+              <h1 className="modal-title">Edit Member Relationship</h1>
               <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body">
@@ -573,7 +695,115 @@ function SettingsUser() {
                   <div className="col-sm-12">
                     <Form>
                       <Form.Group className="mb-3">
-                        <Form.Control type="text" defaultValue="Hargon" />
+                        <Form.Control type="text" defaultValue="Member Relationship" />
+                      </Form.Group>
+                      <div className="text-end">
+                        <button type="button" className="btn-save"> Save</button>
+                      </div>
+                    </Form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Add Member Identification Types */}
+      <div className="modal fade modal-m" id="add-mit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div className="modal-dialog modal-dialog-centered modal-lg">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h1 className="modal-title">Create Member Identification Types</h1>
+              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div className="modal-body">
+              <div className="inner-card">
+                <div className="row mt-5">
+                  <div className="col-sm-12">
+                    <Form>
+                      <Form.Group className="mb-3">
+                        <Form.Control type="text" placeholder="Name of Member Identification Types" />
+                      </Form.Group>
+                      <div className="text-end">
+                        <button type="button" className="btn-save"> Save</button>
+                      </div>
+                    </Form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Edit Member Identification Types */}
+      <div className="modal fade modal-m" id="edit-mit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div className="modal-dialog modal-dialog-centered modal-lg">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h1 className="modal-title">Edit Member Identification Types</h1>
+              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div className="modal-body">
+              <div className="inner-card">
+                <div className="row mt-5">
+                  <div className="col-sm-12">
+                    <Form>
+                      <Form.Group className="mb-3">
+                        <Form.Control type="text" defaultValue="Member Identification Types" />
+                      </Form.Group>
+                      <div className="text-end">
+                        <button type="button" className="btn-save"> Save</button>
+                      </div>
+                    </Form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+       {/* Add Member Instructions */}
+       <div className="modal fade modal-m" id="add-mi" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div className="modal-dialog modal-dialog-centered modal-lg">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h1 className="modal-title">Create Member Instructions</h1>
+              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div className="modal-body">
+              <div className="inner-card">
+                <div className="row mt-5">
+                  <div className="col-sm-12">
+                    <Form>
+                      <Form.Group className="mb-3">
+                        <Form.Control type="text" placeholder="Member Instructions" />
+                      </Form.Group>
+                      <div className="text-end">
+                        <button type="button" className="btn-save"> Save</button>
+                      </div>
+                    </Form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Edit Member Instructions */}
+      <div className="modal fade modal-m" id="edit-mi" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div className="modal-dialog modal-dialog-centered modal-lg">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h1 className="modal-title">Edit Member Instructions</h1>
+              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div className="modal-body">
+              <div className="inner-card">
+                <div className="row mt-5">
+                  <div className="col-sm-12">
+                    <Form>
+                      <Form.Group className="mb-3">
+                        <Form.Control type="text" defaultValue="Member Instructions" />
                       </Form.Group>
                       <div className="text-end">
                         <button type="button" className="btn-save"> Save</button>

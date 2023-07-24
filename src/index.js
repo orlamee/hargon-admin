@@ -56,7 +56,7 @@ root.render(
       <Route path='/manage-users/details' element={<UserDetails/>}></Route>
       <Route path='/bulk--users' element={<BulkUsers/>}></Route>
       <Route path='/import--users' element={<UploadUsers/>}></Route>
-      <Route path='/user-settings' element={<UserSettings/>}></Route>
+      <Route path='/user--settins' element={<UserSettings/>}></Route>
 
     </Routes>
   </BrowserRouter>
