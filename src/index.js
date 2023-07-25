@@ -54,9 +54,9 @@ root.render(
       <Route path='/imported-loan' element={<ImportedLoans/>}></Route>
       <Route path='/manage-users' element={<UsersManagement/>}></Route>
       <Route path='/manage-users/details' element={<UserDetails/>}></Route>
-      <Route path='/bulk--users' element={<BulkUsers/>}></Route>
-      <Route path='/import--users' element={<UploadUsers/>}></Route>
-      <Route path='/user--settins' element={<UserSettings/>}></Route>
+      <Route path='/bulk-users' element={<BulkUsers/>}></Route>
+      <Route path='/import-users' element={<UploadUsers/>}></Route>
+      <Route path='/user-settings' element={<UserSettings/>}></Route>
 
     </Routes>
   </BrowserRouter>

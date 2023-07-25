@@ -39,7 +39,7 @@ function Sidebar() {
             <div className="sub-menu">
               <a href="/manage-users" className="sub-item">Manage users</a>
               <a href="" className="sub-item">Import users</a>
-              <a href="" className="sub-item">Settings</a>
+              <a href="/user-settings" className="sub-item">Settings</a>
             </div>
           </div>
           <div className="item">
