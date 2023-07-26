@@ -45,7 +45,7 @@ function Sidebar() {
           <div className="item">
             <a className="sub-btn"><Icon icon="ep:user" className="me-3 nme-1 fs-4" />Agent management <i className="bi bi-chevron-right dropdown"></i></a>
             <div className="sub-menu">
-              <a href="" className="sub-item">Manage agent</a>
+              <a href="/manage-agents" className="sub-item">Manage agent</a>
               <a href="" className="sub-item">Import agent</a>
               <a href="" className="sub-item">Settings</a>
             </div>
