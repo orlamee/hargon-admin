@@ -30,6 +30,9 @@ import BulkUsers from './dashboardPages/importUsers';
 import UserSettings from './dashboardPages/userSettings';
 import AgentManagement from './dashboardPages/agentManagement';
 import AgentDetails from './dashboardPages/agentDetails';
+import AgentSettings from './dashboardPages/agentSettings';
+import BulkAgent from './dashboardPages/bulkAgent';
+import UploadAgents from './dashboardPages/uploadAgents';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -61,6 +64,11 @@ root.render(
       <Route path='/user-settings' element={<UserSettings/>}></Route>
       <Route path='/manage-agents' element={<AgentManagement/>}></Route>
       <Route path='/manage-agents/details' element={<AgentDetails/>}></Route>
+      <Route path='/agent-settings' element={<AgentSettings/>}></Route>
+      <Route path='/bulk-agents' element={<BulkAgent/>}></Route>
+      <Route path='/import-agent' element={<UploadAgents/>}></Route>
+
+
 
 
     </Routes>
