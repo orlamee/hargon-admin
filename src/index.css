@@ -494,7 +494,8 @@ div.content {
 .app-details .form-select,
 .app-cal .form-control,
 .app-cal .form-select,
-.modal-m .form-control {
+.modal-m .form-control,
+.modal-m .form-select {
   border: 1px solid #F0F0F0;
   padding: 13px;
   font-size: 14px;
@@ -756,4 +757,10 @@ input::-webkit-inner-spin-button {
 
 .overview .table>:not(caption)>*>* {
   padding: 1rem 0.5rem!important;
+}
+
+.emp-detail hr {
+  margin: 24px -37px;
+  color: #F6F6F6;
+  opacity: .9;
 }

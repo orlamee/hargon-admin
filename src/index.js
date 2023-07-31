@@ -33,6 +33,12 @@ import AgentDetails from './dashboardPages/agentDetails';
 import AgentSettings from './dashboardPages/agentSettings';
 import BulkAgent from './dashboardPages/bulkAgent';
 import UploadAgents from './dashboardPages/uploadAgents';
+import OnboardingCompany from './dashboardPages/onboardCompany';
+import UploadCompany from './dashboardPages/uploadCompany';
+import ManageCompany from './dashboardPages/manageCompany';
+import CompanyDetails from './dashboardPages/companyDetails';
+import EmployeeDetails from './dashboardPages/employeeDetails';
+import CompanySettings from './dashboardPages/companySettings';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -67,10 +73,12 @@ root.render(
       <Route path='/agent-settings' element={<AgentSettings/>}></Route>
       <Route path='/bulk-agents' element={<BulkAgent/>}></Route>
       <Route path='/import-agent' element={<UploadAgents/>}></Route>
-
-
-
-
+      <Route path='/onboard-company' element={<OnboardingCompany/>}></Route>
+      <Route path='/import-company' element={<UploadCompany/>}></Route>
+      <Route path='/manage-company' element={<ManageCompany/>}></Route>
+      <Route path='/manage-company/details' element={<CompanyDetails/>}></Route>
+      <Route path='/employee-details' element={<EmployeeDetails/>}></Route>
+      <Route path='/company-settings' element={<CompanySettings/>}></Route>
     </Routes>
   </BrowserRouter>
 );
