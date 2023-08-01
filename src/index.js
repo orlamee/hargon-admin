@@ -39,7 +39,7 @@ import ManageCompany from './dashboardPages/manageCompany';
 import CompanyDetails from './dashboardPages/companyDetails';
 import EmployeeDetails from './dashboardPages/employeeDetails';
 import CompanySettings from './dashboardPages/companySettings';
-import Application from './dashboardPages/application';
+// import Application from './dashboardPages/application';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
