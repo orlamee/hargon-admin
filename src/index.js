@@ -39,6 +39,7 @@ import ManageCompany from './dashboardPages/manageCompany';
 import CompanyDetails from './dashboardPages/companyDetails';
 import EmployeeDetails from './dashboardPages/employeeDetails';
 import CompanySettings from './dashboardPages/companySettings';
+import Application from './dashboardPages/application';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -78,7 +79,8 @@ root.render(
       <Route path='/manage-company' element={<ManageCompany/>}></Route>
       <Route path='/manage-company/details' element={<CompanyDetails/>}></Route>
       <Route path='/employee-details' element={<EmployeeDetails/>}></Route>
-      <Route path='/company---settings' element={<CompanySettings/>}></Route>
+      <Route path='/company-settings' element={<CompanySettings/>}></Route>
+      {/* <Route path='/application-summary' element={<Application/>}></Route> */}
     </Routes>
   </BrowserRouter>
 );

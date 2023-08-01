@@ -1,6 +1,6 @@
 import SearchNotification from "./searchNotification";
 
-function ApplicationSum() {
+function Summary() {
   return (
     <div className="content home">
       <SearchNotification />
@@ -8,7 +8,7 @@ function ApplicationSum() {
         <div className="col-sm-12 px-0">
           <div className="pending-loan">
             <div className="d-flex flex-row">
-              <h5 className="me-3">Application Summary</h5>
+              <h5 className="me-3">Application</h5>
             </div>
           </div>
         </div>
@@ -18,6 +18,9 @@ function ApplicationSum() {
         style={{ borderRadius: "0 0 20px 20px" }}
       >
         <div className="col">
+           <div className="text-end">
+            <button className="btn-save">Add <i className="bi bi-plus"></i></button>
+          </div>
           <table
             className="table table-responsive"
             style={{ width: "100%" }}
@@ -29,7 +32,7 @@ function ApplicationSum() {
                 <th>Customer Type</th>
                 <th>Loan officer</th>
                 <th>Requested</th>
-                <th>Interest</th>
+                <th>Notes</th>
                 <th>Status</th>
                 <th>Products</th>
                 <th>Action</th>
@@ -41,7 +44,7 @@ function ApplicationSum() {
                 <td>Merchant</td>
                 <td>Kola Daisi</td>
                 <td>₦10,000</td>
-                <td>₦10,000</td>
+                <td><span style={{color: "#228B22"}}>View Notes</span></td>
                 <td>
                   <span className="approved">Approved</span>
                 </td>
@@ -55,8 +58,18 @@ function ApplicationSum() {
                     ></i>
                     <ul class="dropdown-menu details">
                       <li>
-                        <a className="dropdown-item" href="/applications/details">
+                        <a className="dropdown-item" href="/">
                           View Details
+                        </a>
+                      </li>
+                      <li>
+                        <a className="dropdown-item" href="/">
+                          Edit Details
+                        </a>
+                      </li>
+                      <li>
+                        <a className="dropdown-item" href="/">
+                          Send to compliance
                         </a>
                       </li>
                     </ul>
@@ -68,7 +81,7 @@ function ApplicationSum() {
                 <td>Agent</td>
                 <td>John Doe</td>
                 <td>₦10,000</td>
-                <td>₦10,000</td>
+                <td><span style={{color: "#228B22"}}>View Notes</span></td>
                 <td>
                   <span className="approved">Successful</span>
                 </td>
@@ -82,8 +95,18 @@ function ApplicationSum() {
                     ></i>
                     <ul class="dropdown-menu details">
                       <li>
-                        <a className="dropdown-item" href="/applications/details">
+                        <a className="dropdown-item" href="/">
                           View Details
+                        </a>
+                      </li>
+                      <li>
+                        <a className="dropdown-item" href="/">
+                          Edit Details
+                        </a>
+                      </li>
+                      <li>
+                        <a className="dropdown-item" href="/">
+                          Send to compliance
                         </a>
                       </li>
                     </ul>
@@ -95,7 +118,7 @@ function ApplicationSum() {
                 <td>Agent</td>
                 <td>Jane Doe</td>
                 <td>₦10,000</td>
-                <td>₦10,000</td>
+                <td><span style={{color: "#228B22"}}>View Notes</span></td>
                 <td>
                   <span className="awaiting">Pending</span>
                 </td>
@@ -109,8 +132,18 @@ function ApplicationSum() {
                     ></i>
                     <ul class="dropdown-menu details">
                       <li>
-                        <a className="dropdown-item" href="/applications/details">
+                        <a className="dropdown-item" href="/">
                           View Details
+                        </a>
+                      </li>
+                      <li>
+                        <a className="dropdown-item" href="/">
+                          Edit Details
+                        </a>
+                      </li>
+                      <li>
+                        <a className="dropdown-item" href="/">
+                          Send to compliance
                         </a>
                       </li>
                     </ul>
@@ -122,7 +155,7 @@ function ApplicationSum() {
                 <td>Agent</td>
                 <td>Jane Doe</td>
                 <td>₦10,000,000</td>
-                <td>₦10,000</td>
+                <td><span style={{color: "#228B22"}}>View Notes</span></td>
                 <td>
                   <span className="withdrawn">Expired</span>
                 </td>
@@ -136,8 +169,18 @@ function ApplicationSum() {
                     ></i>
                     <ul class="dropdown-menu details">
                       <li>
-                        <a className="dropdown-item" href="/applications/details">
+                        <a className="dropdown-item" href="/">
                           View Details
+                        </a>
+                      </li>
+                      <li>
+                        <a className="dropdown-item" href="/">
+                          Edit Details
+                        </a>
+                      </li>
+                      <li>
+                        <a className="dropdown-item" href="/">
+                          Send to compliance
                         </a>
                       </li>
                     </ul>
@@ -149,7 +192,7 @@ function ApplicationSum() {
                 <td>Agent</td>
                 <td>Jane Doe</td>
                 <td>₦10,000,000</td>
-                <td>₦10,000</td>
+                <td><span style={{color: "#228B22"}}>View Notes</span></td>
                 <td>
                   <span className="withdrawn">Expired</span>
                 </td>
@@ -163,8 +206,18 @@ function ApplicationSum() {
                     ></i>
                     <ul class="dropdown-menu details">
                       <li>
-                        <a className="dropdown-item" href="/applications/details">
+                        <a className="dropdown-item" href="/">
                           View Details
+                        </a>
+                      </li>
+                      <li>
+                        <a className="dropdown-item" href="/">
+                          Edit Details
+                        </a>
+                      </li>
+                      <li>
+                        <a className="dropdown-item" href="/">
+                          Send to compliance
                         </a>
                       </li>
                     </ul>
@@ -176,7 +229,7 @@ function ApplicationSum() {
                 <td>Company</td>
                 <td>Bola Doe</td>
                 <td>₦10,000,000</td>
-                <td>₦10,000</td>
+                <td><span style={{color: "#228B22"}}>View Notes</span></td>
                 <td>
                   <span className="approved">Approved</span>
                 </td>
@@ -190,8 +243,18 @@ function ApplicationSum() {
                     ></i>
                     <ul class="dropdown-menu details">
                       <li>
-                        <a className="dropdown-item" href="/applications/details">
+                        <a className="dropdown-item" href="/">
                           View Details
+                        </a>
+                      </li>
+                      <li>
+                        <a className="dropdown-item" href="/">
+                          Edit Details
+                        </a>
+                      </li>
+                      <li>
+                        <a className="dropdown-item" href="/">
+                          Send to compliance
                         </a>
                       </li>
                     </ul>
@@ -206,4 +269,4 @@ function ApplicationSum() {
   );
 }
 
-export default ApplicationSum;
+export default Summary;

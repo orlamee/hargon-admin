@@ -23,6 +23,17 @@ function Sidebar() {
           <h6>MAIN MENU</h6>
           <a className="" href="/dashboard"><Icon icon="radix-icons:dashboard" className="me-3 nme-1 fs-4" />Dashboard</a>
           <div className="item">
+            <a className="sub-btn"><Icon icon="streamline:interface-user-add-actions-add-close-geometric-human-person-plus-single-up-user" className="me-3 nme-1 fs-4" />Application <i className="bi bi-chevron-right dropdown"></i></a>
+            <div className="sub-menu">
+              <a href="/application-summary" className="sub-item">Application</a>
+              <a href="/" className="sub-item">Check and compliance</a>
+              <a href="/" className="sub-item">Decision & Scoring</a>
+              <a href="/" className="sub-item">Direct debit link</a>
+              <a href="/" className="sub-item">Legal</a>
+              <a href="/" className="sub-item">Settings</a>
+            </div>
+          </div>
+          <div className="item">
             <a className="sub-btn"><Icon icon="ri:building-2-line" className="me-3 nme-1 fs-4" />Loans <i className="bi bi-chevron-right dropdown"></i></a>
             <div className="sub-menu">
               <a href="/all-loans" className="sub-item">All Loans</a>
@@ -55,8 +66,8 @@ function Sidebar() {
             <div className="sub-menu">
               <a href="/manage-company" className="sub-item">Manage company</a>
               <a href="/onboard-company" className="sub-item">Onboarding company</a>
-              <a href="/settings" className="sub-item">Settings</a>
-              <a href="/report" className="sub-item">Report</a>
+              <a href="/company-settings" className="sub-item">Settings</a>
+              {/* <a href="/report" className="sub-item">Report</a> */}
             </div>
           </div>
           <div className="item">
