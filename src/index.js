@@ -40,6 +40,7 @@ import CompanyDetails from './dashboardPages/companyDetails';
 import EmployeeDetails from './dashboardPages/employeeDetails';
 import CompanySettings from './dashboardPages/companySettings';
 import Application from './dashboardPages/application';
+import SummaryDetails from './dashboardPages/summaryDetails';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -81,6 +82,7 @@ root.render(
       <Route path='/employee-details' element={<EmployeeDetails/>}></Route>
       <Route path='/company-settings' element={<CompanySettings/>}></Route>
       <Route path='/application-summary' element={<Application/>}></Route>
+      <Route path='/application-summary/details' element={<SummaryDetails/>}></Route>
     </Routes>
   </BrowserRouter>
 );

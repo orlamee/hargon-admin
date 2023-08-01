@@ -58,7 +58,7 @@ function Summary() {
                     ></i>
                     <ul class="dropdown-menu details">
                       <li>
-                        <a className="dropdown-item" href="/">
+                        <a className="dropdown-item" href="/application-summary/details">
                           View Details
                         </a>
                       </li>
@@ -95,7 +95,7 @@ function Summary() {
                     ></i>
                     <ul class="dropdown-menu details">
                       <li>
-                        <a className="dropdown-item" href="/">
+                        <a className="dropdown-item" href="/application-summary/details">
                           View Details
                         </a>
                       </li>
@@ -132,7 +132,7 @@ function Summary() {
                     ></i>
                     <ul class="dropdown-menu details">
                       <li>
-                        <a className="dropdown-item" href="/">
+                        <a className="dropdown-item" href="/application-summary/details">
                           View Details
                         </a>
                       </li>
@@ -169,7 +169,7 @@ function Summary() {
                     ></i>
                     <ul class="dropdown-menu details">
                       <li>
-                        <a className="dropdown-item" href="/">
+                        <a className="dropdown-item" href="/application-summary/details">
                           View Details
                         </a>
                       </li>

@@ -37,13 +37,13 @@ function AppDetails() {
               </Row>
               <Form.Group>
                 <div><Form.Label className="mb-3">Offer Letter</Form.Label></div>
-                <div class="form-check form-check-inline me-5">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
-                  <label class="form-check-label" for="inlineRadio1">Signed</label>
+                <div className="form-check form-check-inline me-5">
+                  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+                  <label className="form-check-label" for="inlineRadio1">Signed</label>
                 </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"/>
-                  <label class="form-check-label" for="inlineRadio2">Not Signed</label>
+                <div className="form-check form-check-inline">
+                  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"/>
+                  <label className="form-check-label" for="inlineRadio2">Not Signed</label>
                 </div>
               </Form.Group>
               <h3 className="text-black my-4">Personal Details</h3>
