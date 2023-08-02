@@ -22,7 +22,7 @@ export default function SearchNotification(params) {
             <div className="d-flex flex-row">
               <img src={avatar} alt="admin" className="img-fluid" />
               <div className="user-avi mt-3 ms-3">
-                <h6>Shalli Popi</h6>
+                <h6>Paddy Adenuga</h6>
                 <p>CEO</p>
               </div>
             </div>

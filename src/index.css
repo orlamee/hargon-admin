@@ -764,3 +764,54 @@ input::-webkit-inner-spin-button {
   color: #F6F6F6;
   opacity: .9;
 }
+
+.guZdik {
+  height: 70px!important;
+  border: 1px dashed #228B22!important;
+  padding: 8px 16px 8px 8px;
+  border-radius: 0px!important;
+}
+
+.bg-ref {
+  background-color: #FAFAFA;
+  padding: 13px 20px;
+  border-radius: 30px;
+  font-size: 12px;
+  color: #228B22;
+  margin-bottom: 50px;
+}
+
+.slips h5 {
+  color: #000000;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.slips p {
+  color: #9CA3AF;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.c-s h4,
+.score-head h4 {
+  color: #9CA3AF;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.c-s h1 {
+  color: #041004;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 500;
+}
+
+.score-head {
+  background: #FAFAFA;
+  padding: 10px;
+  border-radius: 10px 10px 0px 0px;
+}

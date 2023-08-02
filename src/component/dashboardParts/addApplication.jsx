@@ -4,15 +4,12 @@ import { FileUploader } from "react-drag-drop-files";
 import { Col, Form, Row } from "react-bootstrap";
 import tier from "../../assets/tier1.svg"
 import tiertwo from "../../assets/tier2.svg"
-import frsc from "../../assets/frsx.svg"
 import tierthree from "../../assets/tier3.svg"
-import cs from "../../assets/cd.svg"
-import ls from "../../assets/ls.svg"
-import bs from "../../assets/bs.svg"
+
 
 
 const fileTypes = ["JPG", "PNG"];
-function ApplicationSummaryView() {
+function AddApplication() {
   const [file, setFile] = useState(null);
   const handleChange = (file) => {
     setFile(file);
@@ -24,7 +21,7 @@ function ApplicationSummaryView() {
         <div className="col-sm-12 px-0">
           <div className="pending-loan">
             <div className="d-flex flex-row">
-              <h5 className="me-3"><a href="/application-summary"><i className="bi bi-chevron-left me-2" style={{color: "#228B22"}}></i></a>Application Details</h5>
+              <h5 className="me-3"><a href="/application-summary"><i className="bi bi-chevron-left me-2" style={{color: "#228B22"}}></i></a>Add New Application</h5>
             </div>
           </div>
         </div>
@@ -194,13 +191,13 @@ function ApplicationSummaryView() {
                                   </Form.Group>
                                   <Form.Group as={Col}>
                                     <Form.Label>Product</Form.Label>
-                                    <Form.Control type="text" placeholder="Auto Loan" />
+                                    <Form.Control type="text" />
                                   </Form.Group>
                                 </Row>
                                 <Row className="mb-3">
                                   <Form.Group as={Col}>
                                     <Form.Label>Interest</Form.Label>
-                                    <Form.Control type="number" placeholder="100" />
+                                    <Form.Control type="number" />
                                   </Form.Group>
                                   <Form.Group as={Col}>
                                     <Form.Label>Loan Purpose</Form.Label>
@@ -215,7 +212,7 @@ function ApplicationSummaryView() {
                                 <Row className="mb-3">
                                   <Col xs={6}>
                                     <Form.Label>Amount Requested</Form.Label>
-                                    <Form.Control type="number" placeholder="10000" />
+                                    <Form.Control type="number" />
                                   </Col>
                                 </Row>
                               </Form>
@@ -280,7 +277,7 @@ function ApplicationSummaryView() {
                                   </Col>
                                 </Row>
                                 <div className="text-end">
-                                  <button className="btn-save">Save Changes</button>
+                                  <button className="btn-save">Save</button>
                                 </div>
                               </Form>
                             </div>
@@ -365,7 +362,7 @@ function ApplicationSummaryView() {
                                   </Form.Group>
                                 </Row>
                                 <div className="text-end">
-                                  <button className="btn-save">Save Changes</button>
+                                  <button className="btn-save">Save</button>
                                 </div>
                               </Form>
                             </div>
@@ -384,58 +381,30 @@ function ApplicationSummaryView() {
                     <div className="guarantor">
                       <div className="row justify-content-center">
                         <div className="col-sm-7">
-                          <div className="details-card pb-0">
-                            <div className="text-end mb-3">
-                              <button className="btn-save" data-bs-toggle="modal" data-bs-target="#add-bene">Add <i className="bi bi-plus ms-2"></i></button>
-                            </div>
-                            <div className="bg-white p-4">
-                              <h3>Beneficiary 1</h3>
-                              <hr />
-                              <Form className="modal-m">
-                                <Row className="mb-3">
-                                  <Form.Group as={Col}>
-                                    <Form.Label>Full Name</Form.Label>
-                                    <Form.Control type="text" placeholder="Ade Ade" />
-                                  </Form.Group>
-                                  <Form.Group as={Col}>
-                                    <Form.Label>Phone Number</Form.Label>
-                                    <Form.Control type="tel" placeholder="08169858635" />
-                                  </Form.Group>
-                                </Row>
-                                <Form.Group className="mb-3">
-                                  <Form.Label>Address</Form.Label>
-                                  <Form.Control type="text" placeholder="2, Adeleke-David Avenue, Gwarinpa, Abuja" />
-                                </Form.Group>
-                                <Form.Group className="mb-3">
-                                  <Form.Label>Relationship</Form.Label>
-                                  <Form.Control type="text" placeholder="Brother" />
-                                </Form.Group>
-                              </Form>
-                            </div>
-                          </div>
                           <div className="details-card">
                             <div className="bg-white p-4">
-                              <h3>Beneficiary 2</h3>
-                              <hr />
                               <Form className="modal-m">
                                 <Row className="mb-3">
                                   <Form.Group as={Col}>
                                     <Form.Label>Full Name</Form.Label>
-                                    <Form.Control type="text" placeholder="Ade Ola" />
+                                    <Form.Control type="text"  />
                                   </Form.Group>
                                   <Form.Group as={Col}>
                                     <Form.Label>Phone Number</Form.Label>
-                                    <Form.Control type="tel" placeholder="08169858635" />
+                                    <Form.Control type="tel" />
                                   </Form.Group>
                                 </Row>
                                 <Form.Group className="mb-3">
                                   <Form.Label>Address</Form.Label>
-                                  <Form.Control type="text" placeholder="2, Adeleke-David Avenue, Gwarinpa, Abuja" />
+                                  <Form.Control type="text" />
                                 </Form.Group>
                                 <Form.Group className="mb-3">
                                   <Form.Label>Relationship</Form.Label>
-                                  <Form.Control type="text" placeholder="Brother" />
+                                  <Form.Control type="text" />
                                 </Form.Group>
+                                <div className="text-end">
+                                  <button className="btn-save">Save</button>
+                                </div>
                               </Form>
                             </div>
                           </div>
@@ -530,7 +499,7 @@ function ApplicationSummaryView() {
                                   <Form.Control type="text" placeholder="2, Adeleke-David Avenue, Gwarinpa, Abuja" />
                                 </Form.Group>
                                 <div className="text-end">
-                                  <button className="btn-save">Save Changes</button>
+                                  <button className="btn-save">Save</button>
                                 </div>
                               </Form>
                             </div>
@@ -607,11 +576,13 @@ function ApplicationSummaryView() {
                                 <Row className="mb-3">
                                   <Form.Group as={Col}>
                                     <Form.Label>FRSC</Form.Label>
-                                    <div><img src={frsc} alt="frsc" className="img-fluid w-100"/></div>
+                                    <FileUploader handleChange={handleChange} name="file" label="Upload Picture" types={fileTypes} />
+                                    <p>{file ? `File name: ${file[0].name}` : "no files uploaded yet"}</p>
                                   </Form.Group>
                                   <Form.Group as={Col}>
                                     <Form.Label>INEC</Form.Label>
-                                    <div><img src={frsc} alt="frsc" className="img-fluid w-100"/></div>
+                                    <FileUploader handleChange={handleChange} name="file" label="Upload Picture" types={fileTypes} />
+                                    <p>{file ? `File name: ${file[0].name}` : "no files uploaded yet"}</p>
                                   </Form.Group>
                                 </Row>
                                 <Row className="mb-3">
@@ -654,7 +625,7 @@ function ApplicationSummaryView() {
                                   </Form.Group>
                                 </Row>
                                 <div className="text-end">
-                                  <button className="btn-save">Save Changes</button>
+                                  <button className="btn-save">Save</button>
                                 </div>
                               </Form>
                             </div>
@@ -673,36 +644,12 @@ function ApplicationSummaryView() {
                     <div className="overview">
                       <div className="row justify-content-center">
                         <div className="col-sm-5">
-                          <div className="details-card pb-0">
-                            <div className="bg-white p-4">
-                              <table className="table overview-table">
-                                <tbody>
-                                  <tr>
-                                    <th><span className="text-dark"><img src={cs} alt="cs" className="img-fluid me-2"/> Credit Score</span></th>
-                                    <td>700</td>
-                                  </tr>
-                                  <tr>
-                                    <th><span className="text-dark"><img src={ls} alt="ls" className="img-fluid me-2"/> Level Scores</span></th>
-                                    <td>700</td>
-                                  </tr>
-                                  <tr>
-                                    <th><span className="text-dark"><img src={bs} alt="bs" className="img-fluid me-2"/> Bank Statement</span></th>
-                                    <td>300</td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
-                          </div>
                           <div className="details-card">
                             <div className="bg-white p-4">
-                              <table className="table overview-table">
-                                <tbody>
-                                  <tr>
-                                    <th><span className="text-dark fs-6">Total Scores</span></th>
-                                    <td><span className="fs-4" style={{color: "#FF823B"}}>700</span></td>
-                                  </tr>
-                                </tbody>
-                              </table>
+                              <div className="text-center">
+                                <h5>No activity yet</h5>
+                                <h6>Scoring for this user have not been calculated yet</h6>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -721,19 +668,9 @@ function ApplicationSummaryView() {
                         <div className="col-sm-6">
                           <div className="details-card">
                             <div className="bg-white p-4">
-                              <div className="row justify-content-center">
-                                <div className="col-sm-3 mb-3">
-                                  <h5>Bank Name</h5>
-                                  <h6>GTBank</h6>
-                                </div>
-                                <div className="col-sm-3 mb-3">
-                                  <h5>Account Number</h5>
-                                  <h6>0163876541</h6>
-                                </div>
-                                <div className="col-sm-3 mb-3">
-                                  <h5>Status</h5>
-                                  <h6><span className="approved">Linked</span></h6>
-                                </div>
+                              <div className="text-center">
+                                <h5>No activity yet</h5>
+                                <h6>link not sent yet</h6>
                               </div>
                             </div>
                           </div>
@@ -753,15 +690,9 @@ function ApplicationSummaryView() {
                         <div className="col-sm-6">
                           <div className="details-card">
                             <div className="bg-white p-4">
-                              <div className="row justify-content-center">
-                                <div className="col-sm-4 mb-3">
-                                  <h5>Offer Letter Status</h5>
-                                  <h6><span className="approved">Signed</span></h6>
-                                </div>
-                                <div className="col-sm-4">
-                                  <h5>Offer Letter Link</h5>
-                                  <a href="#!">https://www.jotform.com</a>
-                                </div>
+                              <div className="text-center">
+                                <h5>No activity yet</h5>
+                                <h6>Offer letter not sent yet</h6>
                               </div>
                             </div>
                           </div>
@@ -815,103 +746,8 @@ function ApplicationSummaryView() {
           </div>
         </div>
       </div>
-      {/* Add Work Details Modal */}
-      <div className="modal fade modal-m" id="add-work" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div className="modal-dialog modal-dialog-centered modal-lg">
-          <div className="modal-content">
-            <div className="modal-header">
-              <h1 className="modal-title">Add Work Details</h1>
-              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div className="modal-body">
-              <div className="inner-card">
-                <div className="row">
-                  <div className="col-sm-12">
-                    <Form>
-                      <Row className="mb-3">
-                        <Col>
-                          <Form.Control placeholder="Name" />
-                        </Col>
-                        <Col>
-                          <Form.Control type="text" placeholder="Official Designation" />
-                        </Col>
-                        <Col>
-                          <Form.Control type="text" placeholder="Work Status" />
-                        </Col>
-                      </Row>
-                      <Row className="mb-3">
-                        <Col>
-                          <Form.Control placeholder="Gross Salary" />
-                        </Col>
-                        <Col>
-                          <Form.Control type="text" placeholder="Net Salary" />
-                        </Col>
-                        <Col>
-                          <Form.Control type="text" placeholder="Employment Terms" />
-                        </Col>
-                        <Col>
-                          <Form.Control type="text" placeholder="Contract Expiry Date" />
-                        </Col>
-                      </Row>
-                      <div className="text-end">
-                        <button type="button" className="btn-save">Continue</button>
-                      </div>
-                    </Form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* Add Bank Modal */}
-      <div className="modal fade modal-m" id="add-bank" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div className="modal-dialog modal-dialog-centered modal-lg">
-          <div className="modal-content">
-            <div className="modal-header">
-              <h1 className="modal-title">Add Bank Details</h1>
-              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div className="modal-body">
-              <div className="inner-card">
-                <div className="row">
-                  <div className="col-sm-12">
-                    <Form>
-                      <Row className="mb-3">
-                        <Col>
-                          <Form.Control placeholder="Name" />
-                        </Col>
-                        <Col>
-                          <Form.Control type="text" placeholder="Bank name" />
-                        </Col>
-                      </Row>
-                      <Row className="mb-3">
-                        <Col>
-                          <Form.Control type="number" placeholder="Amount Number" />
-                        </Col>
-                        <Col>
-                          <Form.Control type="text" placeholder="Branch" />
-                        </Col>
-                        <Col>
-                          <Form.Control type="number" placeholder="Bank Swift Code" />
-                        </Col>
-                        <Col>
-                          <Form.Control type="number" placeholder="Tax Payer ID" />
-                        </Col>
-                      </Row>
-                      <div className="text-end">
-                        <button type="button" className="btn-save">Continue</button>
-                      </div>
-                    </Form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }
 
-export default ApplicationSummaryView;
+export default AddApplication;

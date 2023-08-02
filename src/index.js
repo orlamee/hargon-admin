@@ -41,6 +41,10 @@ import EmployeeDetails from './dashboardPages/employeeDetails';
 import CompanySettings from './dashboardPages/companySettings';
 import Application from './dashboardPages/application';
 import SummaryDetails from './dashboardPages/summaryDetails';
+import NewApplication from './dashboardPages/newApplication';
+import DecisionSharing from './dashboardPages/decisionSharing';
+import ViewDecision from './dashboardPages/viewDecision';
+import Legal from './dashboardPages/legal';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -83,6 +87,10 @@ root.render(
       <Route path='/company-settings' element={<CompanySettings/>}></Route>
       <Route path='/application-summary' element={<Application/>}></Route>
       <Route path='/application-summary/details' element={<SummaryDetails/>}></Route>
+      <Route path='/new-application' element={<NewApplication/>}></Route>
+      <Route path='/decision--sharing' element={<DecisionSharing/>}></Route>
+      <Route path='/legally' element={<Legal/>}></Route>
+      <Route path='/decision--sharing/details' element={<ViewDecision/>}></Route>
     </Routes>
   </BrowserRouter>
 );
