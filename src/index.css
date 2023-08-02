@@ -765,7 +765,8 @@ input::-webkit-inner-spin-button {
   opacity: .9;
 }
 
-.guZdik {
+.guZdik,
+.dtlKip {
   height: 70px!important;
   border: 1px dashed #228B22!important;
   padding: 8px 16px 8px 8px;
