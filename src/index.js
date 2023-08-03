@@ -90,7 +90,7 @@ root.render(
       <Route path='/new-application' element={<NewApplication/>}></Route>
       <Route path='/decision-sharing' element={<DecisionSharing/>}></Route>
       <Route path='/legally' element={<Legal/>}></Route>
-      <Route path='/decision--sharing/details' element={<ViewDecision/>}></Route>
+      <Route path='/decision-sharing/details' element={<ViewDecision/>}></Route>
     </Routes>
   </BrowserRouter>
 );
