@@ -27,7 +27,7 @@ function Sidebar() {
             <div className="sub-menu">
               <a href="/application-summary" className="sub-item">Application</a>
               <a href="/" className="sub-item">Check and compliance</a>
-              <a href="/" className="sub-item">Decision & Scoring</a>
+              <a href="/decision-sharing" className="sub-item">Decision & Scoring</a>
               <a href="/" className="sub-item">Direct debit link</a>
               <a href="/" className="sub-item">Legal</a>
               <a href="/" className="sub-item">Settings</a>
