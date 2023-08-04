@@ -26,7 +26,7 @@ function Sidebar() {
             <a className="sub-btn"><Icon icon="streamline:interface-user-add-actions-add-close-geometric-human-person-plus-single-up-user" className="me-3 nme-1 fs-4" />Application <i className="bi bi-chevron-right dropdown"></i></a>
             <div className="sub-menu">
               <a href="/application-summary" className="sub-item">Application</a>
-              <a href="/check-compliance" className="sub-item">Check and compliance</a>
+              <a href="/compliance" className="sub-item">Check and compliance</a>
               <a href="/decision-sharing" className="sub-item">Decision & Scoring</a>
               <a href="/debit-link" className="sub-item">Direct debit link</a>
               <a href="/legal" className="sub-item">Legal</a>
