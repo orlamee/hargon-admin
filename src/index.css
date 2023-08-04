@@ -390,7 +390,8 @@ div.content {
 
 .details .dropdown-item {
   font-size: 13px;
-  text-align: center;
+  line-height: 17px;
+  text-align: left;
   font-weight: 500;
   color: #041004!important;
 }
@@ -637,7 +638,8 @@ input::-webkit-inner-spin-button {
   margin-bottom: 20px;
 }
 
-.modal-m .modal-content { 
+.modal-m .modal-content,
+.vprogress .modal-content { 
   background: #FAFAFA;
   border-radius: 24px;
 }
@@ -648,6 +650,9 @@ input::-webkit-inner-spin-button {
   border-radius: 24px 24px 0px 0px;
   padding: 25px;
 }
+.vprogress .modal-header {
+  border-bottom: 0;
+}
 
 .modal-m .modal-title {
   font-size: 14px;
@@ -656,8 +661,22 @@ input::-webkit-inner-spin-button {
   font-weight: 500;
 }
 
-.modal-m .modal-body {
+.modal-m .modal-body,
+.vprogress .modal-body {
   padding: 25px;
+}
+
+.vprogress h6 {
+  font-size: 12px;
+  line-height: 16px;
+  color: #000;
+  font-weight: 500;
+}
+
+.vprogress h1 {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 500;
 }
 
 .inner-card {

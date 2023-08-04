@@ -45,6 +45,9 @@ import NewApplication from './dashboardPages/newApplication';
 import DecisionSharing from './dashboardPages/decisionSharing';
 import ViewDecision from './dashboardPages/viewDecision';
 import Legal from './dashboardPages/legal';
+import DebitLink from './dashboardPages/debitLink';
+import DebitHistory from './dashboardPages/debitHistory';
+import CheckCompliance from './dashboardPages/compliance';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -91,6 +94,9 @@ root.render(
       <Route path='/decision-sharing' element={<DecisionSharing/>}></Route>
       <Route path='/legal' element={<Legal/>}></Route>
       <Route path='/decision-sharing/details' element={<ViewDecision/>}></Route>
+      <Route path='/debit-link' element={<DebitLink/>}></Route>
+      <Route path='/debit-link/history' element={<DebitHistory/>}></Route>
+      <Route path='/check-compliance' element={<CheckCompliance/>}></Route>
     </Routes>
   </BrowserRouter>
 );
