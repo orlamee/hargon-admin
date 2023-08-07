@@ -1,7 +1,5 @@
 import SearchNotification from "./searchNotification";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import React, { useState } from "react";
-import { FileUploader } from "react-drag-drop-files";
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Autoplay } from 'swiper/modules';
@@ -9,15 +7,8 @@ import valid from "../../assets/validid.svg";
 import back from "../../assets/back.svg";
 import avi from "../../assets/o.svg";
 import { Col, Form, Row } from "react-bootstrap";
-import { Icon } from "@iconify/react";
 
-
-const fileTypes = ["JPG", "PNG"];
-function DetailsCompany() {
-  const [file, setFile] = useState(null);
-  const handleChange = (file) => {
-    setFile(file);
-  };
+function DetailsMerchant() {
   return (
     <div className="content home">
       <SearchNotification />
@@ -25,7 +16,7 @@ function DetailsCompany() {
         <div className="col-sm-12 px-0">
           <div className="pending-loan">
             <div className="d-flex flex-row">
-              <h5 className="me-3">Company Details</h5>
+              <h5 className="me-3">Merchant Details</h5>
             </div>
           </div>
         </div>
@@ -43,25 +34,25 @@ function DetailsCompany() {
         >
           <SwiperSlide>
             <div className="report-card">
-              <h3>Total companies</h3>
+              <h3>Total merchants</h3>
               <h6 className="mt-3 text-black">0</h6>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="report-card">
-              <h3>Rejected companies</h3>
+              <h3>Rejected merchants</h3>
               <h6 className="mt-3 text-black">0</h6>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="report-card">
-              <h3>Onboarded companies</h3>
+              <h3>Onboarded merchants</h3>
               <h6 className="mt-3 text-black">0</h6>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="report-card">
-              <h3>Pending companies</h3>
+              <h3>Pending merchants</h3>
               <h6 className="mt-3 text-black">0</h6>
             </div>
           </SwiperSlide>
@@ -166,7 +157,7 @@ function DetailsCompany() {
                         aria-controls="pills-x"
                         aria-selected="false"
                       >
-                        Company Details
+                        Business Details
                       </button>
                     </li>
                     <li class="nav-item" role="presentation">
@@ -1367,37 +1358,63 @@ function DetailsCompany() {
                     <div className="guarantor">
                       <div className="row justify-content-center">
                         <div className="col-sm-7">
-                          <div className="details-card">
+                          <div className="details-card pb-0">
                             <button className="btn-save mb-3" data-bs-toggle="modal" data-bs-target="#add-kin">Add New <i className="bi bi-plus ms-2"></i></button>
                             <div className="bg-white p-4">
                               <h3>Collateral 1</h3>
                               <hr />
-                              <div className="row mt-4">
-                                <div className="col-sm-6 mb-2">
-                                  <h5>HouseDocument (C Of O)</h5>
-                                  <div className="p-3 empty-state text-center">
-                                    <h5>Empty</h5>
-                                  </div>
+                              <div className="row">
+                                <div className="col-sm-4 mb-3">
+                                  <h5>Name</h5>
+                                  <h6>Victoria Beckham</h6>
                                 </div>
-                                <div className="col-sm-6 mb-2">
-                                  <h5>Land Document (C Of O)</h5>
-                                  <div className="p-3 empty-state text-center">
-                                    <h5>Empty</h5>
-                                  </div>
+                                <div className="col-sm-4 mb-3">
+                                  <h5>Gender</h5>
+                                  <h6>Male</h6>
+                                </div>
+                                <div className="col-sm-4 mb-3">
+                                  <h5>Phone number</h5>
+                                  <h6>+234 867 876 7593</h6>
                                 </div>
                               </div>
-                              <div className="row mt-2">
-                                <div className="col-sm-6 mb-2">
-                                  <h5>HouseDocument (C Of O)</h5>
-                                  <div className="p-3 empty-state">
-                                    <h6><Icon icon="majesticons:file" className="me-2 fs-4" style={{color: "#9CA3AF"}} />HouseDocument.docx</h6>
-                                  </div>
+                              <div className="row mt-3">
+                                <div className="col-sm-4 mb-3">
+                                  <h5>Address</h5>
+                                  <h6>2, Adebowale street, Ikeja, Lagos state. Nigeria</h6>
                                 </div>
-                                <div className="col-sm-6 mb-2">
-                                  <h5>Land Document (C Of O)</h5>
-                                  <div className="p-3 empty-state">
-                                    <h6><Icon icon="majesticons:file" className="me-2 fs-4" style={{color: "#9CA3AF"}} />HouseDocument.docx</h6>
-                                  </div>
+                                <div className="col-sm-4 mb-3">
+                                  <h5>Relationship</h5>
+                                  <h6>Brother</h6>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="details-card">
+                            <div className="bg-white p-4">
+                              <h3>Collateral 2</h3>
+                              <hr />
+                              <div className="row">
+                                <div className="col-sm-4 mb-3">
+                                  <h5>Name</h5>
+                                  <h6>Victoria Beckham</h6>
+                                </div>
+                                <div className="col-sm-4 mb-3">
+                                  <h5>Gender</h5>
+                                  <h6>Male</h6>
+                                </div>
+                                <div className="col-sm-4 mb-3">
+                                  <h5>Phone number</h5>
+                                  <h6>+234 867 876 7593</h6>
+                                </div>
+                              </div>
+                              <div className="row mt-3">
+                                <div className="col-sm-4 mb-3">
+                                  <h5>Address</h5>
+                                  <h6>2, Adebowale street, Ikeja, Lagos state. Nigeria</h6>
+                                </div>
+                                <div className="col-sm-4 mb-3">
+                                  <h5>Relationship</h5>
+                                  <h6>Brother</h6>
                                 </div>
                               </div>
                             </div>
@@ -1416,7 +1433,7 @@ function DetailsCompany() {
                     <div className="guarantor">
                       <div className="row justify-content-center">
                         <div className="col-sm-7">
-                          <div className="details-card">
+                          <div className="details-card pb-0">
                             <button className="btn-save mb-3" data-bs-toggle="modal" data-bs-target="#add-work">Add New <i className="bi bi-plus ms-2"></i></button>
                             <div className="bg-white p-4">
                               <h3>Business Details 1</h3>
@@ -1900,28 +1917,23 @@ function DetailsCompany() {
                   <div className="col-sm-12">
                     <Form>
                       <Row className="mb-3">
-                        <Form.Group as={Col}>
-                          <Form.Label>HouseDocument (C Of O)</Form.Label>
-                          <FileUploader handleChange={handleChange} name="file" label="Upload Picture" types={fileTypes} />
-                          <p>{file ? `File name: ${file[0].name}` : "no files uploaded yet"}</p>
-                        </Form.Group>
-                        <Form.Group as={Col}>
-                          <Form.Label>Land Document (C Of O)</Form.Label>
-                          <FileUploader handleChange={handleChange} name="file" label="Upload Picture" types={fileTypes} />
-                          <p>{file ? `File name: ${file[0].name}` : "no files uploaded yet"}</p>
-                        </Form.Group>
+                        <Col>
+                          <Form.Control placeholder="Name" />
+                        </Col>
+                        <Col>
+                          <Form.Control type="tel" placeholder="Phone no" />
+                        </Col>
                       </Row>
                       <Row className="mb-3">
-                        <Form.Group as={Col}>
-                          <Form.Label>HouseDocument (C Of O)</Form.Label>
-                          <FileUploader handleChange={handleChange} name="file" label="Upload Picture" types={fileTypes} />
-                          <p>{file ? `File name: ${file[0].name}` : "no files uploaded yet"}</p>
-                        </Form.Group>
-                        <Form.Group as={Col}>
-                          <Form.Label>Land Document (C Of O)</Form.Label>
-                          <FileUploader handleChange={handleChange} name="file" label="Upload Picture" types={fileTypes} />
-                          <p>{file ? `File name: ${file[0].name}` : "no files uploaded yet"}</p>
-                        </Form.Group>
+                        <Col xs={6}>
+                          <Form.Control placeholder="Address" />
+                        </Col>
+                        <Col>
+                          <Form.Control type="text" placeholder="Gender" />
+                        </Col>
+                        <Col>
+                          <Form.Control type="text" placeholder="Relationship" />
+                        </Col>
                       </Row>
                       <div className="text-end">
                         <button type="button" className="btn-save">Continue</button>
@@ -2080,4 +2092,4 @@ function DetailsCompany() {
   );
 }
 
-export default DetailsCompany;
+export default DetailsMerchant;

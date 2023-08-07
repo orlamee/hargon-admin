@@ -885,3 +885,7 @@ input::-webkit-inner-spin-button {
   width: 110px;
   background: #F3F4F6;
 }
+
+.empty-state {
+  border: 1px dotted #D1D5DB;
+}

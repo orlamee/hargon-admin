@@ -49,6 +49,10 @@ import DebitLink from './dashboardPages/debitLink';
 import DebitHistory from './dashboardPages/debitHistory';
 import CheckCompliance from './dashboardPages/compliance';
 import ComplianceDetails from './dashboardPages/complianceDetails';
+import MerchantReports from './dashboardPages/merchantReports';
+import ManageMerchants from './dashboardPages/manageMerchant';
+import MerchantDetails from './dashboardPages/merchantDetails';
+import MerchantSettings from './dashboardPages/merchantSettings';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -99,6 +103,12 @@ root.render(
       <Route path='/debit-link/history' element={<DebitHistory/>}></Route>
       <Route path='/compliance' element={<CheckCompliance/>}></Route>
       <Route path='/compliance/details' element={<ComplianceDetails/>}></Route>
+      <Route path='/merchant/reportss' element={<MerchantReports/>}></Route>
+      <Route path='/manage-merchant' element={<ManageMerchants/>}></Route>
+      <Route path='/manage-merchant/details' element={<MerchantDetails/>}></Route>
+      <Route path='/merchant-settings' element={<MerchantSettings/>}></Route>
+
+
     </Routes>
   </BrowserRouter>
 );

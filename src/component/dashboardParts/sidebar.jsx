@@ -73,10 +73,10 @@ function Sidebar() {
           <div className="item">
             <a className="sub-btn"><Icon icon="jam:store" className="me-3 nme-1 fs-4" />Merchant management <i className="bi bi-chevron-right dropdown"></i></a>
             <div className="sub-menu">
-              <a href="" className="sub-item">Manage merchants</a>
+              <a href="/manage-merchant" className="sub-item">Manage merchants</a>
               <a href="" className="sub-item">Inventory</a>
-              <a href="" className="sub-item">Settings</a>
-              <a href="" className="sub-item">Reports</a>
+              <a href="/merchant-settings" className="sub-item">Settings</a>
+              <a href="/merchant--/reports" className="sub-item">Reports</a>
             </div>
           </div>
           <a className="" href="/"><Icon icon="solar:card-linear" className="me-3 nme-1 fs-4" />Payment</a>
