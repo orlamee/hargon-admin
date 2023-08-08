@@ -103,7 +103,7 @@ root.render(
       <Route path='/debit-link/history' element={<DebitHistory/>}></Route>
       <Route path='/compliance' element={<CheckCompliance/>}></Route>
       <Route path='/compliance/details' element={<ComplianceDetails/>}></Route>
-      <Route path='/merchant/reportss' element={<MerchantReports/>}></Route>
+      <Route path='/merchant/reports' element={<MerchantReports/>}></Route>
       <Route path='/manage-merchant' element={<ManageMerchants/>}></Route>
       <Route path='/manage-merchant/details' element={<MerchantDetails/>}></Route>
       <Route path='/merchant-settings' element={<MerchantSettings/>}></Route>

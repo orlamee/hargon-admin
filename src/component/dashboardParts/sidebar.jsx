@@ -76,7 +76,7 @@ function Sidebar() {
               <a href="/manage-merchant" className="sub-item">Manage merchants</a>
               <a href="" className="sub-item">Inventory</a>
               <a href="/merchant-settings" className="sub-item">Settings</a>
-              <a href="/merchant--/reports" className="sub-item">Reports</a>
+              <a href="/merchant-/reports" className="sub-item">Reports</a>
             </div>
           </div>
           <a className="" href="/"><Icon icon="solar:card-linear" className="me-3 nme-1 fs-4" />Payment</a>
