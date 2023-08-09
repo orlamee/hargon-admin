@@ -14,7 +14,7 @@ function AppDetails() {
           </div>
         </div>
       </div>
-      <div className="bg-white mt-5 mx-5 p-5 app-details">
+      <div className="bg-white mt-2 mx-5 p-5 app-details">
         <div className="row">
           <div className="col-sm-6 mb-3">
             <h3 className="text-black mb-4">Product Details</h3>

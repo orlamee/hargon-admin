@@ -30,7 +30,7 @@ function DetailsCompany() {
           </div>
         </div>
       </div>
-      <div className="row mt-5 mx-5">
+      <div className="row mt-2 mx-5">
         <Swiper
           slidesPerView={4}
           spaceBetween={30}
@@ -1327,6 +1327,7 @@ function DetailsCompany() {
                       <div className="row justify-content-center">
                         <div className="col-sm-10">
                           <div className="details-card">
+                            <button className="btn-save mb-3" data-bs-toggle="modal" data-bs-target="#add-kyc">Add New <i className="bi bi-plus ms-2"></i></button>
                             <div className="bg-white px-5 py-4">
                               <div>
                                 <h3>Valid ID</h3>
@@ -1583,6 +1584,7 @@ function DetailsCompany() {
                       <div className="row justify-content-center">
                         <div className="col-sm-10">
                           <div className="details-card">
+                            <button className="btn-save mb-3" data-bs-toggle="modal" data-bs-target="#add-files">Add New <i className="bi bi-plus ms-2"></i></button>
                             <div className="bg-white px-5 py-4">
                               <div>
                                 <h3>Valid ID</h3>
@@ -2067,6 +2069,102 @@ function DetailsCompany() {
                       </Row>
                       <div className="text-end">
                         <button type="button" className="btn-save">Add</button>
+                      </div>
+                    </Form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Add KYC Modal */}
+      <div className="modal fade modal-m" id="add-kyc" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div className="modal-dialog modal-dialog-centered modal-lg">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h1 className="modal-title">Add KYC</h1>
+              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div className="modal-body">
+              <div className="inner-card">
+                <div className="row">
+                  <div className="col-sm-12">
+                    <Form>
+                      <Row className="mb-3">
+                        <Form.Group as={Col}>
+                          <Form.Label>HouseDocument (C Of O)</Form.Label>
+                          <FileUploader handleChange={handleChange} name="file" label="Upload Picture" types={fileTypes} />
+                          <p>{file ? `File name: ${file[0].name}` : "no files uploaded yet"}</p>
+                        </Form.Group>
+                        <Form.Group as={Col}>
+                          <Form.Label>Land Document (C Of O)</Form.Label>
+                          <FileUploader handleChange={handleChange} name="file" label="Upload Picture" types={fileTypes} />
+                          <p>{file ? `File name: ${file[0].name}` : "no files uploaded yet"}</p>
+                        </Form.Group>
+                      </Row>
+                      <Row className="mb-3">
+                        <Form.Group as={Col}>
+                          <Form.Label>HouseDocument (C Of O)</Form.Label>
+                          <FileUploader handleChange={handleChange} name="file" label="Upload Picture" types={fileTypes} />
+                          <p>{file ? `File name: ${file[0].name}` : "no files uploaded yet"}</p>
+                        </Form.Group>
+                        <Form.Group as={Col}>
+                          <Form.Label>Land Document (C Of O)</Form.Label>
+                          <FileUploader handleChange={handleChange} name="file" label="Upload Picture" types={fileTypes} />
+                          <p>{file ? `File name: ${file[0].name}` : "no files uploaded yet"}</p>
+                        </Form.Group>
+                      </Row>
+                      <div className="text-end">
+                        <button type="button" className="btn-save">Continue</button>
+                      </div>
+                    </Form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Add Files Modal */}
+      <div className="modal fade modal-m" id="add-files" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div className="modal-dialog modal-dialog-centered modal-lg">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h1 className="modal-title">Add Files</h1>
+              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div className="modal-body">
+              <div className="inner-card">
+                <div className="row">
+                  <div className="col-sm-12">
+                    <Form>
+                      <Row className="mb-3">
+                        <Form.Group as={Col}>
+                          <Form.Label>HouseDocument (C Of O)</Form.Label>
+                          <FileUploader handleChange={handleChange} name="file" label="Upload Picture" types={fileTypes} />
+                          <p>{file ? `File name: ${file[0].name}` : "no files uploaded yet"}</p>
+                        </Form.Group>
+                        <Form.Group as={Col}>
+                          <Form.Label>Land Document (C Of O)</Form.Label>
+                          <FileUploader handleChange={handleChange} name="file" label="Upload Picture" types={fileTypes} />
+                          <p>{file ? `File name: ${file[0].name}` : "no files uploaded yet"}</p>
+                        </Form.Group>
+                      </Row>
+                      <Row className="mb-3">
+                        <Form.Group as={Col}>
+                          <Form.Label>HouseDocument (C Of O)</Form.Label>
+                          <FileUploader handleChange={handleChange} name="file" label="Upload Picture" types={fileTypes} />
+                          <p>{file ? `File name: ${file[0].name}` : "no files uploaded yet"}</p>
+                        </Form.Group>
+                        <Form.Group as={Col}>
+                          <Form.Label>Land Document (C Of O)</Form.Label>
+                          <FileUploader handleChange={handleChange} name="file" label="Upload Picture" types={fileTypes} />
+                          <p>{file ? `File name: ${file[0].name}` : "no files uploaded yet"}</p>
+                        </Form.Group>
+                      </Row>
+                      <div className="text-end">
+                        <button type="button" className="btn-save">Continue</button>
                       </div>
                     </Form>
                   </div>

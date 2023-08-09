@@ -804,6 +804,7 @@ input::-webkit-inner-spin-button {
   border: 1px dashed #228b22 !important;
   padding: 8px 16px 8px 8px;
   border-radius: 0px !important;
+  max-width: 700px!important;
 }
 
 .bg-ref {
@@ -888,4 +889,12 @@ input::-webkit-inner-spin-button {
 
 .empty-state {
   border: 1px dotted #D1D5DB;
+}
+
+.cat {
+  background: #F3F4F6;
+  color: #000;
+  padding: 6px 14px;
+  border-radius: 44px;
+  font-size: 10px;
 }

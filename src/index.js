@@ -53,6 +53,10 @@ import MerchantReports from './dashboardPages/merchantReports';
 import ManageMerchants from './dashboardPages/manageMerchant';
 import MerchantDetails from './dashboardPages/merchantDetails';
 import MerchantSettings from './dashboardPages/merchantSettings';
+import ViewNotes from './dashboardPages/viewNotes';
+import MerchantInventory from './dashboardPages/merchantInventory';
+import ViewInventory from './dashboardPages/viewInventory';
+import NewInventory from './dashboardPages/newInventory';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -107,6 +111,10 @@ root.render(
       <Route path='/manage-merchant' element={<ManageMerchants/>}></Route>
       <Route path='/manage-merchant/details' element={<MerchantDetails/>}></Route>
       <Route path='/merchant-settings' element={<MerchantSettings/>}></Route>
+      <Route path='/view-notes' element={<ViewNotes/>}></Route>
+      <Route path='/merchant---inventory' element={<MerchantInventory/>}></Route>
+      <Route path='/merchant---inventory/details' element={<ViewInventory/>}></Route>
+      <Route path='/new-inventory' element={<NewInventory/>}></Route>
 
 
     </Routes>
