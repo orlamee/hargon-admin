@@ -112,8 +112,8 @@ root.render(
       <Route path='/manage-merchant/details' element={<MerchantDetails/>}></Route>
       <Route path='/merchant-settings' element={<MerchantSettings/>}></Route>
       <Route path='/view-notes' element={<ViewNotes/>}></Route>
-      <Route path='/merchant---inventory' element={<MerchantInventory/>}></Route>
-      <Route path='/merchant---inventory/details' element={<ViewInventory/>}></Route>
+      <Route path='/merchant-inventory' element={<MerchantInventory/>}></Route>
+      <Route path='/merchant-inventory/details' element={<ViewInventory/>}></Route>
       <Route path='/new-inventory' element={<NewInventory/>}></Route>
 
 
