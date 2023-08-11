@@ -57,6 +57,7 @@ import ViewNotes from './dashboardPages/viewNotes';
 import MerchantInventory from './dashboardPages/merchantInventory';
 import ViewInventory from './dashboardPages/viewInventory';
 import NewInventory from './dashboardPages/newInventory';
+import AppSettings from './dashboardPages/appSettings';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -115,8 +116,7 @@ root.render(
       <Route path='/merchant-inventory' element={<MerchantInventory/>}></Route>
       <Route path='/merchant-inventory/details' element={<ViewInventory/>}></Route>
       <Route path='/new-inventory' element={<NewInventory/>}></Route>
-
-
+      <Route path='/application-settings' element={<AppSettings/>}></Route>
     </Routes>
   </BrowserRouter>
 );

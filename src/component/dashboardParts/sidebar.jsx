@@ -30,7 +30,7 @@ function Sidebar() {
               <a href="/decision-sharing" className="sub-item">Decision & Scoring</a>
               <a href="/debit-link" className="sub-item">Direct debit link</a>
               <a href="/legal" className="sub-item">Legal</a>
-              <a href="/" className="sub-item">Settings</a>
+              <a href="/application-settings" className="sub-item">Settings</a>
             </div>
           </div>
           <div className="item">

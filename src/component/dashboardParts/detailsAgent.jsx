@@ -390,7 +390,7 @@ function DetailsAgent() {
                     aria-labelledby="pills-h-tab"
                     tabIndex="0"
                   >
-                     <div className="row justify-content-center">
+                    <div className="row justify-content-center">
                       <div className="col-sm-2 loany">
                         <ul className="nav nav-pills  nav-justified" id="pills-tab" role="tablist">
                           <li className="nav-item" role="presentation">
