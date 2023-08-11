@@ -1,5 +1,4 @@
 import SearchNotification from "./searchNotification";
-
 function ApplicationSum() {
   return (
     <div className="content home">
