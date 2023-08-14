@@ -63,6 +63,7 @@ import SavingsDashboard from './dashboardPages/savingDashboard';
 import TotalDeposit from './dashboardPages/totalDeposit';
 import Bills from './dashboardPages/bills';
 import Auction from './dashboardPages/auction';
+import AppNot from './dashboardPages/appNot';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -127,6 +128,7 @@ root.render(
       <Route path='/total-deposit' element={<TotalDeposit/>}></Route>
       <Route path='/biller' element={<Bills/>}></Route>
       <Route path='/auction' element={<Auction/>}></Route>
+      <Route path='/app-notification' element={<AppNot/>}></Route>
     </Routes>
   </BrowserRouter>
 );
