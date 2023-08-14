@@ -16,7 +16,7 @@ export default function SettingsApp() {
           </div>
         </div>
       </div>
-      <div className="mt-5 row mx-5">
+      <div className="mt-2 row mx-5">
         <div className="col-sm-12 px-0">
           <div className="bg-white p-4 view-loans">
             <div className="row justify-content-center mt-5">
@@ -1461,7 +1461,7 @@ export default function SettingsApp() {
         </div>
       </div>
        {/* Add Member Instructions */}
-       <div className="modal fade modal-m" id="add-mi" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div className="modal fade modal-m" id="add-mi" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div className="modal-dialog modal-dialog-centered modal-lg">
           <div className="modal-content">
             <div className="modal-header">

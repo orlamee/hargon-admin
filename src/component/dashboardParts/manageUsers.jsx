@@ -72,7 +72,7 @@ function ManageUsers() {
         </div>
       </div>
       <div
-        className="row mt-5 mx-5 members bg-white py-5 px-2"
+        className="row mt-2 mx-5 members bg-white py-5 px-2"
         style={{ borderRadius: "0 0 20px 20px" }}
       >
         <div className="col">
@@ -99,6 +99,102 @@ function ManageUsers() {
               </tr>
             </thead>
             <tbody>
+              <tr>
+                <td>
+                  <div className="dropdown">
+                    <i
+                      className="bi bi-three-dots"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    ></i>
+                    <ul class="dropdown-menu details">
+                      <li>
+                        <a className="dropdown-item" href="/manage-users/details">
+                          View Details
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+                <td>#11-22</td>
+                <td>Twitter</td>
+                <td>Elon Musk</td>
+                <td>johndoe@gmail.com</td>
+                <td>45995</td>
+                <td>15/06/2023</td>
+                <td>Kunle Ola</td>
+                <td>29, Oladoyingbr street</td>
+                <td>08167875342</td>
+                <td>₦10,000</td>
+                <td>₦10,000,000</td>
+                <td>
+                  <span className="withdrawn">Due Today</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div className="dropdown">
+                    <i
+                      className="bi bi-three-dots"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    ></i>
+                    <ul class="dropdown-menu details">
+                      <li>
+                        <a className="dropdown-item" href="/manage-users/details">
+                          View Details
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+                <td>#11-22</td>
+                <td>Twitter</td>
+                <td>Elon Musk</td>
+                <td>johndoe@gmail.com</td>
+                <td>45995</td>
+                <td>15/06/2023</td>
+                <td>Kunle Ola</td>
+                <td>29, Oladoyingbr street</td>
+                <td>08167875342</td>
+                <td>₦10,000</td>
+                <td>₦10,000,000</td>
+                <td>
+                  <span className="withdrawn">Due Today</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div className="dropdown">
+                    <i
+                      className="bi bi-three-dots"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    ></i>
+                    <ul class="dropdown-menu details">
+                      <li>
+                        <a className="dropdown-item" href="/manage-users/details">
+                          View Details
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+                <td>#11-22</td>
+                <td>Twitter</td>
+                <td>Elon Musk</td>
+                <td>johndoe@gmail.com</td>
+                <td>45995</td>
+                <td>15/06/2023</td>
+                <td>Kunle Ola</td>
+                <td>29, Oladoyingbr street</td>
+                <td>08167875342</td>
+                <td>₦10,000</td>
+                <td>₦10,000,000</td>
+                <td>
+                  <span className="withdrawn">Due Today</span>
+                </td>
+              </tr>
               <tr>
                 <td>
                   <div className="dropdown">

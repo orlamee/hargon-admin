@@ -898,3 +898,21 @@ input::-webkit-inner-spin-button {
   border-radius: 44px;
   font-size: 10px;
 }
+
+.table-cards {
+  background-color: #FAFAFA;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.table-cards h6 {
+  font-size: 10px;
+  color: #6B7280;
+  font-weight: 400;
+}
+
+.table-cards h5 {
+  font-size: 10px;
+  color: #000;
+  font-weight: 400;
+}

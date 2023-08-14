@@ -79,12 +79,14 @@ function Sidebar() {
               <a href="/merchant-/reports" className="sub-item">Reports</a>
             </div>
           </div>
-          <a className="" href="/"><Icon icon="solar:card-linear" className="me-3 nme-1 fs-4" />Payment</a>
+          <a className="" href="/payment"><Icon icon="solar:card-linear" className="me-3 nme-1 fs-4" />Payment</a>
           <div className="item">
             <a className="sub-btn"><Icon icon="streamline:money-atm-card-3-deposit-money-payment-finance-atm-withdraw" className="me-3 nme-1 fs-4" />Savings <i className="bi bi-chevron-right dropdown"></i></a>
             <div className="sub-menu">
-              <a href="" className="sub-item">Total deposit</a>
+              <a href="/savings-dashboard" className="sub-item">Dashboard</a>
+              <a href="/total-deposit" className="sub-item">Total deposit</a>
               <a href="" className="sub-item">Total withdrawal</a>
+              <a href="" className="sub-item">Report</a>
             </div>
           </div>
           <div className="item">
@@ -105,8 +107,8 @@ function Sidebar() {
             </div>
           </div>
           <a className="" href="/"><Icon icon="ion:wallet-outline" className="me-3 nme-1 fs-4" />Wallet</a>
-          <a className="" href="/"><Icon icon="mingcute:auction-line" className="me-3 nme-1 fs-4" />Auction</a>
-          <a className="" href="/"><Icon icon="tabler:receipt" className="me-3 nme-1 fs-4" />Bills</a>
+          <a className="" href="/auction"><Icon icon="mingcute:auction-line" className="me-3 nme-1 fs-4" />Auction</a>
+          <a className="" href="/bills"><Icon icon="tabler:receipt" className="me-3 nme-1 fs-4" />Bills</a>
           <div className="my-5">
             <hr />
             <h6 className="mt-5">SETTINGS</h6>
