@@ -123,10 +123,10 @@ root.render(
       <Route path='/merchant-inventory/details' element={<ViewInventory/>}></Route>
       <Route path='/new-inventory' element={<NewInventory/>}></Route>
       <Route path='/application-settings' element={<AppSettings/>}></Route>
-      <Route path='/paymenttttttt' element={<Payment/>}></Route>
+      <Route path='/payment' element={<Payment/>}></Route>
       <Route path='/savings-dashboard' element={<SavingsDashboard/>}></Route>
       <Route path='/total-deposit' element={<TotalDeposit/>}></Route>
-      <Route path='/biller' element={<Bills/>}></Route>
+      <Route path='/bills' element={<Bills/>}></Route>
       <Route path='/auction' element={<Auction/>}></Route>
       <Route path='/app-notification' element={<AppNot/>}></Route>
     </Routes>
