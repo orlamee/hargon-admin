@@ -64,6 +64,8 @@ import TotalDeposit from './dashboardPages/totalDeposit';
 import Bills from './dashboardPages/bills';
 import Auction from './dashboardPages/auction';
 import AppNot from './dashboardPages/appNot';
+import Prompt from './dashboardPages/prompt';
+import Email from './dashboardPages/email';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -129,6 +131,8 @@ root.render(
       <Route path='/bills' element={<Bills/>}></Route>
       <Route path='/auction' element={<Auction/>}></Route>
       <Route path='/app-notification' element={<AppNot/>}></Route>
+      <Route path='/prompt' element={<Prompt/>}></Route>
+      <Route path='/email' element={<Email/>}></Route>
     </Routes>
   </BrowserRouter>
 );

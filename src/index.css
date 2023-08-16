@@ -916,3 +916,27 @@ input::-webkit-inner-spin-button {
   color: #000;
   font-weight: 400;
 }
+
+.not-alert h3 {
+  color: #041004;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.not-alert p {
+  color: #9CA3AF;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.btn-prompt {
+  background: #F3F4F6 !important;
+  color: #328a28 !important;
+  padding: 12px 30px !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  border-radius: 50px !important;
+  border: 1px solid #F3F4F6 !important;
+}

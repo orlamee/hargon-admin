@@ -101,9 +101,9 @@ function Sidebar() {
           <div className="item">
             <a className="sub-btn"><Icon icon="nimbus:marketing" className="me-3 nme-1 fs-4" />Marketing <i className="bi bi-chevron-right dropdown"></i></a>
             <div className="sub-menu">
-              <a href="" className="sub-item">Email</a>
-              <a href="" className="sub-item">Prompt</a>
-              <a href="/app-" className="sub-item">Application notification</a>
+              <a href="/email" className="sub-item">Email</a>
+              <a href="/prompt" className="sub-item">Prompt</a>
+              <a href="/app-notification" className="sub-item">Application notification</a>
             </div>
           </div>
           <a className="" href="/"><Icon icon="ion:wallet-outline" className="me-3 nme-1 fs-4" />Wallet</a>
