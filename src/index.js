@@ -66,6 +66,7 @@ import Auction from './dashboardPages/auction';
 import AppNot from './dashboardPages/appNot';
 import Prompt from './dashboardPages/prompt';
 import Email from './dashboardPages/email';
+import AccountSettings from './dashboardPages/accountSettings';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -133,6 +134,7 @@ root.render(
       <Route path='/app-notification' element={<AppNot/>}></Route>
       <Route path='/prompt' element={<Prompt/>}></Route>
       <Route path='/email' element={<Email/>}></Route>
+      <Route path='/account' element={<AccountSettings/>}></Route>
     </Routes>
   </BrowserRouter>
 );

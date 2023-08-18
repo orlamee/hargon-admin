@@ -940,3 +940,12 @@ input::-webkit-inner-spin-button {
   border-radius: 50px !important;
   border: 1px solid #F3F4F6 !important;
 }
+
+.admin-badge {
+  color: #228B22;
+  font-size: 11px;
+  font-weight: 500;
+  background: #F3FCF3;
+  padding: 6px 14px;
+  border-radius: 4px;
+}
