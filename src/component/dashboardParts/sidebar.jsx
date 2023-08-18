@@ -113,7 +113,7 @@ function Sidebar() {
             <hr />
             <h6 className="mt-5">SETTINGS</h6>
             <a className="" href="/account"><Icon icon="iconoir:profile-circle" className="me-3 nme-1 fs-4" />Account</a>
-            <a className="" href="/"><Icon icon="icons8:support" className="me-3 nme-1 fs-4" />Support</a>
+            <a className="" href="/support"><Icon icon="icons8:support" className="me-3 nme-1 fs-4" />Support</a>
             <a className="" href="/"><Icon icon="carbon:login" className="me-3 nme-1 fs-4" />Logout</a>
           </div>
         </div>
