@@ -6,7 +6,7 @@ import { useRef } from "react";
 import { Autoplay } from "swiper/modules";
 import { Col, Form, Row } from "react-bootstrap";
 
-function Deposit() {
+function WalletTable() {
   const ref = useRef();
   return (
     <div className="content home">
@@ -16,10 +16,7 @@ function Deposit() {
           <div className="pending-loan">
             <div className="d-flex flex-row">
               <h5 className="me-3">
-                Savings -{" "}
-                <span style={{ color: "#9CA3AF", fontSize: "10px" }}>
-                  Total Deposits
-                </span>
+                Wallet
               </h5>
             </div>
           </div>
@@ -38,25 +35,31 @@ function Deposit() {
         >
           <SwiperSlide>
             <div className="report-card">
-              <h3>Savings customers</h3>
+              <h3>Customer’s wallet</h3>
               <h6 className="mt-3 text-black">0</h6>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="report-card">
-              <h3>Active savings</h3>
+              <h3>Active wallet</h3>
+              <h6 className="mt-3 text-black">0</h6>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="report-card">
+              <h3>Closed wallet</h3>
+              <h6 className="mt-3 text-black">0</h6>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="report-card">
+              <h3>Total deposits</h3>
               <h6 className="mt-3 text-black">0</h6>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="report-card">
               <h3>Total withdrawal</h3>
-              <h6 className="mt-3 text-black">0</h6>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="report-card">
-              <h3>Total balance</h3>
               <h6 className="mt-3 text-black">0</h6>
             </div>
           </SwiperSlide>
@@ -72,12 +75,12 @@ function Deposit() {
         <div className="col-sm-12 px-0">
           <div className="pending-loan">
             <div className="d-flex flex-row">
-              <h5 className="me-3">Deposit </h5>
+              <h5 className="me-3">All Wallets </h5>
             </div>
             <button
               className="btn-save float-end"
               data-bs-toggle="modal"
-              data-bs-target="#add-user"
+              data-bs-target="#add-depo"
               style={{ marginTop: "-38px" }}
             >
               Add <i className="bi bi-plus ms-2"></i>
@@ -97,51 +100,43 @@ function Deposit() {
           >
             <thead className="bg-white rounded-pill">
               <tr>
-                <th>Customer ID</th>
-                <th>Amount</th>
+                <th>User</th>
+                <th>KodeHex</th>
                 <th>Date</th>
-                <th>Savings ID</th>
-                <th>Frequency</th>
-                <th>Interest Rate</th>
-                <th>Balance</th>
-                <th>Status</th>
-                <th>Product</th>
-                <th>Duration</th>
+                <th>Transaction ID</th>
+                <th>Amount</th>
+                <th>Charges</th>
+                <th>Activity</th>
+                
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>#11-22</td>
-                <td>150,000</td>
+                <td>Michael Opara</td>
+                <td>{"<"}Bola{"/>"}</td>
                 <td>10/08/2023</td>
-                <td>100302</td>
-                <td>Monthly</td>
-                <td>50%</td>
+                <td>#253166</td>
+                <td>150,000</td>
                 <td>10000</td>
-                <td><span className="approved">Received</span></td>
-                <td>LP</td>
-                <td>Weekly</td>
+                <td><span className="text-danger"><i className="bi bi-upload me-2"></i>Withdrawal</span></td>
               </tr>
               <tr>
-                <td>#11-22</td>
-                <td>150,000</td>
+                <td>Ola Ola</td>
+                <td>{"<"}Nakel{"/>"}</td>
                 <td>10/08/2023</td>
-                <td>100302</td>
-                <td>Monthly</td>
-                <td>50%</td>
+                <td>#253166</td>
+                <td>150,000</td>
                 <td>10000</td>
-                <td><span className="awaiting">Pending</span></td>
-                <td>LP</td>
-                <td>Weekly</td>
+                <td><span style={{color: "#228B22"}}><i className="bi bi-download me-2"></i>Deposit</span></td>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
-      {/* Add Users */}
+      {/* Add Deposit */}
       <div
         className="modal fade modal-m"
-        id="add-user"
+        id="add-depo"
         data-bs-backdrop="static"
         data-bs-keyboard="false"
         tabindex="-1"
@@ -167,66 +162,44 @@ function Deposit() {
                       <Row className="mb-4 mt-4">
                         <Col>
                           <Form.Control
-                            type="number"
-                            placeholder="Customer ID"
+                            type="text"
+                            placeholder="Enter User Name"
+                          />
+                        </Col>
+                        <Col>
+                          <Form.Control type="text" placeholder="Enter KodeHex" />
+                        </Col>
+                        
+                      </Row>
+                      <Row className="mb-4">
+                        <Col>
+                          <Form.Control
+                            type="datetime-local"
+                            placeholder="Schedule Date and Time"
+                            ref={ref}
+                            onChange={(e) => console.log(e.target.value)}
+                            onFocus={() => (ref.current.type = "datetime-local")}
+                            onBlur={() => (ref.current.type = "text")}
                           />
                         </Col>
                         <Col>
                           <Form.Control type="number" placeholder="Amount" />
                         </Col>
-                        <Col>
-                          <Form.Control
-                            type="date"
-                            placeholder="Date"
-                            ref={ref}
-                            onChange={(e) => console.log(e.target.value)}
-                            onFocus={() => (ref.current.type = "date")}
-                            onBlur={() => (ref.current.type = "text")}
-                          />
-                        </Col>
                       </Row>
                       <Row className="mb-4">
                         <Col>
                           <Form.Control
                             type="number"
-                            placeholder="Savings ID"
+                            placeholder="Charges"
                           />
                         </Col>
                         <Col>
-                          <Form.Control type="number" placeholder="Frequency" />
-                        </Col>
-                        <Col>
-                          <Form.Control
-                            type="number"
-                            placeholder="Interest Rate"
-                          />
-                        </Col>
-                      </Row>
-                      <Row className="mb-4">
-                        <Col>
-                          <Form.Control
-                            type="number"
-                            placeholder="Balance"
-                          />
-                        </Col>
-                        <Col>
-                          <Form.Control type="number" placeholder="Status" />
-                        </Col>
-                        <Col>
-                          <Form.Control type="text" placeholder="Product" />
-                        </Col>
-                      </Row>
-                      <Row className="mb-4">
-                        <Col xs={4}>
-                          <Form.Control
-                            type="number"
-                            placeholder="Duration"
-                          />
+                          <Form.Control type="number" placeholder="Transaction ID" />
                         </Col>
                       </Row>
                       <div className="text-end">
                         <button type="button" className="btn-save">
-                          Add
+                          Add Wallet
                         </button>
                       </div>
                     </Form>
@@ -241,4 +214,4 @@ function Deposit() {
   );
 }
 
-export default Deposit;
+export default WalletTable;

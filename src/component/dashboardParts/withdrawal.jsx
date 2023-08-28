@@ -6,7 +6,7 @@ import { useRef } from "react";
 import { Autoplay } from "swiper/modules";
 import { Col, Form, Row } from "react-bootstrap";
 
-function Deposit() {
+function WithDrawal() {
   const ref = useRef();
   return (
     <div className="content home">
@@ -72,7 +72,7 @@ function Deposit() {
         <div className="col-sm-12 px-0">
           <div className="pending-loan">
             <div className="d-flex flex-row">
-              <h5 className="me-3">Deposit </h5>
+              <h5 className="me-3">Withdrawal </h5>
             </div>
             <button
               className="btn-save float-end"
@@ -101,12 +101,11 @@ function Deposit() {
                 <th>Amount</th>
                 <th>Date</th>
                 <th>Savings ID</th>
-                <th>Frequency</th>
-                <th>Interest Rate</th>
+                <th>Type</th>
                 <th>Balance</th>
                 <th>Status</th>
                 <th>Product</th>
-                <th>Duration</th>
+                <th>Action</th>
               </tr>
             </thead>
             <tbody>
@@ -115,24 +114,26 @@ function Deposit() {
                 <td>150,000</td>
                 <td>10/08/2023</td>
                 <td>100302</td>
-                <td>Monthly</td>
-                <td>50%</td>
+                <td>Break</td>
                 <td>10000</td>
-                <td><span className="approved">Received</span></td>
+                <td><span className="approved">Disbursed</span></td>
                 <td>LP</td>
-                <td>Weekly</td>
-              </tr>
-              <tr>
-                <td>#11-22</td>
-                <td>150,000</td>
-                <td>10/08/2023</td>
-                <td>100302</td>
-                <td>Monthly</td>
-                <td>50%</td>
-                <td>10000</td>
-                <td><span className="awaiting">Pending</span></td>
-                <td>LP</td>
-                <td>Weekly</td>
+                <td>
+                  <div className="dropdown">
+                    <i
+                      className="bi bi-three-dots"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    ></i>
+                    <ul class="dropdown-menu details">
+                      <li>
+                        <a className="dropdown-item" href="#!">
+                          View Details
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
               </tr>
             </tbody>
           </table>
@@ -241,4 +242,4 @@ function Deposit() {
   );
 }
 
-export default Deposit;
+export default WithDrawal;

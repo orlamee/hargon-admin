@@ -949,3 +949,17 @@ input::-webkit-inner-spin-button {
   padding: 6px 14px;
   border-radius: 4px;
 }
+
+.view-com h4 {
+  color: #000;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+}
+
+.view-com p {
+  color: #9CA3AF;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 500;
+}

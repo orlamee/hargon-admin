@@ -342,7 +342,7 @@ function SettingsCompany() {
           </div>
         </div>
       </div>
-      {/* Add Fund Modal */}
+      {/* Add Company Type Modal */}
       <div className="modal fade modal-m" id="add" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div className="modal-dialog modal-dialog-centered modal-lg">
           <div className="modal-content">
@@ -369,7 +369,7 @@ function SettingsCompany() {
           </div>
         </div>
       </div>
-      {/* Edit Fund Modal */}
+      {/* Edit Company Type Modal */}
       <div className="modal fade modal-m" id="edit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div className="modal-dialog modal-dialog-centered modal-lg">
           <div className="modal-content">
@@ -396,7 +396,7 @@ function SettingsCompany() {
           </div>
         </div>
       </div>
-      {/* Add Collateral Modal */}
+      {/* Add Titles Modal */}
       <div className="modal fade modal-m" id="add-collateral" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div className="modal-dialog modal-dialog-centered modal-lg">
           <div className="modal-content">
@@ -423,7 +423,7 @@ function SettingsCompany() {
           </div>
         </div>
       </div>
-      {/* Edit Collateral Modal */}
+      {/* Edit Title Modal */}
       <div className="modal fade modal-m" id="edit-collateral" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div className="modal-dialog modal-dialog-centered modal-lg">
           <div className="modal-content">

@@ -67,6 +67,11 @@ import AppNot from './dashboardPages/appNot';
 import Prompt from './dashboardPages/prompt';
 import Email from './dashboardPages/email';
 import AccountSettings from './dashboardPages/accountSettings';
+import SavingReports from './dashboardPages/savingReports';
+import TotalWithdrawal from './dashboardPages/totalWithdrawal';
+import Wallet from './dashboardPages/wallet';
+import Support from './dashboardPages/support';
+import Complaint from './dashboardPages/complaint';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -117,7 +122,7 @@ root.render(
       <Route path='/debit-link/history' element={<DebitHistory/>}></Route>
       <Route path='/compliance' element={<CheckCompliance/>}></Route>
       <Route path='/compliance/details' element={<ComplianceDetails/>}></Route>
-      <Route path='/merchant/reports' element={<MerchantReports/>}></Route>
+      <Route path='/merchant-reports' element={<MerchantReports/>}></Route>
       <Route path='/manage-merchant' element={<ManageMerchants/>}></Route>
       <Route path='/manage-merchant/details' element={<MerchantDetails/>}></Route>
       <Route path='/merchant-settings' element={<MerchantSettings/>}></Route>
@@ -129,12 +134,17 @@ root.render(
       <Route path='/payment' element={<Payment/>}></Route>
       <Route path='/savings-dashboard' element={<SavingsDashboard/>}></Route>
       <Route path='/total-deposit' element={<TotalDeposit/>}></Route>
+      <Route path='/total-withdrawal' element={<TotalWithdrawal/>}></Route>
       <Route path='/bills' element={<Bills/>}></Route>
       <Route path='/auction' element={<Auction/>}></Route>
       <Route path='/app-notification' element={<AppNot/>}></Route>
       <Route path='/prompt' element={<Prompt/>}></Route>
       <Route path='/email' element={<Email/>}></Route>
       <Route path='/account' element={<AccountSettings/>}></Route>
+      <Route path='/savings-report' element={<SavingReports/>}></Route>
+      <Route path='/waallet' element={<Wallet/>}></Route>
+      <Route path='/support' element={<Support/>}></Route>
+      <Route path='/supportt/view-complain' element={<Complaint/>}></Route>
     </Routes>
   </BrowserRouter>
 );

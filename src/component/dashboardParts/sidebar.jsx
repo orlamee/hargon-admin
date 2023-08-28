@@ -76,7 +76,7 @@ function Sidebar() {
               <a href="/manage-merchant" className="sub-item">Manage merchants</a>
               <a href="/merchant-inventory" className="sub-item">Inventory</a>
               <a href="/merchant-settings" className="sub-item">Settings</a>
-              <a href="/merchant-/reports" className="sub-item">Reports</a>
+              <a href="/merchant-reports" className="sub-item">Reports</a>
             </div>
           </div>
           <a className="" href="/payment"><Icon icon="solar:card-linear" className="me-3 nme-1 fs-4" />Payment</a>
@@ -85,8 +85,8 @@ function Sidebar() {
             <div className="sub-menu">
               <a href="/savings-dashboard" className="sub-item">Dashboard</a>
               <a href="/total-deposit" className="sub-item">Total deposit</a>
-              <a href="" className="sub-item">Total withdrawal</a>
-              <a href="" className="sub-item">Report</a>
+              <a href="/total-withdrawal" className="sub-item">Total withdrawal</a>
+              <a href="/savings-report" className="sub-item">Report</a>
             </div>
           </div>
           <div className="item">
@@ -106,7 +106,7 @@ function Sidebar() {
               <a href="/app-notification" className="sub-item">Application notification</a>
             </div>
           </div>
-          <a className="" href="/"><Icon icon="ion:wallet-outline" className="me-3 nme-1 fs-4" />Wallet</a>
+          <a className="" href="/wallet"><Icon icon="ion:wallet-outline" className="me-3 nme-1 fs-4" />Wallet</a>
           <a className="" href="/auction"><Icon icon="mingcute:auction-line" className="me-3 nme-1 fs-4" />Auction</a>
           <a className="" href="/bills"><Icon icon="tabler:receipt" className="me-3 nme-1 fs-4" />Bills</a>
           <div className="my-5">
