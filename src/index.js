@@ -142,9 +142,9 @@ root.render(
       <Route path='/email' element={<Email/>}></Route>
       <Route path='/account' element={<AccountSettings/>}></Route>
       <Route path='/savings-report' element={<SavingReports/>}></Route>
-      <Route path='/waallet' element={<Wallet/>}></Route>
+      <Route path='/wallet' element={<Wallet/>}></Route>
       <Route path='/support' element={<Support/>}></Route>
-      <Route path='/supportt/view-complain' element={<Complaint/>}></Route>
+      <Route path='/support/view-complain' element={<Complaint/>}></Route>
     </Routes>
   </BrowserRouter>
 );
