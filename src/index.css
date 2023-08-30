@@ -125,6 +125,7 @@ div.content {
 .side-bar .sub-menu {
   background: transparent;
   display: none;
+  padding-left: 50px;
 }
 
 .side-bar .menu .item .sub-menu a {
