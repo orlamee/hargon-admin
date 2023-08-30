@@ -72,6 +72,10 @@ import TotalWithdrawal from './dashboardPages/totalWithdrawal';
 import Wallet from './dashboardPages/wallet';
 import Support from './dashboardPages/support';
 import Complaint from './dashboardPages/complaint';
+import CareerApplications from './dashboardPages/careerApplications';
+import CareerView from './dashboardPages/careerView';
+import ManageJob from './dashboardPages/manageJob';
+import AddJob from './dashboardPages/addJob';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -145,6 +149,10 @@ root.render(
       <Route path='/wallet' element={<Wallet/>}></Route>
       <Route path='/support' element={<Support/>}></Route>
       <Route path='/support/view-complain' element={<Complaint/>}></Route>
+      <Route path='/career' element={<CareerApplications/>}></Route>
+      <Route path='/career/details' element={<CareerView/>}></Route>
+      <Route path='/career/job-post' element={<ManageJob/>}></Route>
+      <Route path='/career/add--job' element={<AddJob/>}></Route>
     </Routes>
   </BrowserRouter>
 );

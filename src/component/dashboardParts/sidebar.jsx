@@ -111,8 +111,8 @@ function Sidebar() {
           <div className="item">
             <a className="sub-btn"><Icon icon="ion:wallet-outline" className="me-3 nme-1 fs-4" />Career <i className="bi bi-chevron-right dropdown"></i></a>
             <div className="sub-menu">
-              <a href="" className="sub-item">Applications</a>
-              <a href="" className="sub-item">Manage Job Posts</a>
+              <a href="/career" className="sub-item">Applications</a>
+              <a href="/career/job-post" className="sub-item">Manage Job Posts</a>
               <a href="" className="sub-item">Settings</a>
             </div>
           </div>
