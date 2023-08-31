@@ -1,7 +1,6 @@
 import SearchNotification from "./searchNotification";
 import { Form } from "react-bootstrap";
-
-
+import success from "../../assets/success.svg";
 
 export default function CreateJob() {
   return (
@@ -17,13 +16,12 @@ export default function CreateJob() {
               <button
                 className="btn-save"
                 style={{ marginTop: "-38px" }}
+                data-bs-toggle="modal"
+                data-bs-target="#post-job"
               >
                 Post Job
               </button>
-              <button
-                className="btn-white ms-2"
-                style={{ marginTop: "-38px" }}
-              >
+              <button className="btn-white ms-2" style={{ marginTop: "-38px" }}>
                 Save As Draft
               </button>
             </div>
@@ -33,7 +31,7 @@ export default function CreateJob() {
       <div className="mt-2 row mx-5">
         <div className="col-sm-12 px-0">
           <div className="bg-white p-4 view-loans">
-          <div className="overview">
+            <div className="overview">
               <div className="row justify-content-center">
                 <div className="col-sm-8">
                   <div className="details-card mt-3">
@@ -45,10 +43,7 @@ export default function CreateJob() {
                             id="pills-tab"
                             role="tablist"
                           >
-                            <li
-                              className="nav-item"
-                              role="presentation"
-                            >
+                            <li className="nav-item" role="presentation">
                               <button
                                 className="nav-link active"
                                 id="pills-jt-tab"
@@ -62,10 +57,7 @@ export default function CreateJob() {
                                 Job Title
                               </button>
                             </li>
-                            <li
-                              className="nav-item"
-                              role="presentation"
-                            >
+                            <li className="nav-item" role="presentation">
                               <button
                                 className="nav-link"
                                 id="pills-desc-tab"
@@ -79,10 +71,7 @@ export default function CreateJob() {
                                 Description
                               </button>
                             </li>
-                            <li
-                              className="nav-item"
-                              role="presentation"
-                            >
+                            <li className="nav-item" role="presentation">
                               <button
                                 className="nav-link"
                                 id="pills-resp-tab"
@@ -96,10 +85,7 @@ export default function CreateJob() {
                                 Responsibilities
                               </button>
                             </li>
-                            <li
-                              className="nav-item"
-                              role="presentation"
-                            >
+                            <li className="nav-item" role="presentation">
                               <button
                                 className="nav-link"
                                 id="pills-skill-tab"
@@ -113,10 +99,7 @@ export default function CreateJob() {
                                 Requirements and Skills
                               </button>
                             </li>
-                            <li
-                              className="nav-item"
-                              role="presentation"
-                            >
+                            <li className="nav-item" role="presentation">
                               <button
                                 className="nav-link"
                                 id="pills-place-tab"
@@ -130,10 +113,7 @@ export default function CreateJob() {
                                 Job Type/Work Place Type
                               </button>
                             </li>
-                            <li
-                              className="nav-item"
-                              role="presentation"
-                            >
+                            <li className="nav-item" role="presentation">
                               <button
                                 className="nav-link"
                                 id="pills-question-tab"
@@ -147,10 +127,7 @@ export default function CreateJob() {
                                 Application Questions
                               </button>
                             </li>
-                            <li
-                              className="nav-item"
-                              role="presentation"
-                            >
+                            <li className="nav-item" role="presentation">
                               <button
                                 className="nav-link"
                                 id="pills-uploads-tab"
@@ -169,10 +146,7 @@ export default function CreateJob() {
                       </div>
                       <div className="row mt-5">
                         <div className="col-sm-12">
-                          <div
-                            class="tab-content"
-                            id="pills-tabContent"
-                          >
+                          <div class="tab-content" id="pills-tabContent">
                             <div
                               class="tab-pane fade show active"
                               id="pills-jt"
@@ -208,7 +182,11 @@ export default function CreateJob() {
                                     <div className="job-tab">
                                       <Form>
                                         <Form.Group className="mb-3">
-                                          <Form.Control as="textarea" rows={5} placeholder="Enter Description" />
+                                          <Form.Control
+                                            as="textarea"
+                                            rows={5}
+                                            placeholder="Enter Description"
+                                          />
                                         </Form.Group>
                                       </Form>
                                     </div>
@@ -229,7 +207,11 @@ export default function CreateJob() {
                                     <div className="job-tab">
                                       <Form>
                                         <Form.Group className="mb-3">
-                                          <Form.Control as="textarea" rows={5} placeholder="Enter Responsibilities" />
+                                          <Form.Control
+                                            as="textarea"
+                                            rows={5}
+                                            placeholder="Enter Responsibilities"
+                                          />
                                         </Form.Group>
                                       </Form>
                                     </div>
@@ -250,7 +232,11 @@ export default function CreateJob() {
                                     <div className="job-tab">
                                       <Form>
                                         <Form.Group className="mb-3">
-                                          <Form.Control as="textarea" rows={5} placeholder="Enter Requirements and Skills" />
+                                          <Form.Control
+                                            as="textarea"
+                                            rows={5}
+                                            placeholder="Enter Requirements and Skills"
+                                          />
                                         </Form.Group>
                                       </Form>
                                     </div>
@@ -281,7 +267,6 @@ export default function CreateJob() {
                                         <option value="2">Web Developer</option>
                                         <option value="3">UI/UX</option>
                                       </Form.Select>
-                                      
                                     </div>
                                   </div>
                                 </div>
@@ -307,8 +292,16 @@ export default function CreateJob() {
                                       </Form.Select>
                                       <div className="mb-4 forgot-p">
                                         <div className="form-check">
-                                          <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                                          <label className="form-check-label" htmlFor="flexCheckDefault">
+                                          <input
+                                            className="form-check-input"
+                                            type="checkbox"
+                                            value=""
+                                            id="flexCheckDefault"
+                                          />
+                                          <label
+                                            className="form-check-label"
+                                            htmlFor="flexCheckDefault"
+                                          >
                                             Compulsory
                                           </label>
                                         </div>
@@ -322,8 +315,16 @@ export default function CreateJob() {
                                       </Form.Select>
                                       <div className="mb-4 forgot-p">
                                         <div className="form-check">
-                                          <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                                          <label className="form-check-label" htmlFor="flexCheckDefault">
+                                          <input
+                                            className="form-check-input"
+                                            type="checkbox"
+                                            value=""
+                                            id="flexCheckDefault"
+                                          />
+                                          <label
+                                            className="form-check-label"
+                                            htmlFor="flexCheckDefault"
+                                          >
                                             Compulsory
                                           </label>
                                         </div>
@@ -337,8 +338,16 @@ export default function CreateJob() {
                                       </Form.Select>
                                       <div className="mb-4 forgot-p">
                                         <div className="form-check">
-                                          <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                                          <label className="form-check-label" htmlFor="flexCheckDefault">
+                                          <input
+                                            className="form-check-input"
+                                            type="checkbox"
+                                            value=""
+                                            id="flexCheckDefault"
+                                          />
+                                          <label
+                                            className="form-check-label"
+                                            htmlFor="flexCheckDefault"
+                                          >
                                             Compulsory
                                           </label>
                                         </div>
@@ -352,8 +361,16 @@ export default function CreateJob() {
                                       </Form.Select>
                                       <div className="mb-4 forgot-p">
                                         <div className="form-check">
-                                          <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                                          <label className="form-check-label" htmlFor="flexCheckDefault">
+                                          <input
+                                            className="form-check-input"
+                                            type="checkbox"
+                                            value=""
+                                            id="flexCheckDefault"
+                                          />
+                                          <label
+                                            className="form-check-label"
+                                            htmlFor="flexCheckDefault"
+                                          >
                                             Compulsory
                                           </label>
                                         </div>
@@ -367,8 +384,16 @@ export default function CreateJob() {
                                       </Form.Select>
                                       <div className="mb-4 forgot-p">
                                         <div className="form-check">
-                                          <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                                          <label className="form-check-label" htmlFor="flexCheckDefault">
+                                          <input
+                                            className="form-check-input"
+                                            type="checkbox"
+                                            value=""
+                                            id="flexCheckDefault"
+                                          />
+                                          <label
+                                            className="form-check-label"
+                                            htmlFor="flexCheckDefault"
+                                          >
                                             Compulsory
                                           </label>
                                         </div>
@@ -382,8 +407,16 @@ export default function CreateJob() {
                                       </Form.Select>
                                       <div className="mb-4 forgot-p">
                                         <div className="form-check">
-                                          <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                                          <label className="form-check-label" htmlFor="flexCheckDefault">
+                                          <input
+                                            className="form-check-input"
+                                            type="checkbox"
+                                            value=""
+                                            id="flexCheckDefault"
+                                          />
+                                          <label
+                                            className="form-check-label"
+                                            htmlFor="flexCheckDefault"
+                                          >
                                             Compulsory
                                           </label>
                                         </div>
@@ -397,8 +430,16 @@ export default function CreateJob() {
                                       </Form.Select>
                                       <div className="mb-4 forgot-p">
                                         <div className="form-check">
-                                          <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                                          <label className="form-check-label" htmlFor="flexCheckDefault">
+                                          <input
+                                            className="form-check-input"
+                                            type="checkbox"
+                                            value=""
+                                            id="flexCheckDefault"
+                                          />
+                                          <label
+                                            className="form-check-label"
+                                            htmlFor="flexCheckDefault"
+                                          >
                                             Compulsory
                                           </label>
                                         </div>
@@ -412,13 +453,20 @@ export default function CreateJob() {
                                       </Form.Select>
                                       <div className="mb-4 forgot-p">
                                         <div className="form-check">
-                                          <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                                          <label className="form-check-label" htmlFor="flexCheckDefault">
+                                          <input
+                                            className="form-check-input"
+                                            type="checkbox"
+                                            value=""
+                                            id="flexCheckDefault"
+                                          />
+                                          <label
+                                            className="form-check-label"
+                                            htmlFor="flexCheckDefault"
+                                          >
                                             Compulsory
                                           </label>
                                         </div>
                                       </div>
-                                      
                                     </div>
                                   </div>
                                 </div>
@@ -443,8 +491,16 @@ export default function CreateJob() {
                                       </Form.Select>
                                       <div className="mb-4 forgot-p">
                                         <div className="form-check">
-                                          <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                                          <label className="form-check-label" htmlFor="flexCheckDefault">
+                                          <input
+                                            className="form-check-input"
+                                            type="checkbox"
+                                            value=""
+                                            id="flexCheckDefault"
+                                          />
+                                          <label
+                                            className="form-check-label"
+                                            htmlFor="flexCheckDefault"
+                                          >
                                             Compulsory
                                           </label>
                                         </div>
@@ -457,8 +513,16 @@ export default function CreateJob() {
                                       </Form.Select>
                                       <div className="mb-4 forgot-p">
                                         <div className="form-check">
-                                          <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                                          <label className="form-check-label" htmlFor="flexCheckDefault">
+                                          <input
+                                            className="form-check-input"
+                                            type="checkbox"
+                                            value=""
+                                            id="flexCheckDefault"
+                                          />
+                                          <label
+                                            className="form-check-label"
+                                            htmlFor="flexCheckDefault"
+                                          >
                                             Compulsory
                                           </label>
                                         </div>
@@ -473,6 +537,38 @@ export default function CreateJob() {
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Post Job */}
+      <div
+        className="modal fade vprogress"
+        id="post-job"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+            <div className="modal-header">
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div className="modal-body">
+              <div className="row justify-content-center not-alert mb-4">
+                <div className="col-sm-9 text-center">
+                  <img src={success} alt="success" className="img-fluid" />
+                  <h3 className="my-3">Job Posted Successfully</h3>
+                  <p>You have successfully posted a job to the website</p>
                 </div>
               </div>
             </div>
