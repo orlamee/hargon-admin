@@ -152,7 +152,7 @@ root.render(
       <Route path='/career' element={<CareerApplications/>}></Route>
       <Route path='/career/details' element={<CareerView/>}></Route>
       <Route path='/career/job-post' element={<ManageJob/>}></Route>
-      <Route path='/career/add--job' element={<AddJob/>}></Route>
+      <Route path='/career/add-job' element={<AddJob/>}></Route>
     </Routes>
   </BrowserRouter>
 );
