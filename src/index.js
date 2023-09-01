@@ -76,6 +76,8 @@ import CareerApplications from './dashboardPages/careerApplications';
 import CareerView from './dashboardPages/careerView';
 import ManageJob from './dashboardPages/manageJob';
 import AddJob from './dashboardPages/addJob';
+import CareerSettings from './dashboardPages/careerSettings';
+import CreateEmail from './dashboardPages/createEmail';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -144,6 +146,7 @@ root.render(
       <Route path='/app-notification' element={<AppNot/>}></Route>
       <Route path='/prompt' element={<Prompt/>}></Route>
       <Route path='/email' element={<Email/>}></Route>
+      <Route path='/create-email' element={<CreateEmail/>}></Route>
       <Route path='/account' element={<AccountSettings/>}></Route>
       <Route path='/savings-report' element={<SavingReports/>}></Route>
       <Route path='/wallet' element={<Wallet/>}></Route>
@@ -153,6 +156,7 @@ root.render(
       <Route path='/career/details' element={<CareerView/>}></Route>
       <Route path='/career/job-post' element={<ManageJob/>}></Route>
       <Route path='/career/add-job' element={<AddJob/>}></Route>
+      <Route path='/career/settings' element={<CareerSettings/>}></Route>
     </Routes>
   </BrowserRouter>
 );

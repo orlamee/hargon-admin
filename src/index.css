@@ -227,6 +227,7 @@ div.content {
 .swiper-pagination-bullets.swiper-pagination-horizontal {
   top: -1px !important;
   left: 155px !important;
+  z-index: 0;
 }
 
 .graphs img {

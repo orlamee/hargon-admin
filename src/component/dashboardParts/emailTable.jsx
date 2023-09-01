@@ -13,14 +13,13 @@ function EmailTable() {
             <div className="d-flex flex-row">
               <h5 className="me-3">Manage Email </h5>
             </div>
-            <button
+            <a
               className="btn-save float-end"
-              // data-bs-toggle="modal"
-              // data-bs-target="#add-user"
+              href="/create-email"
               style={{ marginTop: "-38px" }}
             >
               Create Email <i className="bi bi-plus ms-2"></i>
-            </button>
+            </a>
           </div>
         </div>
       </div>

@@ -113,7 +113,7 @@ function Sidebar() {
             <div className="sub-menu">
               <a href="/career" className="sub-item">Applications</a>
               <a href="/career/job-post" className="sub-item">Manage Job Posts</a>
-              <a href="" className="sub-item">Settings</a>
+              <a href="/career/settings" className="sub-item">Settings</a>
             </div>
           </div>
           <a className="" href="/bills"><Icon icon="tabler:receipt" className="me-3 nme-1 fs-4" />Bills</a>
