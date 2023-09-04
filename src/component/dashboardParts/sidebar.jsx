@@ -104,10 +104,18 @@ function Sidebar() {
               <a href="/email" className="sub-item">Email</a>
               <a href="/prompt" className="sub-item">Prompt</a>
               <a href="/app-notification" className="sub-item">Application notification</a>
+              <a href="/marketing/settings" className="sub-item">Settings</a>
             </div>
           </div>
           <a className="" href="/wallet"><Icon icon="ion:wallet-outline" className="me-3 nme-1 fs-4" />Wallet</a>
           <a className="" href="/auction"><Icon icon="mingcute:auction-line" className="me-3 nme-1 fs-4" />Auction</a>
+          <div className="item">
+            <a className="sub-btn"><Icon icon="jam:users" className="me-3 nme-1 fs-4" />Member <i className="bi bi-chevron-right dropdown"></i></a>
+            <div className="sub-menu">
+              <a href="/members" className="sub-item">Manage Members</a>
+              <a href="/members/settings" className="sub-item">Settings</a>
+            </div>
+          </div>
           <div className="item">
             <a className="sub-btn"><Icon icon="ion:wallet-outline" className="me-3 nme-1 fs-4" />Career <i className="bi bi-chevron-right dropdown"></i></a>
             <div className="sub-menu">

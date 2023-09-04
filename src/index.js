@@ -78,6 +78,10 @@ import ManageJob from './dashboardPages/manageJob';
 import AddJob from './dashboardPages/addJob';
 import CareerSettings from './dashboardPages/careerSettings';
 import CreateEmail from './dashboardPages/createEmail';
+import MarketingSettings from './dashboardPages/marketingSettings';
+import Members from './dashboardPages/members';
+import MemberDetails from './dashboardPages/memberDetails';
+import MemberSettings from './dashboardPages/memberSettings';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -157,6 +161,10 @@ root.render(
       <Route path='/career/job-post' element={<ManageJob/>}></Route>
       <Route path='/career/add-job' element={<AddJob/>}></Route>
       <Route path='/career/settings' element={<CareerSettings/>}></Route>
+      <Route path='/marketing/settings' element={<MarketingSettings/>}></Route>
+      <Route path='/members' element={<Members/>}></Route>
+      <Route path='/members/details' element={<MemberDetails/>}></Route>
+      <Route path='/members/setings' element={<MemberSettings/>}></Route>
     </Routes>
   </BrowserRouter>
 );

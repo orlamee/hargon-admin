@@ -523,6 +523,16 @@ tr {
   border: 1px solid #328a28 !important;
 }
 
+.btn-delete {
+  background: #FFEBEB !important;
+  color: #FF0606 !important;
+  padding: 12px 30px !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  border-radius: 50px !important;
+  border: 1px solid #FFEBEB !important;
+}
+
 .btn-white {
   background: #fff !important;
   color: #328a28 !important;

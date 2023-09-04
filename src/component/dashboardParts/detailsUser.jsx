@@ -68,7 +68,7 @@ function DetailsUsers() {
         <div className="col-sm-12 px-0">
           <div className="bg-white p-4 view-loans">
             <div className="row justify-content-center mt-5">
-              <div className="col-sm-10">
+              <div className="col-sm-12">
                 <div className="tog-bg p-1">
                   <ul
                     className="nav nav-pills nav-justified"
@@ -200,6 +200,34 @@ function DetailsUsers() {
                         aria-selected="false"
                       >
                         Payments
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="pills-refer-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-refer"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-refer"
+                        aria-selected="false"
+                      >
+                        Referrals
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="pills-lender-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-lender"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-lender"
+                        aria-selected="false"
+                      >
+                        Lenders
                       </button>
                     </li>
                   </ul>

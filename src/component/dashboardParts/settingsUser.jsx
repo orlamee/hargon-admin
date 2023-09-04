@@ -20,7 +20,7 @@ function SettingsUser() {
         <div className="col-sm-12 px-0">
           <div className="bg-white p-4 view-loans">
             <div className="row justify-content-center mt-5">
-              <div className="col-sm-9">
+              <div className="col-sm-10">
                 <div className="tog-bg p-1">
                   <ul
                     className="nav nav-pills nav-justified"
