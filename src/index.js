@@ -164,7 +164,7 @@ root.render(
       <Route path='/marketing/settings' element={<MarketingSettings/>}></Route>
       <Route path='/members' element={<Members/>}></Route>
       <Route path='/members/details' element={<MemberDetails/>}></Route>
-      <Route path='/members/setings' element={<MemberSettings/>}></Route>
+      <Route path='/members/settings' element={<MemberSettings/>}></Route>
     </Routes>
   </BrowserRouter>
 );
