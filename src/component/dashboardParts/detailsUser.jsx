@@ -205,12 +205,12 @@ function DetailsUsers() {
                     <li class="nav-item" role="presentation">
                       <button
                         class="nav-link"
-                        id="pills-refer-tab"
+                        id="pills-referal-tab"
                         data-bs-toggle="pill"
-                        data-bs-target="#pills-refer"
+                        data-bs-target="#pills-referal"
                         type="button"
                         role="tab"
-                        aria-controls="pills-refer"
+                        aria-controls="pills-referal"
                         aria-selected="false"
                       >
                         Referrals
@@ -1747,6 +1747,52 @@ function DetailsUsers() {
                         </div>
                       </div>
                     </div>
+                  </div>
+                  <div
+                    className="tab-pane fade"
+                    id="pills-referal"
+                    role="tabpanel"
+                    aria-labelledby="pills-referal-tab"
+                    tabIndex="0"
+                  >
+                    <div className="guarantor">
+                      <div className="row justify-content-center">
+                        <div className="col-sm-7">
+                          <div className="details-card">
+                            <div className="bg-white p-4">
+                              <h3>Referral Activities</h3>
+                              <hr />
+                              <div className="row">
+                                <div className="col-sm-3 mb-3">
+                                  <h5>Referral Code</h5>
+                                  <h6 style={{color: "#228B22"}}>David2586AD</h6>
+                                </div>
+                              </div>
+                              <div className="row mt-3">
+                                <div className="col-sm-4 mb-3">
+                                  <h5>Users referred</h5>
+                                  <h6>20</h6>
+                                </div>
+                                <div className="col-sm-4 mb-3">
+                                  <h5>New User Signup With Link</h5>
+                                  <h6>20</h6>
+                                </div>
+                                <div className="col-sm-3 mb-3">
+                                  <h5>Referral Code</h5>
+                                  <h6>20/<span style={{color: "#228B22"}}>100</span></h6>
+                                </div>
+                              </div>
+                              <div className="row mt-3">
+                                <div className="col mb-3">
+                                  <h5>Referral Link</h5>
+                                  <h6 style={{color: "#228B22"}}>htgwgvgdbcbhbrfhbfhbhtbghtbhhcbfhrfjnjvnfjnvjgnjngjbhgfvrgf vbfvhbfhvbbvhhbhbb cb cvc v</h6>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>                 
                   </div>
                 </div>
               </div>
