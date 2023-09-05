@@ -72,7 +72,6 @@ function Sidebar() {
               <a href="/manage-company" className="sub-item">Manage company</a>
               <a href="/onboard-company" className="sub-item">Onboarding company</a>
               <a href="/company-settings" className="sub-item">Settings</a>
-              {/* <a href="/report" className="sub-item">Report</a> */}
             </div>
           </div>
           <div className="item">
