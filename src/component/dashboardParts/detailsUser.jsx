@@ -219,12 +219,12 @@ function DetailsUsers() {
                     <li class="nav-item" role="presentation">
                       <button
                         class="nav-link"
-                        id="pills-lender-tab"
+                        id="pills-lenders-tab"
                         data-bs-toggle="pill"
-                        data-bs-target="#pills-lender"
+                        data-bs-target="#pills-lenders"
                         type="button"
                         role="tab"
-                        aria-controls="pills-lender"
+                        aria-controls="pills-lenders"
                         aria-selected="false"
                       >
                         Lenders
@@ -1793,6 +1793,112 @@ function DetailsUsers() {
                         </div>
                       </div>
                     </div>                 
+                  </div>
+                  <div
+                    className="tab-pane fade"
+                    id="pills-lenders"
+                    role="tabpanel"
+                    aria-labelledby="pills-lenders-tab"
+                    tabIndex="0"
+                  >
+                    <div className="guarantor">
+                      <div className="row justify-content-center">
+                        <div className="col-sm-7">
+                          <div className="details-card pb-0">
+                            <div className="bg-white p-4">
+                              <h3>Loan Tenure</h3>
+                              <hr />
+                              <div className="row">
+                                <div className="col-sm-4">
+                                  <h5>Tenure Types</h5>
+                                  <h6>Days</h6>
+                                </div>
+                                <div className="col-sm-4">
+                                  <h5>Minimum Loan Tenure</h5>
+                                  <h6>1 Month</h6>
+                                </div>
+                                <div className="col-sm-4">
+                                  <h5>Maximum Loan Tenure</h5>
+                                  <h6>1 Month</h6>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="details-card pb-0">
+                            <div className="bg-white p-4">
+                              <h3>Risk Appetite</h3>
+                              <hr />
+                              <div className="row">
+                                <div className="col-sm-4">
+                                  <h5>Minimum Individual Loan Amount</h5>
+                                  <h6>N 100,000</h6>
+                                </div>
+                                <div className="col-sm-4">
+                                  <h5>Tolerance Tisk</h5>
+                                  <h6>Low</h6>
+                                </div>
+                                <div className="col-sm-4">
+                                  <h5>Maximum  Individual Loan Amount</h5>
+                                  <h6>N 200,000</h6>
+                                </div>
+                              </div>
+                              <div className="row mt-3">
+                                <div className="col-sm-4">
+                                  <h5>Maximum amount to give in a month</h5>
+                                  <h6>N 200,000</h6>
+                                </div>
+                                <div className="col-sm-4">
+                                  <h5>Maximum Cummulative Loan Amount</h5>
+                                  <h6>N 200,000</h6>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="details-card pb-0">
+                            <div className="bg-white p-4">
+                              <h3>Borrower</h3>
+                              <hr />
+                              <div className="row">
+                                <div className="col-sm-4">
+                                  <h5>Type of Borrower</h5>
+                                  <h6>Friends and Family</h6>
+                                </div>
+                                <div className="col-sm-4">
+                                  <h5>Type of Borrower</h5>
+                                  <h6>Public</h6>
+                                </div>
+                                <div className="col-sm-4">
+                                  <h5>Categories of Borrowers</h5>
+                                  <h6>Employed</h6>
+                                </div>
+                              </div>
+                              <div className="row mt-3">
+                                <div className="col-sm-4">
+                                  <h5>Location of Borrowers</h5>
+                                  <h6>Lagos, Ogun, Osun</h6>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="details-card">
+                            <div className="bg-white p-4">
+                              <h3>Profile Visibility</h3>
+                              <hr />
+                              <div className="row">
+                                <div className="col-sm-4">
+                                  <h5>Hide KodHex</h5>
+                                  <h6>YES</h6>
+                                </div>
+                                <div className="col-sm-4">
+                                  <h5>Profile Private</h5>
+                                  <h6>YES</h6>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>               
                   </div>
                 </div>
               </div>

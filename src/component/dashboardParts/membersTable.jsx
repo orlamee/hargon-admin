@@ -91,6 +91,166 @@ function MemberTables() {
                   </div>
                 </td>
               </tr>
+              <tr>
+                <td>John Doe</td>
+                <td>Admin</td>
+                <td>johndoe@gmail.com</td>
+                <td>15/08/2023, 10:00am</td>
+                <td>
+                  <div className="dropdown">
+                    <i
+                      className="bi bi-three-dots"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    ></i>
+                    <ul class="dropdown-menu details">
+                      <li>
+                        <a className="dropdown-item" href="/members/details">
+                          <i className="bi bi-eye me-2"></i>View Member Details
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          className="dropdown-item"
+                          data-bs-toggle="modal"
+                          data-bs-target="#delete-member"
+                        >
+                          <i className="bi bi-trash3 me-2 text-danger"></i>
+                          Delete Member
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>John Doe</td>
+                <td>Admin</td>
+                <td>johndoe@gmail.com</td>
+                <td>15/08/2023, 10:00am</td>
+                <td>
+                  <div className="dropdown">
+                    <i
+                      className="bi bi-three-dots"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    ></i>
+                    <ul class="dropdown-menu details">
+                      <li>
+                        <a className="dropdown-item" href="/members/details">
+                          <i className="bi bi-eye me-2"></i>View Member Details
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          className="dropdown-item"
+                          data-bs-toggle="modal"
+                          data-bs-target="#delete-member"
+                        >
+                          <i className="bi bi-trash3 me-2 text-danger"></i>
+                          Delete Member
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>John Doe</td>
+                <td>Admin</td>
+                <td>johndoe@gmail.com</td>
+                <td>15/08/2023, 10:00am</td>
+                <td>
+                  <div className="dropdown">
+                    <i
+                      className="bi bi-three-dots"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    ></i>
+                    <ul class="dropdown-menu details">
+                      <li>
+                        <a className="dropdown-item" href="/members/details">
+                          <i className="bi bi-eye me-2"></i>View Member Details
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          className="dropdown-item"
+                          data-bs-toggle="modal"
+                          data-bs-target="#delete-member"
+                        >
+                          <i className="bi bi-trash3 me-2 text-danger"></i>
+                          Delete Member
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Maryanne Obidi</td>
+                <td>Admin</td>
+                <td>johndoe@gmail.com</td>
+                <td>15/08/2023, 10:00am</td>
+                <td>
+                  <div className="dropdown">
+                    <i
+                      className="bi bi-three-dots"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    ></i>
+                    <ul class="dropdown-menu details">
+                      <li>
+                        <a className="dropdown-item" href="/members/details">
+                          <i className="bi bi-eye me-2"></i>View Member Details
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          className="dropdown-item"
+                          data-bs-toggle="modal"
+                          data-bs-target="#delete-member"
+                        >
+                          <i className="bi bi-trash3 me-2 text-danger"></i>
+                          Delete Member
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>John Doe</td>
+                <td>Admin</td>
+                <td>johndoe@gmail.com</td>
+                <td>15/08/2023, 10:00am</td>
+                <td>
+                  <div className="dropdown">
+                    <i
+                      className="bi bi-three-dots"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    ></i>
+                    <ul class="dropdown-menu details">
+                      <li>
+                        <a className="dropdown-item" href="/members/details">
+                          <i className="bi bi-eye me-2"></i>View Member Details
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          className="dropdown-item"
+                          data-bs-toggle="modal"
+                          data-bs-target="#delete-member"
+                        >
+                          <i className="bi bi-trash3 me-2 text-danger"></i>
+                          Delete Member
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
             </tbody>
           </table>
         </div>
