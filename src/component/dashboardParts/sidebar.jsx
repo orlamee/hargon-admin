@@ -1,8 +1,13 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import { useLocation } from "react-router-dom";
 import logo from "../../assets/logo.svg"
 import { Icon } from "@iconify/react"
 
 function Sidebar() {
+  const location = useLocation(); 
+  const isLinkActive = (path) => {
+    return location.pathname === path;
+  };
   return (
     <div className="sidebar side-bar">
       <div className="row justify-content-center mt-4">
@@ -21,7 +26,7 @@ function Sidebar() {
       <div className="row mt-3 justify-content-center">
         <div className="col-sm-10">
           <h6>MAIN MENU</h6>
-          <a className="" href="/dashboard"><Icon icon="radix-icons:dashboard" className="me-3 nme-1 fs-4" />Dashboard</a>
+          <a className={isLinkActive('/dashboard') ? 'active-link' : ''} href="/dashboard"><Icon icon="radix-icons:dashboard" className="me-3 nme-1 fs-4" />Dashboard</a>
           <div className="item">
             <a className="sub-btn"><Icon icon="streamline:interface-user-add-actions-add-close-geometric-human-person-plus-single-up-user" className="me-3 nme-1 fs-4" />Application <i className="bi bi-chevron-right dropdown"></i></a>
             <div className="sub-menu">
@@ -79,7 +84,7 @@ function Sidebar() {
               <a href="/merchant-reports" className="sub-item">Reports</a>
             </div>
           </div>
-          <a className="" href="/payment"><Icon icon="solar:card-linear" className="me-3 nme-1 fs-4" />Payment</a>
+          <a className={isLinkActive('/payment') ? 'active-link' : ''}  href="/payment"><Icon icon="solar:card-linear" className="me-3 nme-1 fs-4" />Payment</a>
           <div className="item">
             <a className="sub-btn"><Icon icon="streamline:money-atm-card-3-deposit-money-payment-finance-atm-withdraw" className="me-3 nme-1 fs-4" />Savings <i className="bi bi-chevron-right dropdown"></i></a>
             <div className="sub-menu">
@@ -107,8 +112,8 @@ function Sidebar() {
               <a href="/marketing/settings" className="sub-item">Settings</a>
             </div>
           </div>
-          <a className="" href="/wallet"><Icon icon="ion:wallet-outline" className="me-3 nme-1 fs-4" />Wallet</a>
-          <a className="" href="/auction"><Icon icon="mingcute:auction-line" className="me-3 nme-1 fs-4" />Auction</a>
+          <a className={isLinkActive('/wallet') ? 'active-link' : ''}  href="/wallet"><Icon icon="ion:wallet-outline" className="me-3 nme-1 fs-4" />Wallet</a>
+          <a className={isLinkActive('/auction') ? 'active-link' : ''}  href="/auction"><Icon icon="mingcute:auction-line" className="me-3 nme-1 fs-4" />Auction</a>
           <div className="item">
             <a className="sub-btn"><Icon icon="jam:users" className="me-3 nme-1 fs-4" />Member <i className="bi bi-chevron-right dropdown"></i></a>
             <div className="sub-menu">
@@ -124,12 +129,12 @@ function Sidebar() {
               <a href="/career/settings" className="sub-item">Settings</a>
             </div>
           </div>
-          <a className="" href="/bills"><Icon icon="tabler:receipt" className="me-3 nme-1 fs-4" />Bills</a>
+          <a className={isLinkActive('/bills') ? 'active-link' : ''}  href="/bills"><Icon icon="tabler:receipt" className="me-3 nme-1 fs-4" />Bills</a>
           <div className="my-5">
             <hr />
             <h6 className="mt-5">SETTINGS</h6>
-            <a className="" href="/account"><Icon icon="iconoir:profile-circle" className="me-3 nme-1 fs-4" />Account</a>
-            <a className="" href="/support"><Icon icon="icons8:support" className="me-3 nme-1 fs-4" />Support</a>
+            <a className={isLinkActive('/account') ? 'active-link' : ''} href="/account"><Icon icon="iconoir:profile-circle" className="me-3 nme-1 fs-4" />Account</a>
+            <a className={isLinkActive('/support') ? 'active-link' : ''}  href="/support"><Icon icon="icons8:support" className="me-3 nme-1 fs-4" />Support</a>
             <a className="" href="/"><Icon icon="carbon:login" className="me-3 nme-1 fs-4" />Logout</a>
           </div>
         </div>
