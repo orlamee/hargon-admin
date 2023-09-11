@@ -291,7 +291,7 @@ function MemberTables() {
                       </Row>
                       <Row className="mb-4">
                         <Col xs={6}>
-                          <Form.Control type="text" placeholder="Username" />
+                          <Form.Control type="tel" placeholder="Phone Number" />
                         </Col>
                         <Col>
                           <Form.Control placeholder="Email" />
@@ -299,20 +299,14 @@ function MemberTables() {
                       </Row>
                       <Row className="mb-4">
                         <Col xs={6}>
-                          <Form.Control type="tel" placeholder="Phone Number" />
+                          <Form.Control type="password" placeholder="Password" />
                         </Col>
                         <Col>
-                          <Form.Control placeholder="User Role" />
+                          <Form.Control placeholder="Title" />
                         </Col>
                       </Row>
                       <Row className="mb-4">
                         <Col xs={6}>
-                          <Form.Control
-                            type="password"
-                            placeholder="Password"
-                          />
-                        </Col>
-                        <Col>
                           <Form.Control type="file" placeholder="" />
                         </Col>
                       </Row>

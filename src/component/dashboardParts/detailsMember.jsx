@@ -114,7 +114,7 @@ function DetailsMember() {
                                     <td>10/12/2023</td>
                                   </tr>
                                   <tr>
-                                    <th>Member Role</th>
+                                    <th>Title</th>
                                     <td>Admin</td>
                                   </tr>
                                   <tr>

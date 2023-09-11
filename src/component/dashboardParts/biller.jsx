@@ -1,5 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import SearchNotification from "./searchNotification";
-import icon from "../../assets/comesoon.svg";
 
 
 function Biller() {
@@ -16,27 +16,111 @@ function Biller() {
         </div>
       </div>
       <div
-        className="mt-2 mx-5 members bg-white py-5 px-2 view-loans"
+        className="row mt-2 mx-5 members bg-white py-5 px-2"
         style={{ borderRadius: "0 0 20px 20px" }}
       >
-        <div className="row justify-content-center">
-          <div className="col-sm-7">
-            <div className="overview">
-              <div className="row justify-content-center">
-                <div className="col-sm-10">
-                  <div className="details-card">
-                    <div className="bg-white p-4 ">
-                      <div className="text-center my-5">
-                        <img src={icon} alt="coming soon" className="img-fluid"/>
-                        <h4 className="my-4">Coming Soon</h4>
-                        <h6 style={{color: "#9CA3AF"}}>This feature is not available right now. It will be in Version 2.0</h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className="col">
+          <table
+            className="table table-responsive"
+            style={{ width: "100%" }}
+            id="application"
+          >
+            <thead className="bg-white rounded-pill">
+              <tr>
+                <th>User ID</th>
+                <th>Transaction ID</th>
+                <th>Type</th>
+                <th>Payment</th>
+                <th>Operator</th>
+                <th>Provider</th>
+                <th>Cus Token</th>
+                <th>Package</th>
+                <th>Amount</th>
+                <th>Rewards</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#5643</td>
+                <td>4357889</td>
+                <td>Data</td>
+                <td>Kode Hex</td>
+                <td>CoralPlay</td>
+                <td>MTN</td>
+                <td>08165435789</td>
+                <td>100MB(Daily Plan)</td>
+                <td>N 100</td>
+                <td>N 100</td>
+                <td><span className="awaiting">Pending</span></td>
+              </tr>
+              <tr>
+                <td>#5643</td>
+                <td>4357889</td>
+                <td>Data</td>
+                <td>Kode Hex</td>
+                <td>CoralPlay</td>
+                <td>MTN</td>
+                <td>08165435789</td>
+                <td>100MB(Daily Plan)</td>
+                <td>N 100</td>
+                <td>N 100</td>
+                <td><span className="approved">Approved</span></td>
+              </tr>
+              <tr>
+                <td>#5643</td>
+                <td>4357889</td>
+                <td>Electricity</td>
+                <td>Kode Hex</td>
+                <td>CoralPlay</td>
+                <td>MTN</td>
+                <td>08165435789</td>
+                <td>100MB(Daily Plan)</td>
+                <td>N 100</td>
+                <td>N 100</td>
+                <td><span className="withdrawn">Declined</span></td>
+              </tr>
+              <tr>
+                <td>#5643</td>
+                <td>4357889</td>
+                <td>Electricity</td>
+                <td>Kode Hex</td>
+                <td>CoralPlay</td>
+                <td>MTN</td>
+                <td>08165435789</td>
+                <td>100MB(Daily Plan)</td>
+                <td>N 100</td>
+                <td>N 100</td>
+                <td><span className="withdrawn">Declined</span></td>
+              </tr>
+              <tr>
+                <td>#5643</td>
+                <td>4357889</td>
+                <td>Electricity</td>
+                <td>Kode Hex</td>
+                <td>CoralPlay</td>
+                <td>MTN</td>
+                <td>08165435789</td>
+                <td>100MB(Daily Plan)</td>
+                <td>N 100</td>
+                <td>N 100</td>
+                <td><span className="withdrawn">Declined</span></td>
+              </tr>
+              <tr>
+                <td>#5643</td>
+                <td>4357889</td>
+                <td>Electricity</td>
+                <td>Kode Hex</td>
+                <td>CoralPlay</td>
+                <td>Sporty Bet</td>
+                <td>08165435789</td>
+                <td>100MB(Daily Plan)</td>
+                <td>N 100</td>
+                <td>N 100</td>
+                <td><span className="withdrawn">Declined</span></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
