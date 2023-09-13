@@ -82,6 +82,10 @@ import MarketingSettings from './dashboardPages/marketingSettings';
 import Members from './dashboardPages/members';
 import MemberDetails from './dashboardPages/memberDetails';
 import MemberSettings from './dashboardPages/memberSettings';
+import CashBack from './dashboardPages/cashBack';
+import Referral from './dashboardPages/referral';
+import RewardSettings from './dashboardPages/rewardSettings';
+import CompanyReports from './dashboardPages/companyReports';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -122,6 +126,7 @@ root.render(
       <Route path='/manage-company/details' element={<CompanyDetails/>}></Route>
       <Route path='/employee-details' element={<EmployeeDetails/>}></Route>
       <Route path='/company-settings' element={<CompanySettings/>}></Route>
+      <Route path='/company/reports' element={<CompanyReports/>}></Route>
       <Route path='/application-summary' element={<Application/>}></Route>
       <Route path='/application-summary/details' element={<SummaryDetails/>}></Route>
       <Route path='/new-application' element={<NewApplication/>}></Route>
@@ -165,6 +170,9 @@ root.render(
       <Route path='/members' element={<Members/>}></Route>
       <Route path='/members/details' element={<MemberDetails/>}></Route>
       <Route path='/members/settings' element={<MemberSettings/>}></Route>
+      <Route path='/cashback' element={<CashBack/>}></Route>
+      <Route path='/referral' element={<Referral/>}></Route>
+      <Route path='/rewards/settings' element={<RewardSettings/>}></Route>
     </Routes>
   </BrowserRouter>
 );

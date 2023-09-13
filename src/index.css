@@ -350,6 +350,14 @@ tr {
   font-size: 10px;
 }
 
+.not-claim {
+  background: #F3F4F6;
+  color: #6B7280;
+  padding: 6px 14px;
+  border-radius: 44px;
+  font-size: 10px;
+}
+
 .disbursed {
   background: #f0f6ff;
   color: #005fee;
@@ -1014,3 +1022,12 @@ input::-webkit-inner-spin-button {
   color: #fff; 
 }
 
+.claimed {
+  color: #9CA3AF;
+  text-decoration: underline!important;
+}
+
+.claim {
+  color: #228B22;
+  text-decoration: underline!important;
+}

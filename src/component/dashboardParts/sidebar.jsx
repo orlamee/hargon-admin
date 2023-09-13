@@ -72,6 +72,7 @@ function Sidebar() {
               <a href="/manage-company" className="sub-item">Manage company</a>
               <a href="/onboard-company" className="sub-item">Onboarding company</a>
               <a href="/company-settings" className="sub-item">Settings</a>
+              <a href="/company/reports" className="sub-item">Reports</a>
             </div>
           </div>
           <div className="item">
@@ -126,6 +127,14 @@ function Sidebar() {
               <a href="/career" className="sub-item">Applications</a>
               <a href="/career/job-post" className="sub-item">Manage Job Posts</a>
               <a href="/career/settings" className="sub-item">Settings</a>
+            </div>
+          </div>
+          <div className="item">
+            <a className="sub-btn"><Icon icon="mdi:achievement-outline" className="me-3 nme-1 fs-4" />Rewards<i className="bi bi-chevron-right dropdown"></i></a>
+            <div className="sub-menu">
+              <a href="/cashback" className="sub-item">Cashback</a>
+              <a href="/referral" className="sub-item">Referral</a>
+              <a href="/rewards/settings" className="sub-item">Settings</a>
             </div>
           </div>
           <a className={isLinkActive('/bills') ? 'active-link' : ''}  href="/bills"><Icon icon="tabler:receipt" className="me-3 nme-1 fs-4" />Bills</a>

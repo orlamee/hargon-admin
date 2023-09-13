@@ -16,7 +16,7 @@ function SettingsMerchant() {
           </div>
         </div>
       </div>
-      <div className="mt-5 row mx-5">
+      <div className="mt-2 row mx-5">
         <div className="col-sm-12 px-0">
           <div className="bg-white p-4 view-loans">
             <div className="row justify-content-center mt-5">
