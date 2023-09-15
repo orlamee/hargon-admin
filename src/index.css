@@ -1031,3 +1031,31 @@ input::-webkit-inner-spin-button {
   color: #228B22;
   text-decoration: underline!important;
 }
+
+.edit-btn {
+  background: #F3FCF3;
+  border: 1px solid #F3FCF3;
+  font-size: 12px;
+  color: #228B22;
+  padding: 8px 20px;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+.delete-btn {
+  background: #FFF0F0;
+  border: 1px solid #FFF0F0;
+  font-size: 12px;
+  color: #FF0606;
+  padding: 8px 20px;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+.report-card hr {
+  margin: 2rem 0;
+  color: #F9FAFB;
+  border: 0;
+  border-top: var(--bs-border-width) solid;
+  opacity: 0.9;
+}

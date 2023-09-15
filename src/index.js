@@ -87,6 +87,7 @@ import Referral from './dashboardPages/referral';
 import RewardSettings from './dashboardPages/rewardSettings';
 import CompanyReports from './dashboardPages/companyReports';
 import AdminAccountOfficer from './dashboardPages/adminAccountOfficer';
+import AdminAccountOfficerView from './dashboardPages/adminAccountOfficerView';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -175,6 +176,7 @@ root.render(
       <Route path='/referral' element={<Referral/>}></Route>
       <Route path='/rewards/settings' element={<RewardSettings/>}></Route>
       <Route path='/admin/account-officer' element={<AdminAccountOfficer/>}></Route>
+      <Route path='/admin/account-officer/view' element={<AdminAccountOfficerView/>}></Route>
     </Routes>
   </BrowserRouter>
 );
