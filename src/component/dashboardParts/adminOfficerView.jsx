@@ -25,7 +25,7 @@ function AdminOfficerView() {
         </div>
       </div>
       <div className="row mt-2 mx-5 justify-content-between">
-        <div className="col-sm-5 mb-3">
+        <div className="col-sm-5 mb-3 px-0">
           <div className="report-card">
             <div className="row justify-content-center">
               <div className="col-sm-5 text-center mb-4">
@@ -57,7 +57,7 @@ function AdminOfficerView() {
             </div>
           </div>
         </div>
-        <div className="col-sm-7 mb-3">
+        <div className="col-sm-7 mb-3 px-0">
           <div className="report-card">
             
           </div>
