@@ -137,6 +137,8 @@ function Sidebar() {
               <a href="/rewards/settings" className="sub-item">Settings</a>
             </div>
           </div>
+          <a className={isLinkActive('/admin/account-officer') ? 'active-link' : ''}  href="/admin/account-officer"><Icon icon="mdi:account-cog-outline" className="me-3 nme-1 fs-4" />Admin Account Officer</a>
+          <a className={isLinkActive('/employee/account-officer') ? 'active-link' : ''}  href="/employee/account-officer"><Icon icon="mdi:account-cog-outline" className="me-3 nme-1 fs-4" />Employee Account Officer</a>
           <a className={isLinkActive('/bills') ? 'active-link' : ''}  href="/bills"><Icon icon="tabler:receipt" className="me-3 nme-1 fs-4" />Bills</a>
           <div className="my-5">
             <hr />

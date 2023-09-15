@@ -86,6 +86,7 @@ import CashBack from './dashboardPages/cashBack';
 import Referral from './dashboardPages/referral';
 import RewardSettings from './dashboardPages/rewardSettings';
 import CompanyReports from './dashboardPages/companyReports';
+import AdminAccountOfficer from './dashboardPages/adminAccountOfficer';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -173,6 +174,7 @@ root.render(
       <Route path='/cashback' element={<CashBack/>}></Route>
       <Route path='/referral' element={<Referral/>}></Route>
       <Route path='/rewards/settings' element={<RewardSettings/>}></Route>
+      <Route path='/admin/account-officer' element={<AdminAccountOfficer/>}></Route>
     </Routes>
   </BrowserRouter>
 );
