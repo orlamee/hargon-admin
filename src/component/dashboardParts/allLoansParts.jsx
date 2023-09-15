@@ -15,7 +15,7 @@ function AllLoansParts() {
         </div>
       </div>
       <div
-        className="row mt-5 mx-5 members bg-white py-5 px-2"
+        className="row mt-2 mx-5 members bg-white py-5 px-2"
         style={{ borderRadius: "0 0 20px 20px" }}
       >
         <div className="col">
