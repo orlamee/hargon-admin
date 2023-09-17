@@ -88,6 +88,12 @@ function MemberTables() {
 
   const handleAddMember = (event) => {
     event.preventDefault();
+    const isEmailTaken = members.some(member => member.email === newMemberData.email);
+
+    if (isEmailTaken) {
+      toast.error("Email is already taken. Please choose a different email.");
+      return;
+    }
     setLoading(true);
 
     // Simulate an API request delay (you can replace this with your actual API request)
