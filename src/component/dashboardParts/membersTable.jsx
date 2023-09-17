@@ -4,6 +4,8 @@ import SearchNotification from "./searchNotification";
 import Select from 'react-select'
 import React, { useState } from "react";
 import DataTable from "react-data-table-component";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const options = [
@@ -94,6 +96,7 @@ function MemberTables() {
       setMembers([...members, newMember]);
       setShowAddMemberModal(false);
       setLoading(false);
+      toast.success("Member added successfully!");
     }, 1500);
   };
 
@@ -104,6 +107,7 @@ function MemberTables() {
 
   return (
     <div className="content home">
+      <ToastContainer />
       <SearchNotification />
       <div className="mt-5 row mx-5">
         <div className="col-sm-12 px-0">
