@@ -1,5 +1,4 @@
 import SearchNotification from "./searchNotification";
-import { Link } from "react-router-dom";
 import ratings from "../../assets/ratings.svg"
 
 function AdminOfficer() {
@@ -78,7 +77,7 @@ function AdminOfficer() {
                   <img src={ratings} alt="ratings" className="img-fluid" />
                 </td>
                 <td>
-                  <Link className="claim" to="/admin/account-officer/view">View</Link>
+                  <a className="claim" href="/admin/account-officer/view">View</a>
                 </td>
               </tr>
               <tr>
@@ -93,7 +92,7 @@ function AdminOfficer() {
                   <img src={ratings} alt="ratings" className="img-fluid" />
                 </td>
                 <td>
-                  <Link className="claim" to="/admin/account-officer/view">View</Link>
+                  <a className="claim" href="/admin/account-officer/view">View</a>
                 </td>
               </tr>
               <tr>
@@ -108,7 +107,7 @@ function AdminOfficer() {
                   <img src={ratings} alt="ratings" className="img-fluid" />
                 </td>
                 <td>
-                  <Link className="claim" to="/admin/account-officer/view">View</Link>
+                  <a className="claim" href="/admin/account-officer/view">View</a>
                 </td>
               </tr>
             </tbody>
