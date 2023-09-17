@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import SearchNotification from "./searchNotification";
 import ratings from "../../assets/userrate.svg";
 import avi from "../../assets/officer.svg";
@@ -57,13 +58,298 @@ function AdminOfficerView() {
             </div>
           </div>
         </div>
-        <div className="col-sm-7 mb-3 px-0">
+        <div className="col-sm-7 pe-0">
           <div className="report-card">
-            
+            <div className="assignee">
+              <h5 className="mt-2">
+                Assigned Clients <span className="text-black">(20)</span>
+              </h5>
+              <button
+                // data-bs-toggle="modal"
+                // data-bs-target="#"
+                className="btn-save float-end"
+                style={{ marginTop: "-38px" }}
+              >
+                Assign Clients <i className="bi bi-plus ms-2"></i>
+              </button>
+            </div>
+            <div className="col members mt-5">
+              <table
+                className="table table-responsive"
+                style={{ width: "100%" }}
+                id="example"
+              >
+                <thead className="bg-white rounded-pill">
+                  <tr>
+                    <th>Client</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      Ola Ola{" "}
+                      <span style={{ color: "#FF823B" }}>(#2501)</span>
+                    </td>
+                    <td>
+                      <div className="dropdown">
+                        <i
+                          className="bi bi-three-dots-vertical"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        ></i>
+                        <ul class="dropdown-menu details">
+                          <li>
+                            <a
+                              className="dropdown-item"
+                              data-bs-toggle="modal"
+                              data-bs-target="#feedback"
+                            >
+                              <i className="bi bi-eye me-2"></i>
+                              View Feedback
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              className="dropdown-item"
+                              data-bs-toggle="modal"
+                              data-bs-target="#remove-officer"
+                            >
+                              <i className="bi bi-trash3 me-2 text-danger"></i>
+                              Remove User
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Elon Musk{" "}
+                      <span style={{ color: "#FF823B" }}>(#2591)</span>
+                    </td>
+                    <td>
+                      <div className="dropdown">
+                        <i
+                          className="bi bi-three-dots-vertical"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        ></i>
+                        <ul class="dropdown-menu details">
+                          <li>
+                            <a
+                              className="dropdown-item"
+                              data-bs-toggle="modal"
+                              data-bs-target="#feedback"
+                            >
+                              <i className="bi bi-eye me-2"></i>
+                              View Feedback
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              className="dropdown-item"
+                              data-bs-toggle="modal"
+                              data-bs-target="#remove-officer"
+                            >
+                              <i className="bi bi-trash3 me-2 text-danger"></i>
+                              Remove User
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Oshodi David{" "}
+                      <span style={{ color: "#FF823B" }}>(#2501)</span>
+                    </td>
+                    <td>
+                      <div className="dropdown">
+                        <i
+                          className="bi bi-three-dots-vertical"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        ></i>
+                        <ul class="dropdown-menu details">
+                          <li>
+                            <a
+                              className="dropdown-item"
+                              data-bs-toggle="modal"
+                              data-bs-target="#feedback"
+                            >
+                              <i className="bi bi-eye me-2"></i>
+                              View Feedback
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              className="dropdown-item"
+                              data-bs-toggle="modal"
+                              data-bs-target="#remove-officer"
+                            >
+                              <i className="bi bi-trash3 me-2 text-danger"></i>
+                              Remove User
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Joy David{" "}
+                      <span style={{ color: "#FF823B" }}>(#2501)</span>
+                    </td>
+                    <td>
+                      <div className="dropdown">
+                        <i
+                          className="bi bi-three-dots-vertical"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        ></i>
+                        <ul class="dropdown-menu details">
+                          <li>
+                            <a
+                              className="dropdown-item"
+                              data-bs-toggle="modal"
+                              data-bs-target="#feedback"
+                            >
+                              <i className="bi bi-eye me-2"></i>
+                              View Feedback
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              className="dropdown-item"
+                              data-bs-toggle="modal"
+                              data-bs-target="#remove-officer"
+                            >
+                              <i className="bi bi-trash3 me-2 text-danger"></i>
+                              Remove User
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Joy David{" "}
+                      <span style={{ color: "#FF823B" }}>(#2501)</span>
+                    </td>
+                    <td>
+                      <div className="dropdown">
+                        <i
+                          className="bi bi-three-dots-vertical"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        ></i>
+                        <ul class="dropdown-menu details">
+                          <li>
+                            <a
+                              className="dropdown-item"
+                              data-bs-toggle="modal"
+                              data-bs-target="#feedback"
+                            >
+                              <i className="bi bi-eye me-2"></i>
+                              View Feedback
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              className="dropdown-item"
+                              data-bs-toggle="modal"
+                              data-bs-target="#remove-officer"
+                            >
+                              <i className="bi bi-trash3 me-2 text-danger"></i>
+                              Remove User
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Tunmise Akindele{" "}
+                      <span style={{ color: "#FF823B" }}>(#2501)</span>
+                    </td>
+                    <td>
+                      <div className="dropdown">
+                        <i
+                          className="bi bi-three-dots-vertical"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        ></i>
+                        <ul class="dropdown-menu details">
+                          <li>
+                            <a
+                              className="dropdown-item"
+                              data-bs-toggle="modal"
+                              data-bs-target="#feedback"
+                            >
+                              <i className="bi bi-eye me-2"></i>
+                              View Feedback
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              className="dropdown-item"
+                              data-bs-toggle="modal"
+                              data-bs-target="#remove-officer"
+                            >
+                              <i className="bi bi-trash3 me-2 text-danger"></i>
+                              Remove User
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
 
+      {/* Remove Officer */}
+      <div
+        className="modal fade vprogress"
+        id="remove-officer"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+            <div className="modal-header">
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div className="modal-body">
+              <div className="row justify-content-start not-alert mb-4">
+                <div className="col">
+                  <h3 className="mb-3 fs-4">Remove “Ololade Akindele”</h3>
+                  <p>You will not be able to undo after removing this user</p>
+                  <div className="d-flex flex-row mt-4 justify-content-center">
+                    <button className="me-3 btn-delete">Remove</button>
+                    <button className="me-3 btn-white">Cancel</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       {/* Delete Officer */}
       <div
         className="modal fade vprogress"
@@ -151,6 +437,39 @@ function AdminOfficerView() {
                         </button>
                       </div>
                     </Form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Feedback */}
+      <div
+        className="modal fade vprogress"
+        id="feedback"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+            <div className="modal-header">
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div className="modal-body">
+               <div className="row justify-content-start not-alert mb-4">
+                <div className="col-sm-12">
+                  <h3 className="mb-3 fs-4">Feedback</h3>
+                  <div className="feed-back">
+                    <p>My interaction with him was a good one.</p>
                   </div>
                 </div>
               </div>

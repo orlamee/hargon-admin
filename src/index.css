@@ -279,7 +279,8 @@ div.content {
   border-radius: 20px 20px 0px 0px;
 }
 
-.pending-loan h5 {
+.pending-loan h5,
+.assignee h5 {
   color: #000000;
   font-size: 15px;
   line-height: 19px;
@@ -1058,4 +1059,11 @@ input::-webkit-inner-spin-button {
   border: 0;
   border-top: var(--bs-border-width) solid;
   opacity: 0.9;
+}
+
+.feed-back {
+  border: 1px solid #F3F4F6;
+  padding: 20px;
+  min-height: 100px;
+  border-radius: 8px;
 }
