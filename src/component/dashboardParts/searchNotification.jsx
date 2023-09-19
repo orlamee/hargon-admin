@@ -3,6 +3,7 @@ import avatar from "../../assets/avi.svg"
 import { Link } from "react-router-dom"
 
 export default function SearchNotification(params) {
+  const registeredEmail = sessionStorage.getItem("email");
   return (
     <div className="sticky-top container-fluid bg-white dash-bot px-5 py-4">
       <div className="row justify-content-end">
@@ -22,8 +23,8 @@ export default function SearchNotification(params) {
             <div className="d-flex flex-row">
               <img src={avatar} alt="admin" className="img-fluid" />
               <div className="user-avi mt-3 ms-3">
-                <h6>Paddy Adenuga</h6>
-                <p>CEO</p>
+                <h6>{registeredEmail}</h6>
+                <p>Admin</p>
               </div>
             </div>
           </div>

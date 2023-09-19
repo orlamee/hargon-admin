@@ -1,3 +1,5 @@
+// OTP for New User
+
 import logo from "../assets/logo.svg";
 import OtpInput from "react18-input-otp";
 import { Link, useNavigate, useLocation } from "react-router-dom";
@@ -5,8 +7,7 @@ import { useFormik } from "formik";
 import axios from "axios";
 import { useState } from "react";
 
-
-export default function LoginOtp() {
+export default function UserOtp() {
   const location = useLocation();
   const registeredEmail = location.state ? location.state.email : '';
   const [otp, setOtp] = useState('');
@@ -23,7 +24,7 @@ export default function LoginOtp() {
     },
     onSubmit: (values) => {
       setVerifying(true); 
-      const apiUrl = 'https://hargon-admin-be.onrender.com/api/v1/hargon/admin/auth/login';
+      const apiUrl = 'https://hargon-admin-be.onrender.com/api/v1/hargon/admin/auth/register';
 
       const otpData = {
         email: registeredEmail,
@@ -33,9 +34,6 @@ export default function LoginOtp() {
       axios.post(apiUrl, otpData)
         .then(function (response) {
           if (response.data.code === 200) {
-            const token = response.data.token;
-            sessionStorage.setItem("token", token);
-            console.log("Success Response:", response.data);
             navigate("/dashboard");
           } else {
             console.log("OTP verification failed:", response.data);

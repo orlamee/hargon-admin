@@ -1,7 +1,7 @@
 import LoginOtp from "../component/loginOtp";
 
 
-export default function VerifyLogin () {
+export default function OtpLogin () {
   return (
     <div>
       <LoginOtp/>

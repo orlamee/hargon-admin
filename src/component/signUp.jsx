@@ -6,16 +6,40 @@ import { Link } from "react-router-dom";
 import { Formik } from "formik";
 import validate from "../validations/signupValidation";
 import axios from "axios";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { useNavigate } from "react-router-dom";
+
 
 export default function SignUp() {
+  const navigate = useNavigate();
   const [submitting, setSubmitting] = useState(false);
   const [serverResponse, setServerResponse] = useState(null);
 
   const handleSubmit = async (values) => {
     setSubmitting(true);
 
-    try {
-      const response = await axios.post("https://jsonplaceholder.typicode.com/posts", values); 
+      try {
+      const response = await axios.post("https://hargon-admin-be.onrender.com/api/v1/hargon/admin/auth/contact_verification", values);
+      const { data } = response;
+
+      if (data.code === 200) {
+        // Handle successful sign-up as before
+        sessionStorage.setItem("email", values.email);
+        navigate("/signup/otp", { state: { email: values.email } });
+      } else if (data.code === 400) {
+        if (data.message === "Phone exists already") {
+          toast.error("Phone number is already taken.");
+        } else if (data.message === "Email exists already") {
+          toast.error("Email is already taken.");
+        } else {
+          toast.error("An error occurred. Please try again later.");
+        }
+      } else {
+        // Handle other error cases
+        toast.error("An error occurred. Please try again later.");
+      }
+
       setServerResponse(response.data);
       console.log("Server Response:", response.data);
     } catch (error) {
@@ -40,7 +64,9 @@ export default function SignUp() {
           </h6>
           <Formik
             initialValues={{
-              fullName: "",
+              first_name: "",
+              last_name: "",
+              phone: "",
               email: "",
               password: "",
             }}
@@ -52,12 +78,32 @@ export default function SignUp() {
                 <Form.Group className="mb-4">
                   <Form.Control
                     type="text"
-                    name="fullName"
-                    placeholder="Name"
-                    value={values.fullName}
+                    name="first_name"
+                    placeholder="First Name"
+                    value={values.first_name}
                     onChange={handleChange}
                   />
-                  {errors.fullName && <div className="text-danger" style={{fontSize:"10px"}}>{errors.fullName}</div>}
+                  {errors.first_name && <div className="text-danger" style={{fontSize:"10px"}}>{errors.first_name}</div>}
+                </Form.Group>
+                <Form.Group className="mb-4">
+                  <Form.Control
+                    type="text"
+                    name="last_name"
+                    placeholder="Last Name"
+                    value={values.last_name}
+                    onChange={handleChange}
+                  />
+                  {errors.last_name && <div className="text-danger" style={{fontSize:"10px"}}>{errors.last_name}</div>}
+                </Form.Group>
+                <Form.Group className="mb-4">
+                  <Form.Control
+                    type="tel"
+                    name="phone"
+                    placeholder="Phone"
+                    value={values.phone}
+                    onChange={handleChange}
+                  />
+                  {errors.phone && <div className="text-danger" style={{fontSize:"10px"}}>{errors.phone}</div>}
                 </Form.Group>
                 <Form.Group className="mb-4">
                   <Form.Control
@@ -99,6 +145,7 @@ export default function SignUp() {
           </Formik>
         </div>
       </div>
+      <ToastContainer position="top-right" autoClose={3000} />
     </div>
   );
 }

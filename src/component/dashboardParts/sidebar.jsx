@@ -1,13 +1,30 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../../assets/logo.svg"
 import { Icon } from "@iconify/react"
+import axios from "axios"; 
+import { ToastContainer, toast } from "react-toastify";
 
 function Sidebar() {
   const location = useLocation(); 
   const isLinkActive = (path) => {
     return location.pathname === path;
   };
+
+  const handleLogout = async () => {
+    try {
+      // Send a logout request to your API endpoint
+      await axios.post("https://hargon-admin-be.onrender.com/api/v1/hargon/admin/auth/logout");
+
+      // After successful logout, you can redirect the user or perform other actions
+      // For example, you can redirect to the login page:
+      window.location.href = "/";
+      toast.success("Logout successful", { autoClose: 2000 }); 
+    } catch (error) {
+      console.error("Logout Error:", error);
+      toast.error("Logout failed")
+    }
+  }
   return (
     <div className="sidebar side-bar">
       <div className="row justify-content-center mt-4">
@@ -145,11 +162,13 @@ function Sidebar() {
             <h6 className="mt-5">SETTINGS</h6>
             <a className={isLinkActive('/account') ? 'active-link' : ''} href="/account"><Icon icon="iconoir:profile-circle" className="me-3 nme-1 fs-4" />Account</a>
             <a className={isLinkActive('/support') ? 'active-link' : ''}  href="/support"><Icon icon="icons8:support" className="me-3 nme-1 fs-4" />Support</a>
-            <a className="" href="/"><Icon icon="carbon:login" className="me-3 nme-1 fs-4" />Logout</a>
+            <Link onClick={handleLogout}>
+              <Icon icon="carbon:login" className="me-3 nme-1 fs-4" /> Logout
+            </Link>
           </div>
         </div>
       </div>
-      
+      <ToastContainer/>
     </div>
   )
 }
