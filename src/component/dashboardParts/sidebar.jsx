@@ -168,7 +168,7 @@ function Sidebar() {
           </div>
         </div>
       </div>
-      <ToastContainer/>
+      <ToastContainer position="top-right" autoClose={5000} hideProgressBar />
     </div>
   )
 }

@@ -4,6 +4,7 @@ import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useFormik } from "formik";
 import axios from "axios";
 import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
 
 
 export default function LoginOtp() {
@@ -21,7 +22,7 @@ export default function LoginOtp() {
     initialValues: {
       otp: '',
     },
-    onSubmit: (values) => {
+    onSubmit: (values, { resetForm }) => {
       setVerifying(true); 
       const apiUrl = 'https://hargon-admin-be.onrender.com/api/v1/hargon/admin/auth/login';
 
@@ -39,6 +40,8 @@ export default function LoginOtp() {
             navigate("/dashboard");
           } else {
             console.log("OTP verification failed:", response.data);
+            toast.error("Invalid OTP. Please try again.");
+            resetForm();
           }
         })
         .catch(function (error) {
@@ -79,6 +82,7 @@ export default function LoginOtp() {
           <h4 className="mb-3 text-black">Didn’t get an OTP code? <span style={{ color: "#228B22" }}>RESEND</span></h4>
         </div>
       </div>
+      <ToastContainer position="top-right" autoClose={5000} hideProgressBar />
     </div>
   );
 }
