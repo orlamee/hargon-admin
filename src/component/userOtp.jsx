@@ -1,5 +1,3 @@
-// OTP for New User
-
 import logo from "../assets/logo.svg";
 import OtpInput from "react18-input-otp";
 import { Link, useNavigate, useLocation } from "react-router-dom";

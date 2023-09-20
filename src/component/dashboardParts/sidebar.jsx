@@ -14,7 +14,7 @@ function Sidebar() {
   const handleLogout = async () => {
     try {
       await axios.post("https://hargon-admin-be.onrender.com/api/v1/hargon/admin/auth/logout");
-
+      localStorage.removeItem("token"); 
       window.location.href = "/";
       toast.success("Logout successful", { autoClose: 2000 }); 
     } catch (error) {

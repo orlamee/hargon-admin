@@ -5,10 +5,13 @@ import { useFormik } from "formik";
 import axios from "axios";
 import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
-
+import "react-toastify/dist/ReactToastify.css"; // Import CSS for react-toastify
+import { useDispatch } from "react-redux"; // Import useDispatch from react-redux
+import { setUser } from "../auth/userSlice";
 
 export default function LoginOtp() {
   const location = useLocation();
+  const dispatch = useDispatch(); // Get the dispatch function from Redux
   const registeredEmail = location.state ? location.state.email : '';
   const [otp, setOtp] = useState('');
   const [verifying, setVerifying] = useState(false);
@@ -30,12 +33,29 @@ export default function LoginOtp() {
         email: registeredEmail,
         otp: otp,
       };
-
+      
       axios.post(apiUrl, otpData)
         .then(function (response) {
           if (response.data.code === 200) {
             const token = response.data.token;
-            sessionStorage.setItem("token", token);
+            localStorage.setItem("token", token);
+
+            const admin = response.data.admin || {};
+            const adminInfo = admin.adminInfo || {};
+            const lastLogin = adminInfo.last_login || null; 
+
+            dispatch(
+              setUser({
+                admin: {
+                  name: `${admin.first_name} ${admin.last_name}`,
+                  email: admin.email,
+                  adminInfo: {
+                    last_login: lastLogin,
+                  },
+                },
+                token: token,
+              })
+            );
             console.log("Success Response:", response.data);
             navigate("/dashboard");
             window.location.reload();
@@ -75,7 +95,7 @@ export default function LoginOtp() {
                 isInputNum={true}
                 inputStyle="form-control otp-form"
               />
-              <button type="submit" className="btn btn-primary btn-main mt-4 rounded-pill px-5 py-3 w-100">
+              <button type="submit" className="btn btn-primary btn-main mt-4 rounded-pill px-5 py-3 w-100" disabled={verifying}>
                 {verifying ? "Verifying..." : "Verify"}
               </button>
             </form>

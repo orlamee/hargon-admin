@@ -100,6 +100,8 @@ function App() {
         <Route path="/sign-up" element={<Register />}></Route>
         <Route path="/recover-password" element={<ForgotP />}></Route>
         <Route path="/set-password" element={<RecoverPassword />}></Route>
+
+        
         <Route path="/all-loans" element={<AllLoans />}></Route>
         <Route path="/all-loans/details" element={<LoanDetails />}></Route>
         <Route path="/applications" element={<AppSummary />}></Route>

@@ -6,12 +6,10 @@ import Input from "./input";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { ToastContainer, toast } from 'react-toastify';
-import useAuthStore from '../hooks/authStore';
 
 
 export default function SignIn() {
   const navigate = useNavigate();
-  const authStore = useAuthStore();
   const initialValues = {
     email: "",
     password: "",
@@ -32,7 +30,6 @@ export default function SignIn() {
       const { data } = response;
       if (data.code === 200) {
         sessionStorage.setItem("email", values.email);
-        authStore.login(data.token);
         navigate("/login/otp", { state: { email: values.email } });
       } else if (data.code === 400) { 
         toast.error("User does not exist or wrong credentials");
