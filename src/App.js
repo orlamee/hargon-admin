@@ -101,7 +101,7 @@ function App() {
         <Route path="/recover-password" element={<ForgotP />}></Route>
         <Route path="/set-password" element={<RecoverPassword />}></Route>
 
-        
+
         <Route path="/all-loans" element={<AllLoans />}></Route>
         <Route path="/all-loans/details" element={<LoanDetails />}></Route>
         <Route path="/applications" element={<AppSummary />}></Route>
@@ -119,6 +119,8 @@ function App() {
         <Route path="/imported-loan" element={<ImportedLoans />}></Route>
         <Route path="/manage-users" element={<UsersManagement />}></Route>
         <Route path="/manage-users/details" element={<UserDetails />}></Route>
+
+
         <Route path="/bulk-users" element={<BulkUsers />}></Route>
         <Route path="/import-users" element={<UploadUsers />}></Route>
         <Route path="/user-settings" element={<UserSettings />}></Route>
