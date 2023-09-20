@@ -24,7 +24,7 @@ export default function SignUp() {
       const { data } = response;
 
       if (data.code === 200) {
-        sessionStorage.setItem("email", values.email);
+        localStorage.setItem("email", values.email);
         navigate("/signup/otp", { state: { email: values.email } });
       } else if (data.code === 400) {
         if (data.message === "Phone exists already") {

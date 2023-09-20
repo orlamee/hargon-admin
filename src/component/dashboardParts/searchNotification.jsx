@@ -2,8 +2,10 @@ import nots from "../../assets/not.svg"
 import avatar from "../../assets/avi.svg"
 import { Link } from "react-router-dom"
 
-export default function SearchNotification(params) {
-  const registeredEmail = sessionStorage.getItem("email");
+export default function SearchNotification() {
+  
+  const registeredEmail = localStorage.getItem("email");
+
   return (
     <div className="sticky-top container-fluid bg-white dash-bot px-5 py-4">
       <div className="row justify-content-end">

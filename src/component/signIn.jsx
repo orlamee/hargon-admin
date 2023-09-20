@@ -29,7 +29,7 @@ export default function SignIn() {
       
       const { data } = response;
       if (data.code === 200) {
-        sessionStorage.setItem("email", values.email);
+        localStorage.setItem("email", values.email);
         navigate("/login/otp", { state: { email: values.email } });
       } else if (data.code === 400) { 
         toast.error("User does not exist or wrong credentials");

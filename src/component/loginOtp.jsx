@@ -56,6 +56,7 @@ export default function LoginOtp() {
                 token: token,
               })
             );
+            
             console.log("Success Response:", response.data);
             navigate("/dashboard");
             window.location.reload();
