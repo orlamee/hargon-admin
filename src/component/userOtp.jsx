@@ -35,7 +35,10 @@ export default function UserOtp() {
       axios.post(apiUrl, otpData)
         .then(function (response) {
           if (response.data.code === 200) {
+            const token = response.data.token;
+            sessionStorage.setItem("token", token);
             navigate("/dashboard");
+            window.location.reload();
           } else {
             console.log("OTP verification failed:", response.data);
             toast.error("Invalid OTP. Please try again.");

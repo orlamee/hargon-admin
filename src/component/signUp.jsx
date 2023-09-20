@@ -24,7 +24,6 @@ export default function SignUp() {
       const { data } = response;
 
       if (data.code === 200) {
-        // Handle successful sign-up as before
         sessionStorage.setItem("email", values.email);
         navigate("/signup/otp", { state: { email: values.email } });
       } else if (data.code === 400) {
@@ -36,7 +35,6 @@ export default function SignUp() {
           toast.error("An error occurred. Please try again later.");
         }
       } else {
-        // Handle other error cases
         toast.error("An error occurred. Please try again later.");
       }
 

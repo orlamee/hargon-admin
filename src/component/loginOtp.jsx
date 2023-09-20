@@ -38,6 +38,7 @@ export default function LoginOtp() {
             sessionStorage.setItem("token", token);
             console.log("Success Response:", response.data);
             navigate("/dashboard");
+            window.location.reload();
           } else {
             console.log("OTP verification failed:", response.data);
             toast.error("Invalid OTP. Please try again.");

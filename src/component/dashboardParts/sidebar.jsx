@@ -13,11 +13,8 @@ function Sidebar() {
 
   const handleLogout = async () => {
     try {
-      // Send a logout request to your API endpoint
       await axios.post("https://hargon-admin-be.onrender.com/api/v1/hargon/admin/auth/logout");
 
-      // After successful logout, you can redirect the user or perform other actions
-      // For example, you can redirect to the login page:
       window.location.href = "/";
       toast.success("Logout successful", { autoClose: 2000 }); 
     } catch (error) {
