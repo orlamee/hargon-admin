@@ -5,13 +5,13 @@ import { useFormik } from "formik";
 import axios from "axios";
 import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css"; // Import CSS for react-toastify
-import { useDispatch } from "react-redux"; // Import useDispatch from react-redux
+import "react-toastify/dist/ReactToastify.css";
+import { useDispatch } from "react-redux";
 import { setUser } from "../auth/userSlice";
 
 export default function LoginOtp() {
   const location = useLocation();
-  const dispatch = useDispatch(); // Get the dispatch function from Redux
+  const dispatch = useDispatch(); 
   const registeredEmail = location.state ? location.state.email : '';
   const [otp, setOtp] = useState('');
   const [verifying, setVerifying] = useState(false);
@@ -56,7 +56,6 @@ export default function LoginOtp() {
                 token: token,
               })
             );
-            
             console.log("Success Response:", response.data);
             navigate("/dashboard");
             window.location.reload();

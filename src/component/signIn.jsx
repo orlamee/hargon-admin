@@ -34,6 +34,7 @@ export default function SignIn() {
       } else if (data.code === 400) { 
         toast.error("User does not exist or wrong credentials");
       } else {
+        
       }
       console.log("API Response:", response.data);
     } catch (error) {
